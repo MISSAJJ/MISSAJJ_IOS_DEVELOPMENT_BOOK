@@ -1,7 +1,7 @@
 ###MISSAJJ整理的IOS项目开发电子书
 
 ```objc
-Update更新：2016年5月10日 By {MISSAJJ琴瑟静听} 
+Update更新：2016年5月11日 By {MISSAJJ琴瑟静听} 
 ```
  
 
@@ -14,7 +14,7 @@ Update更新：2016年5月10日 By {MISSAJJ琴瑟静听}
            MISSAJJ琴瑟静听 
  ```
 #### Why为什么要写电子书? 
----
+ 
 
 ```objc
 一直想为自己写一本书，
@@ -29,8 +29,7 @@ Update更新：2016年5月10日 By {MISSAJJ琴瑟静听}
 希望能帮助一些学习开发的新手攻城狮，
 也是一本用心良苦想送给儿子W的的IOS启蒙书……
 ```  
-###Chapters目录章节
----
+###Chapters目录章节 
  
 * [Introduction](README.md)
 * [Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
@@ -47,30 +46,36 @@ Update更新：2016年5月10日 By {MISSAJJ琴瑟静听}
 * [Chapter-12 assign和weak的区别](Chapter-12 assign和weak的区别/README.md)
 * [Chapter-13 计算行页数 文本宽度 文件及文件夹大小](Chapter-13 计算行页数 文本宽度 文件及文件夹大小/README.md)
  
+ ####Download下载地址
  
-####Thanks特别感谢 
----
+* [GitBook在线浏览浏览或下载电子书地址](https://www.gitbook.com/book/missajj/missajj_iosdevelopment_gitbook)
+* [PDF版本电子书下载](https://www.gitbook.com/download/pdf/book/missajj/missajj_iosdevelopment_gitbook)
+* [ePub版本电子书下载](https://www.gitbook.com/download/epub/book/missajj/missajj_iosdevelopment_gitbook)
+* [Mobi版本电子书下载](https://www.gitbook.com/download/mobi/book/missajj/missajj_iosdevelopment_gitbook)
+ 
 
+####Thanks特别感谢 
+  
 ```objc
 感谢Jobs的激励，
 感谢MJ的课程启发，
 感谢美国朋友Matt分享资源，
 感谢越南极客Brian的帮助。
 ```
-####Other其他
----
+
+####Contact联系方式
+ 
+- 个人博客: http://www.MISSAJJ.com
+- Github: https://github.com/MISSAJJ
+
 ```objc 
 本人目前正在尝试将过去的项目陆续编译成Swift语言，
-同时也会陆续整理一本相关Swift语言开发的电子书,
-很希望能和大咖们一起快乐地奔跑,不再是一个孤独的攻城狮，
-希望能有更多的狮子一起共勉探讨学习，共同进步！
-个人博客: http://www.MISSAJJ.com
-Github: https://github.com/MISSAJJ
+同时也会陆续整理一本相关Swift语言开发的电子书, 
+希望能有更多的狮子一起共勉探讨学习，愉快奔跑！ 
 我的联系方式: QQ 996174446 ［验证：IOS攻城狮］
 ``` 
 
-####Reading阅读说明 
----
+####Reading阅读说明  
 
 ```objc
 此书使用MarkDown标记语言，
