@@ -3,17 +3,18 @@
 ```objc
 Update更新：2016年5月10日 By {MISSAJJ琴瑟静听} 
 ```
+ 
 
 ```objc
- { 心乎爱矣, 
-   遐不谓矣,
-   中心藏之, 
-   何日忘之. }
+ {  心乎爱矣, 
+    遐不谓矣,
+    中心藏之, 
+    何日忘之.  }
            
-           MISSAJJ琴瑟静听
-           2016.5.9
+           MISSAJJ琴瑟静听 
  ```
-#### 为什么要写电子书? 
+#### Why为什么要写电子书? 
+---
 
 ```objc
 一直想为自己写一本书，
@@ -27,17 +28,56 @@ Update更新：2016年5月10日 By {MISSAJJ琴瑟静听}
 
 希望能帮助一些学习开发的新手攻城狮，
 也是一本用心良苦想送给儿子W的的IOS启蒙书……
+```  
+###Table of Contents目录章节
+
+- 0 Introduction
+- 1 Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记
+•    2 Chapter-02 判断NSString字符串或NSArray数组是否为空
+•    3 Chapter-03 相机相簿存图UIImagePicker SDK
+•    4 Chapter-04 PCH文件的设置创建
+•    5 Chapter-05 颜色相关知识和宏代码
+•    6 Chapter-06 frame和bounds及尺寸位置
+•    7 Chapter-07 NSDate NSCalendar时间日期换算
+•    8 Chapter-08 CocoaPods的使用
+•    9 Chapter-09 UIAlertController的使用
+•    10 Chapter-10 在XIB中设置UIScrollView
+•    11 Chapter-11 UITextField UILabel 图文混排
+•    12 Chapter-12 assign和weak的区别
+•    13 Chapter-13 计算行页数 文本宽度 文件及文件夹大小  
+####Thanks特别感谢 
+---
+
+```objc
+感谢Jobs的激励，
+感谢MJ的课程启发，
+感谢美国朋友Matt分享资源，
+感谢越南极客Brian的帮助。
 ```
-#### 特别感谢 
+####Other其他
+---
+```objc
+
+本人目前正在尝试将过去的项目陆续编译成Swift语言，
+同时也会陆续整理一本相关Swift语言开发的电子书,
+很希望能和大咖们一起快乐地奔跑,不再是一个孤独的攻城狮，
+希望能有更多的狮子一起共勉探讨学习，共同进步！
+个人博客: http://www.MISSAJJ.com
+Github: https://github.com/MISSAJJ
+我的联系方式: QQ 996174446 ［验证：IOS攻城狮］
+``` 
+
+####Reading阅读说明 
+---
+
 ```objc
 此书使用MarkDown标记语言，
 用GitBook编写，不定期更新。
-特别感谢Jobs的激励和MJ的启发。
-```   
-#### 阅读说明 
-```objc
 查看此书章节目录，请点顶部最左边的菜单按钮
 直接阅读此书，请点底部 > 箭头按钮开始阅读
+
+您也可去此书地址下载https://www.gitbook.com/book/missajj/missajj_iosdevelopment_gitbook/
 ```
+ 
 
-
+ 
