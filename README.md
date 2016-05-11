@@ -31,7 +31,7 @@ Update更新：2016年5月11日 By {MISSAJJ琴瑟静听}
 ```  
 ###Chapters目录章节 
  
-* [Introduction](README.md)
+* [Introduction前言介绍](README.md)
 * [Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
 * [Chapter-02 判断NSString字符串或NSArray数组是否为空](Chapter-02 判断NSString字符串或NSArray数组是否为空/README.md)
 * [Chapter-03 相机相簿存图UIImagePicker SDK](Chapter-03 相机相簿存图UIImagePicker SDK/README.md)
@@ -46,23 +46,13 @@ Update更新：2016年5月11日 By {MISSAJJ琴瑟静听}
 * [Chapter-12 assign和weak的区别](Chapter-12 assign和weak的区别/README.md)
 * [Chapter-13 计算行页数 文本宽度 文件及文件夹大小](Chapter-13 计算行页数 文本宽度 文件及文件夹大小/README.md)
  
- ####Download下载地址
+####Download下载地址
  
-* [GitBook在线浏览浏览或下载电子书地址](https://www.gitbook.com/book/missajj/missajj_iosdevelopment_gitbook)
+* [GitBook在线浏览地址](https://missajj.gitbooks.io/missajj_iosdevelopment_gitbook/content/)
 * [PDF版本电子书下载](https://www.gitbook.com/download/pdf/book/missajj/missajj_iosdevelopment_gitbook)
 * [ePub版本电子书下载](https://www.gitbook.com/download/epub/book/missajj/missajj_iosdevelopment_gitbook)
 * [Mobi版本电子书下载](https://www.gitbook.com/download/mobi/book/missajj/missajj_iosdevelopment_gitbook)
  
-
-####Thanks特别感谢 
-  
-```objc
-感谢Jobs的激励，
-感谢MJ的课程启发，
-感谢美国朋友Matt分享资源，
-感谢越南极客Brian的帮助。
-```
-
 ####Contact联系方式
  
 - 个人博客: http://www.MISSAJJ.com
@@ -72,15 +62,22 @@ Update更新：2016年5月11日 By {MISSAJJ琴瑟静听}
 本人目前正在尝试将过去的项目陆续编译成Swift语言，
 同时也会陆续整理一本相关Swift语言开发的电子书, 
 希望能有更多的狮子一起共勉探讨学习，愉快奔跑！ 
-我的联系方式: QQ 996174446 ［验证：IOS攻城狮］
+联系方式: QQ 996174446 ［验证：IOS攻城狮］
 ``` 
-
+####Thanks特别感谢 
+  
+```objc
+感谢Jobs的激励，
+感谢MJ的课程启发，
+感谢美国朋友Matt分享资源，
+感谢越南极客Brian的帮助。
+```
 ####Reading阅读说明  
 
 ```objc
 此书使用MarkDown标记语言，
 用GitBook编写，不定期更新。
-查看此书章节目录，请点顶部最左边的菜单按钮
+手机查看此书章节目录，请点顶部最左边的菜单
 直接阅读此书，请点底部 > 箭头按钮开始阅读
  
 ```
