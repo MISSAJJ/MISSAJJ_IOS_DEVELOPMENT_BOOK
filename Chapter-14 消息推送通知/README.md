@@ -271,3 +271,46 @@ if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
 
 
 
+###监听远程通知的点击
+####一.为什么要监听远程通知的点击
+
+- 比如有需求:点击通知之后跳转到某一个界面中
+- 微信/QQ等应用并没有做该功能(不常见)
+
+####二.如何监听点击
+
+- 1.应用程序分很多种状态
+  - 在前台
+    - 如果在前台不需要进行页面跳转
+  - 在后台
+    - 点击应用时进行页面的跳转
+  - 被杀死
+    - 点击应用打开应用时,进行页面的跳转
+- 2.当应用程序出于后台时的监听
+
+```
+// 和本地通知基本一致,只是这里是接收到远程通知
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    // 跳转到固定的界面
+    if (application.applicationState == UIApplicationStateInactive) {
+        // 进行页面的跳转
+    } else {
+        // 其他情况不需要跳转
+    }
+}
+```
+- 3.应用程序被杀死时的监听
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    // 判断是否是通过点击通知打开了应用程序
+    if (launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey]) {
+        // 跳转代码
+    }
+
+    return YES;
+}
+```
+
