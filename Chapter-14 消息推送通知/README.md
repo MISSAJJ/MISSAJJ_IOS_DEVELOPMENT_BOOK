@@ -31,3 +31,57 @@
    - 收到通知时,同时播放音效.
    - 收到通知时,改变APP图标上的数字
 
+###本地通知
+一.本地通知的介绍
+
+- 直接由应用程序(程序中写入对应代码)给用户发出通知
+- 本地通知需要用到一个重要的类:UILocalNotification
+- 本地通知的实现步骤
+ - 创建本地通知
+ - 设置本地通知要发出的内容等信息
+   - 发出时间
+   - 发出内容
+   - 播放的音效
+ - 调度本地通知
+
+二.实现本地通知
+
+1.注册通知
+
+- iOS8之后,如果想要发出通知(无论本地还是远程),必须先进行注册.(iOS8之前不需要)
+- 通常是在didFinishLaunchingWithOptions中进行注册
+- 代码如下:
+```
+UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
+[application registerUserNotificationSettings:settings];
+```
+
+2.创建并且发出通知
+
+- 创建本地通知
+```
+    UILocalNotification *localNote = [[UILocalNotification alloc] init];
+```
+- 设置本地通知的内容
+```
+      // 2.设置本地通知的信息
+      // 2.1.设置提示信息
+      localNote.alertBody = @"吃饭了吗?";
+      // 2.2.设置通知弹出的时间
+      localNote.fireDate = [NSDate dateWithTimeIntervalSinceNow:5.0];
+      // 2.3.设置滑块显示的文字
+      localNote.alertAction = @"快点";
+      // 2.4.是否让上面的文字生效
+      localNote.hasAction = NO;
+      // 2.5.设置通知中心的标题
+      localNote.alertTitle = @"小码哥哥";
+      // 2.6.设置通知的声音
+      localNote.soundName = @"buyao.wav";
+      // 2.7.设置应用程序图标右上角的数字
+      localNote.applicationIconBadgeNumber = 10;
+```
+- 调度本地通知(调度之后某个时刻会弹出通知)
+```
+      // 3.调度通知
+      [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
+```
