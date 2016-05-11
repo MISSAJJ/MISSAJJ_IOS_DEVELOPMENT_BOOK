@@ -59,8 +59,7 @@ Update更新：2016年5月10日 By {MISSAJJ琴瑟静听}
 ```
 ####Other其他
 ---
-```objc
-
+```objc 
 本人目前正在尝试将过去的项目陆续编译成Swift语言，
 同时也会陆续整理一本相关Swift语言开发的电子书,
 很希望能和大咖们一起快乐地奔跑,不再是一个孤独的攻城狮，
@@ -78,8 +77,7 @@ Github: https://github.com/MISSAJJ
 用GitBook编写，不定期更新。
 查看此书章节目录，请点顶部最左边的菜单按钮
 直接阅读此书，请点底部 > 箭头按钮开始阅读
-
-您也可去此书地址下载https://www.gitbook.com/book/missajj/missajj_iosdevelopment_gitbook/
+ 
 ```
  
 
