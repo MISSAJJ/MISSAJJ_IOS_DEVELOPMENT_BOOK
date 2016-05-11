@@ -34,6 +34,9 @@ if (string) {
 
 ```objc
 #pragma mark ======ios 判断字符串为空和只为空格解决办法==
+/**
+ *  @author MISSAJJ, 15-11-25 
+ *
 + (BOOL)isBlankString:(NSString *)string{
     
     //字符串的长度为0表示空串
@@ -64,6 +67,9 @@ if (string) {
 ```
 ##判断数组为空的最佳方法
 ```objc
+/**
+ *  @author MISSAJJ, 15-11-25 
+ *
 #pragma mark ======ios 判断数组为空的解决办法==
 + (BOOL)isBlankArray:(NSArray *)array{
 
