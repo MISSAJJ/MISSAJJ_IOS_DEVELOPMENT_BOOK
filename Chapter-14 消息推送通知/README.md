@@ -32,7 +32,7 @@
    - 收到通知时,改变APP图标上的数字
 
 ###本地通知
-一.本地通知的介绍
+####一.本地通知的介绍
 
 - 直接由应用程序(程序中写入对应代码)给用户发出通知
 - 本地通知需要用到一个重要的类:UILocalNotification
@@ -44,9 +44,9 @@
    - 播放的音效
  - 调度本地通知
 
-二.实现本地通知
+####二.实现本地通知
 
-1.注册通知
+#####1.注册通知
 
 - iOS8之后,如果想要发出通知(无论本地还是远程),必须先进行注册.(iOS8之前不需要)
 - 通常是在didFinishLaunchingWithOptions中进行注册
@@ -56,7 +56,7 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
 [application registerUserNotificationSettings:settings];
 ```
 
-2.创建并且发出通知
+#####2.创建并且发出通知
 
 - 创建本地通知
 ```
@@ -84,4 +84,54 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
 ```
       // 3.调度通知
       [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
+```
+
+###监听本地通知的点击
+####一. 为什么要监听本地通知的点击?
+
+- 1.通知点击之后会发生什么事情?
+  - 不管应用程序出于后台还是被杀死,点击通知都可以打开应用程序
+- 2.什么情况下需要监听用户点击了通知(不常用)
+  - 比如:当用点击通知时,进入到某一个固定界面
+
+####二. 如何监听本地通知的点击
+
+- 应用程序分很多种状态
+  - 在前台
+    - 如果在前台不需要进行页面跳转
+  - 在后台
+    - 点击应用时进行页面的跳转
+  - 被杀死
+    - 点击应用打开应用时,进行页面的跳转
+- 该代码为应用程序在前台或者后台时的做法
+
+```
+ // 应用在前台时,也会收到该通知,这时不应该进行页面的跳转
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    // 跳转到固定的界面
+    if (application.applicationState == UIApplicationStateInactive) {
+        // 进行页面的跳转
+    } else {
+        // 其他情况不需要跳转
+    }
+}
+```
+- 该代码为应用程序被杀死时的做法
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // iOS8注册通知
+    if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }
+
+    // 判断是否是通过点击通知打开了应用程序
+    if (launchOptions[UIApplicationLaunchOptionsLocalNotificationKey]) {
+        // 跳转代码
+    }
+
+    return YES;
+}
 ```
