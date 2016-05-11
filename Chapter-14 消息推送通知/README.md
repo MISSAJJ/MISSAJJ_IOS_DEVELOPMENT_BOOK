@@ -218,3 +218,56 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
  - 和真机描述文件完全一致
 
 ![image](Snip20151027_71.png)
+
+
+
+
+##获取DeviceToken
+- 1.在苹果的APNs服务器注册,以获取DeviceToken
+ - 通常在didFinishLaunchingWithOptions中添加如下代码进行注册
+```
+if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
+        // 1.向用户请求可以给用户推送消息
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
+        [application registerUserNotificationSettings:settings];
+
+        // 2.注册远程通知(拿到用户的DeviceToken)
+        [application registerForRemoteNotifications];
+    } else {
+        [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound];
+    }
+```
+- 2.注册之后在另外一个代理方法中,拿到DeviceToken
+
+```
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // 5e8cf393 9e950137 86ac8375 12185078 19eb3ebd 936777e1 f061caec a48cb236
+    // 将用户的用户名和deviceToken发送给服务器,让服务器进行保存备份即可
+    NSLog(@"%@", deviceToken);
+}
+```
+- 将DeviceToken发送到服务器即可
+
+
+##测试远程通知
+
+- 当前我们没有自己的服务器,如何测试?
+- 可以使用一个第三方的Mac程序来测试:PushMeBaby
+- 使用该程序需要修改一些内容
+ - 编译程序,报错的行注释掉
+
+![image](Snip20151027_72.png)
+ - 将调试的cer证书,拖入该项目的mainBundle中,并且修改名字为apn.cer
+
+![image](Snip20151028_74.png)
+- 运动pushMeBaby程序
+
+![image](Snip20151028_75.png)
+- 注意:填写的内容
+ - 填写推送给的DeviceToken
+ - 添加推送的内容:固定格式
+   - {"aps":{"alert":"弹出的信息","badge":1,"sound":"声音","info":"额外信息"}}
+
+
+
