@@ -58,6 +58,7 @@ Update更新：2016年5月11日 By {MISSAJJ琴瑟静听}
  
 - 个人博客: http://www.MISSAJJ.com
 - Github: https://github.com/MISSAJJ
+- GitBook: https://www.gitbook.com/@missajj
 
 ```objc 
 本人目前正在尝试将过去的项目陆续编译成Swift语言，
@@ -82,6 +83,3 @@ Update更新：2016年5月11日 By {MISSAJJ琴瑟静听}
 直接阅读此书，请点底部 > 箭头按钮开始阅读
  
 ```
- 
-
- 
