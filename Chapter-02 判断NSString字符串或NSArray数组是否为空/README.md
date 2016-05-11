@@ -30,7 +30,7 @@ if (string) {
 ```
  
 
-##判断NSString字符串的方式
+##判断NSString字符串的最佳方法
 
 ```objc
 #pragma mark ======ios 判断字符串为空和只为空格解决办法==
@@ -62,7 +62,7 @@ if (string) {
 }
 
 ```
-##判断数组为空的方法
+##判断数组为空的最佳方法
 ```objc
 #pragma mark ======ios 判断数组为空的解决办法==
 + (BOOL)isBlankArray:(NSArray *)array{
