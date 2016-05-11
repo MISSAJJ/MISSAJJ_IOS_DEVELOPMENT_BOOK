@@ -49,6 +49,7 @@ Update更新：2016年5月11日 By {MISSAJJ琴瑟静听}
 ####Download下载地址
  
 * [GitBook在线浏览地址](https://missajj.gitbooks.io/missajj_iosdevelopment_gitbook/content/)
+* [GitHub同步浏览地址](https://github.com/MISSAJJ/MISSAJJ_IOS_DEVELOPMENT_BOOK)
 * [PDF版本电子书下载](https://www.gitbook.com/download/pdf/book/missajj/missajj_iosdevelopment_gitbook)
 * [ePub版本电子书下载](https://www.gitbook.com/download/epub/book/missajj/missajj_iosdevelopment_gitbook)
 * [Mobi版本电子书下载](https://www.gitbook.com/download/mobi/book/missajj/missajj_iosdevelopment_gitbook)
