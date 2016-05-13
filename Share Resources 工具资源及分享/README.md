@@ -31,30 +31,30 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，帮助�
 
 ##iOS面试题集锦（附答案）
 
-- 这个我就不多解释了,求职面试必备,呵呵^_^
+- 这个我就不多解释了，求职面试必备，呵呵^_^
  - https://github.com/ChenYilong/iOSInterviewQuestions
 
 ##CocoaPods插件cocoapods-xcode-plugin
 
-- 我很不喜欢用终端设置CocoaPods,所以站在巨人的肩膀上用了这个插件,非常好用哦!
+- 我很不喜欢用终端设置CocoaPods，所以站在巨人的肩膀上用了这个插件，非常好用哦!
  - https://github.com/kattrali/cocoapods-xcode-plugin
 
 ##快速写代码注释的插件VVDocumenter-Xcode
-- 平时经常使用的, 有些依赖她了.
+- 平时经常使用的，有些依赖她了。
  - https://github.com/onevcat/VVDocumenter-Xcode
  
  
-(演示动画Gif图片加载中,请耐心等待)
+(演示动画Gif图片加载中，请耐心等待)
 
 ![image](VV1.gif)
 
 ![image](VV2.gif)
  
 ##快速建模工具ESJsonFormat-Xcode
-- 很强悍哦!将JSON格式化输出为模型的属性,还能生成生成的 MJExtension 框架中objectClassInArray方法(类方法)
+- 很强悍哦！将JSON格式化输出为模型的属性，还能生成生成的 MJExtension框架中objectClassInArray方法(类方法)
  - https://github.com/EnjoySR/ESJsonFormat-Xcode
 
-(演示动画Gif图片加载中,请耐心等待)
+(演示动画Gif图片加载中，请耐心等待)
 
 ![image](ScreenShot3.gif)
 ![image](ScreenShot2.gif)
