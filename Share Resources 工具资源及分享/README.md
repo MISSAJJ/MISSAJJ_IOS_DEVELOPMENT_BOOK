@@ -58,3 +58,18 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，帮助�
 
 ![image](ScreenShot3.gif)
 ![image](ScreenShot2.gif)
+
+##录制Demo演示GIFDemo的工具
+
+- MAButtonTool是我写的一个快速创建按钮的工具类  
+  - https://github.com/MISSAJJ/MAButtonTool
+- 为了能让码友们更直观了解使用方法，特别写一个Demo演示并录制了一张Gif动画演示图
+
+以下就是Demo演示的Gif动画图（GIF动画演示图有1.5M,请耐心等待demo动画加载）
+
+![image](MAButtonTool2.gif)
+
+- 录制这个gif图片的工具是LiceCap
+ - 分享给大家百度网盘地址
+ - 链接: http://pan.baidu.com/s/1kVrmjZp 密码: h8pj
+ - 使用比较简单，至于如何使用的方法，请大家自行问度娘吧^_^
