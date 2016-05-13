@@ -59,7 +59,7 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，帮助�
 ![image](ScreenShot3.gif)
 ![image](ScreenShot2.gif)
 
-##录制Demo演示GIFDemo的工具
+##录制Demo演示GIF的工具
 
 - MAButtonTool是我写的一个快速创建按钮的工具类  
   - https://github.com/MISSAJJ/MAButtonTool
