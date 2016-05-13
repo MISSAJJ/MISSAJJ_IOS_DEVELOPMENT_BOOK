@@ -90,3 +90,11 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，帮助�
 
 - 4、详细的使用教程，还是请大家去问度娘，一搜一大把教程……
   - Charles免费版本下载地址： http://www.waitsun.com/?s=charles
+
+##MAC上翻墙软件-Lantern神灯
+
+- 如果你不喜欢看英文网站，或者不知道翻墙，那就跳过吧，找度娘查资料也能查到很多中文资料的。
+- 如果经常要去看被祖国已经和谐了的国外网站，比如YouTube，Facebook，Twitter等，可以用这个Lantern神灯。
+
+ - 分享给大家百度网盘下载地址（免费的哦！）
+ - 链接: http://pan.baidu.com/s/1kUSjGZ9 密码: x9x1
