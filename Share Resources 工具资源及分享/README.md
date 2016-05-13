@@ -1,5 +1,7 @@
 #Share Resources 工具资源及分享
-
+```
+Update更新：2016年5月13日 By {MISSAJJ琴瑟静听}
+```
 分享给大家一些用下来觉得非常得心应手的工具,帮助大家一起提高开发效率及提升技术能力, 欢迎大家联系分享资源.
 
 ##项目的图片资源
@@ -30,12 +32,19 @@
 ##快速写代码注释的插件VVDocumenter-Xcode
 - 平时经常使用的, 有些依赖她了.
  - https://github.com/onevcat/VVDocumenter-Xcode
+ 
+ 
+(演示动画Gif图片加载中,请耐心等待)
 
+![image](VV1.gif)
 
+![image](VV2.gif)
  
 ##快速建模工具ESJsonFormat-Xcode
 - 很强悍哦!将JSON格式化输出为模型的属性,还能生成生成的 MJExtension 框架中objectClassInArray方法(类方法)
  - https://github.com/EnjoySR/ESJsonFormat-Xcode
 
+(演示动画Gif图片加载中,请耐心等待)
+
+![image](ScreenShot1.gif)
 ![image](ScreenShot2.gif)
-![image](ScreenShot3.gif)
