@@ -1,11 +1,11 @@
-#Share Resources 工具资源及分享
+#Share Resources 高效工具资源及分享
 ```
 Update更新：2016年5月13日 By {MISSAJJ琴瑟静听}
 ```
-分享给大家一些用下来觉得非常得心应手的工具,帮助大家一起提高开发效率及提升技术能力, 欢迎大家联系分享资源.
+MISSAJJ分享给大家一些用下来觉得非常得心应手的工具,帮助大家一起提高开发效率及提升技术能力, 欢迎大家联系分享资源.
 
 ##项目的图片资源
-- 可以利用一个Mac软件解压
+- 可以利用一个
  - https://github.com/devcxm/iOS-Images-Extractor
 
 ##生成PNG图标的工具
@@ -18,18 +18,18 @@ Update更新：2016年5月13日 By {MISSAJJ琴瑟静听}
  - http://github.ibireme.com/github/list/ios
  - 作者本人ibireme的github地址 https://github.com/ibireme
 
-##CocoaPods插件cocoapods-xcode-plugin
-
-- 我很不喜欢用终端设置CocoaPods,所以站在巨人的肩膀上用了这个插件,非常好用哦!
- - https://github.com/kattrali/cocoapods-xcode-plugin
 
 ##iOS面试题集锦（附答案）
 
 - 这个我就不多解释了,求职面试必备,呵呵^_^
  - https://github.com/ChenYilong/iOSInterviewQuestions
 
+##CocoaPods插件cocoapods-xcode-plugin
 
-##快速写代码注释的插件VVDocumenter-Xcode
+- 我很不喜欢用终端设置CocoaPods,所以站在巨人的肩膀上用了这个插件,非常好用哦!
+ - https://github.com/kattrali/cocoapods-xcode-plugin
+ 
+ ##快速写代码注释的插件VVDocumenter-Xcode
 - 平时经常使用的, 有些依赖她了.
  - https://github.com/onevcat/VVDocumenter-Xcode
  
@@ -46,5 +46,5 @@ Update更新：2016年5月13日 By {MISSAJJ琴瑟静听}
 
 (演示动画Gif图片加载中,请耐心等待)
 
-![image](ScreenShot1.gif)
+![image](ScreenShot3.gif)
 ![image](ScreenShot2.gif)
