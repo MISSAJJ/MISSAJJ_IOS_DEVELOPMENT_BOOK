@@ -20,7 +20,7 @@
 * [Chapter-16（I） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（I） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 * [Chapter-16（II） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（II） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 * [Chapter-16（III） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（III） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
+* [Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 * [Chapter-17 const，static，extern简介、作用和使用](Chapter-17 const，static，extern简介、作用和使用/README.md)
 * [Chapter-18 runtime简介和作用](Chapter-18 runtime简介和作用/README.md)
-* [Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 
