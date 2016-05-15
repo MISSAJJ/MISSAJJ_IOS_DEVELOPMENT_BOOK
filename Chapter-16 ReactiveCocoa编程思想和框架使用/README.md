@@ -1,5 +1,8 @@
 #Chapter-16 ReactiveCocoa编程思想和框架使用
-
+---
+```objc
+Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
+```
 ### 1.ReactiveCocoa简介
 
 ReactiveCocoa（简称为`RAC`）,是由Github开源的一个应用于iOS和OS开发的新框架,Cocoa是苹果整套框架的简称，因此很多苹果框架喜欢以Cocoa结尾。
