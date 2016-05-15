@@ -1696,6 +1696,8 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 @end
 ```
 
+###13.RAC归纳总结
+
 ###一.信号类:表示有数据产生
 
 *	`RACSignal`
