@@ -1,3 +1,8 @@
+#Chapter-16(II) ReactiveCocoa编程思想和框架使用
+---
+```objc
+Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
+```
 ### 8.ReactiveCocoa常见宏。
 
 8.1 `RAC(TARGET, [KEYPATH, [NIL_VALUE]])`:用于给某个对象的某个属性绑定。
