@@ -1696,3 +1696,48 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 @end
 ```
 
+###一.信号类:表示有数据产生
+
+*	`RACSignal`
+
+*	`RACDynamicSignal` -> didSubscribe(block)
+
+*	`RACSubject` -> subscribers(数组)
+
+*	`RACReplaySubject` -> valuesReceived(数组)
+
+
+###二.不同的信号订阅方式不同
+
+*	`RACDynamicSignal`:
+	*	1.创建订阅者RACSubscriber
+	*	2.执行didSubscribe
+
+*	`RACSubject`: 
+	*	1.创建订阅者RACSubscriber
+	*	2.保存订阅者
+
+*	`RACReplaySubject`:
+	*	 1.创建订阅者RACSubscriber
+	*	 2.拿到当前创建订阅者,发送之前保存的所有值
+
+###三.订阅者:发送数据
+
+*	`RACSubscriber` -> nextBlock(block)
+
+*	`RACSubject` -> subscribers(数组)
+
+*	`RACReplaySubject` -> valuesReceived(数组)
+
+###四.不同订阅者,发送数据方式不同
+
+*	[`RACSubscriber` sendNext]: 
+	*	执行nextBlock
+	
+*	[`RACSubject` sendNext]: 
+	*	遍历自己所有订阅者,发送数据
+	
+*	[`RACReplaySubject` sendNext]:
+	*	1.保存发送的值
+	*	2.遍历自己所有订阅者,发送数据
+
