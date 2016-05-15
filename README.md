@@ -49,6 +49,7 @@ Update更新：2016年5月13日 By {MISSAJJ琴瑟静听}
 * [Chapter-13 计算行页数 文本宽度 文件及文件夹大小](Chapter-13 计算行页数 文本宽度 文件及文件夹大小/README.md)
 * [Chapter-14 消息推送通知](Chapter-14 消息推送通知/README.md)
 * [Chapter-15 项目管理Git常用命令](Chapter-15 项目管理Git常用命令/README.md)
+* [Chapter-16 ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16 ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 
 
 
