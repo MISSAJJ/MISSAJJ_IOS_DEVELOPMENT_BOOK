@@ -25,5 +25,4 @@
 * [Chapter-17 const，static，extern简介、作用和使用](Chapter-17 const，static，extern简介、作用和使用/README.md)
 * [Chapter-18 runtime简介和作用](Chapter-18 runtime简介和作用/README.md)
 * [Chapter-19 地图定位CoreLocation框架](Chapter-19 地图定位CoreLocation框架/README.md)
-   * Chapter-19（II）地图定位CoreLocation框架
 
