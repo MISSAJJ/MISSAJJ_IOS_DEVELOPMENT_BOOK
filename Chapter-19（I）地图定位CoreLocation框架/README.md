@@ -1,8 +1,10 @@
-#Chapter-19 地图定位CoreLocation框架
+#Chapter-19（I）地图定位CoreLocation框架
 
 ---
 ```objc
 Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
+由于此章节笔记内容比较多，所以特地分了两篇文章，
+避免因文章太长而导致手机浏览器或微信内浏览崩溃
 ```
  
 ###一. IOS8.0之前的定位
