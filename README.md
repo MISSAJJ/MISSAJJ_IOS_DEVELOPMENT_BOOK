@@ -1,7 +1,7 @@
 ###MISSAJJ整理的IOS项目开发电子书
 ---
 ```objc
-Update更新：2016年5月15日 By {MISSAJJ琴瑟静听} 
+Update更新：2016年5月17日 By {MISSAJJ琴瑟静听} 
 ```
  
 
@@ -57,6 +57,8 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 * [Chapter-16（V） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（V） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 * [Chapter-17 const，static，extern简介、作用和使用](Chapter-17 const，static，extern简介、作用和使用/README.md)
 * [Chapter-18 runtime简介和作用](Chapter-18 runtime简介和作用/README.md)
+* [Chapter-19（I）地图定位CoreLocation框架](Chapter-19（I）地图定位CoreLocation框架/README.md)
+* [Chapter-19（II）地图定位CoreLocation框架](Chapter-19（II）地图定位CoreLocation框架/README.md)
 
 
 
