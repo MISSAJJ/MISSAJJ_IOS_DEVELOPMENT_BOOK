@@ -84,52 +84,55 @@
     第四,绝逼是模拟器BUG, 请重置模拟器(是重置,不是重启)
 ```
 ###二. iOS8.0之后定位
-1. 前台定位
+####1. 前台定位
 
-    导入CoreLocation框架以及对应的主头文件
-
+- 导入CoreLocation框架以及对应的主头文件
+```
      #import <CoreLocation/CoreLocation.h>
-
-    创建CLLocationManager对象并设置代理
-
+```
+- 创建CLLocationManager对象并设置代理
+```
      self.locationM = [[CLLocationManager alloc] init];
      self.locationM.delegate = self;
-
-    请求前台定位授权, 并在Info.Plist文件中配置Key ( Nslocationwheninuseusagedescription )
-
+```
+- 请求前台定位授权, 并在Info.Plist文件中配置Key ( Nslocationwheninuseusagedescription )
+```
      [self.locationM requestWhenInUseAuthorization];
-
-    调用方法,开始更新用户位置信息
-
+```
+- 调用方法,开始更新用户位置信息
+```
      [self.locationM startUpdatingLocation];
-
-    在对应的代理方法中获取位置信息
-
+```
+- 在对应的代理方法中获取位置信息
+```
      -(void)locationManager:(nonnull CLLocationManager *)manager didUpdateLocations:(nonnull NSArray<CLLocation > *)locations  
      {
          NSLog(@"每当请求到位置信息时, 都会调用此方法");  
      }
+```
+####2. 后台定位
+#####方案一:
 
-2. 后台定位
-方案一:
+    在前台定位基础上, 勾选后台模式Location updates 
+    
+  ![image](勾选后台模式location udpates.png)
 
-    在前台定位基础上, 勾选后台模式Location updates image
+**注意:此时授权状态如果是前台定位, 那么当APP退到后台时, 屏幕顶部会出现蓝条**
 
-注意:此时授权状态如果是前台定位, 那么当APP退到后台时, 屏幕顶部会出现蓝条
-方案二:
+#####方案二:
 
-    请求前后台定位授权,并在info.plist文件中配置KEY ( NSLocationAlwaysUsageDescription )
-
+- 请求前后台定位授权,并在info.plist文件中配置KEY ( NSLocationAlwaysUsageDescription )
+```
      [self.locationM requestAlwaysAuthorization];
+```
+- 注意:不需要勾选后台模式, 也可以进行后台定位
 
-    注意:不需要勾选后台模式, 也可以进行后台定位
+- 注意:此时授权状态如果是前后台定位, 那么即使APP退到后台时, 屏幕顶部会也不会出现蓝条
 
-    注意:此时授权状态如果是前后台定位, 那么即使APP退到后台时, 屏幕顶部会也不会出现蓝条
+####3. 监听用户授权状态
 
-3. 监听用户授权状态
-
-    实现以下代理方法即可
-
+- 实现以下代理方法即可
+```
      // 当用户授权状态发生变化时调用
      -(void)locationManager:(nonnull CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
      {
@@ -183,28 +186,32 @@
          break;
      }
      }
+```
+####4. 测试环境:
 
-4. 测试环境:
-
+```
 1. XCode版本无要求
 2. 模拟器选择iOS8.0之后的版本
+```
 
-5. 常见问题总结
+####5. 常见问题总结
 
-1. 定位不到, 对应的代理方法不执行
+```
+    定位不到, 对应的代理方法不执行:
     首先,检查是否请求授权, 并设置了对应的KEY
     其次,检查模拟器是否设置位置数据
     第三,确保代码无问题(一般都是代理没有设置,或者位置管理器对象是局部变量,亦或是位置管理器对象没有被强引用)
     第四,绝逼是模拟器BUG, 请重置模拟器(是重置,不是重启)
-
-三. iOS9.0 定位补充(✨✨✨)
-1. 定位变化
-* 前台定位
-
+```
+###三. iOS9.0 定位补充
+####1. 定位变化
+- 前台定位
+```
     (同iOS8.0之后一致, 无任何变化, 都需要主动请求授权)
+```
+- 后台定位
 
-* 后台定位
-方案一:
+#####方案一:
 
     在前台定位基础上, 勾选后台模式Location updates, 并且设置以下属性为YES
 
