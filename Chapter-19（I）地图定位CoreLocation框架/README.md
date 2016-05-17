@@ -123,9 +123,11 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 
     在前台定位基础上, 勾选后台模式Location updates 
     
-  ![image](勾选后台模式location udpates.png)
+![image](勾选后台模式location udpates.png)
 
-**注意:此时授权状态如果是前台定位, 那么当APP退到后台时, 屏幕顶部会出现蓝条**
+
+#####注意:此时授权状态如果是前台定位, 那么当APP退到后台时, 屏幕顶部会出现蓝条
+
 
 #####方案二:
 
