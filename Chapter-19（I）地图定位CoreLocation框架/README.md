@@ -53,14 +53,14 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 ```
  
 
-| 枚举值 | 含义 |
-| -- | -- |
-| kCLLocationAccuracyBestForNavigation | 最适合导航 |
-| kCLLocationAccuracyBest | 精度最好的 |
-| kCLLocationAccuracyNearestTenMeters | 附近10米 |
-| kCLLocationAccuracyHundredMeters | 附近100米 |
-| kCLLocationAccuracyKilometer | 附近1000米 |
-| kCLLocationAccuracyThreeKilometers | 附近3000米 |
+ 枚举值 | 含义 
+ ---- | ---- 
+ kCLLocationAccuracyBestForNavigation | 最适合导航
+ kCLLocationAccuracyBest | 精度最好的
+ kCLLocationAccuracyNearestTenMeters | 附近10米 
+ kCLLocationAccuracyHundredMeters | 附近100米 
+ kCLLocationAccuracyKilometer | 附近1000米 
+ kCLLocationAccuracyThreeKilometers | 附近3000米
 
  
 ###3. 知识补充
