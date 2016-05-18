@@ -32,7 +32,6 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 ###Chapters目录章节 
  
 
-
 * [Introduction前言介绍](README.md)
 * [Share Resources 高效工具资源及分享](Share Resources 工具资源及分享/README.md)
 * [Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
@@ -56,10 +55,7 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 * [Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 * [Chapter-16（V） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（V） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 * [Chapter-17 const，static，extern简介、作用和使用](Chapter-17 const，static，extern简介、作用和使用/README.md)
-* [Chapter-18 runtime简介和作用](Chapter-18 runtime简介和作用/README.md)
-* [Chapter-19（I）地图定位CoreLocation框架](Chapter-19（I）地图定位CoreLocation框架/README.md)
-* [Chapter-19（II）地图定位CoreLocation框架](Chapter-19（II）地图定位CoreLocation框架/README.md)
-
+*
 
 
 ```
