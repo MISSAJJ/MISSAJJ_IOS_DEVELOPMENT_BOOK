@@ -26,5 +26,5 @@
 * [Chapter-18 runtime简介和作用](Chapter-18 runtime简介和作用/README.md)
 * [Chapter-19（I）地图定位CoreLocation框架](Chapter-19（I）地图定位CoreLocation框架/README.md)
 * [Chapter-19（II）地图定位CoreLocation框架](Chapter-19（II）地图定位CoreLocation框架/README.md)
-* [Chapter-20（I）蓝牙交互CoreBlueTooth](Chapter-20 蓝牙交互CoreBlueTooth/README.md)
+* [Chapter-20（I）蓝牙交互CoreBlueTooth](Chapter-20（I）蓝牙交互CoreBlueTooth/README.md)
 
