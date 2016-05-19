@@ -2,7 +2,12 @@
 ---
 ```objc
 Update更新：2016年5月19日 By {MISSAJJ琴瑟静听} 
+
+友情提示：
+“高效工具资源及分享”里的免费MAC软件下载地址随时会失效，
+ 下载到就是赚到！你懂的！^_^
 ```
+
  ![image](MISSAJJHeartProject_200.png)
 
 ```objc
