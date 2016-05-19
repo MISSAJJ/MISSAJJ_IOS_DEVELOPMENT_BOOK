@@ -22,7 +22,7 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，帮助�
  
      - 苹果家园 ：http://www.machome.com.cn/forum.php?mod=viewthread&tid=138632&highlight=%B7%D6%CF%ED  
      （下载到就是赚到！此类软件的下载地址很快就会被屏蔽或失效，所以请尽快下载，你懂的！）
-     
+     - 爱情守望者 ： http://www.waitsun.com  （目前已不再免费，仅会员可下载）
 
 ##Github-iOS代码备忘
 - 非常详尽的归纳整理了Github各种IOS相关的代码
