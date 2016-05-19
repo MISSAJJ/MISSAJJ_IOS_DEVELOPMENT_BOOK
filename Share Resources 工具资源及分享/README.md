@@ -23,7 +23,7 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，帮助�
 
   - MISSAJJ搜集整理的各种免费MAC软件
   
-   MISSAJJ百度网盘分享链接: http://pan.baidu.com/s/1jIB7qVc 密码: k31d
+   MISSAJJ百度网盘分享链接: 链接: http://pan.baidu.com/s/1c1IoRKW 密码: rbu8
    （由于此类软件分享下载链接很容易会被屏蔽或失效，请尽快下载，你懂的！）
    
   - 其他下载资源：
