@@ -17,19 +17,12 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，帮助�
 ##将MAC应用免费进行到底！
 
 - 首先申明：本人绝对尊重原版！！！
-- 喜欢这些网站里的一句话 “我们不Hack软件，我们是只是优秀软件的搬运工” ^_^
-- 我平日所用的很多MAC软件，如设计Adobe系列和Sketch，抓包Charles，思维Xmind等软件……都是在这几个网站里下载的,全部免费哦！
-- 感谢这些网站为我们省了几千美金了！
-
-  - MISSAJJ搜集整理的各种免费MAC软件
-  
-   MISSAJJ百度网盘分享链接:  http://pan.baidu.com/s/1c1IoRKW 密码: rbu8
-   （由于此类软件分享下载链接很容易会被屏蔽或失效，请尽快下载，你懂的！）
-   
-  - 其他下载资源：
+- 喜欢一句话 “我们不Hack软件，我们是只是优秀软件的搬运工” ^_^
+- 我平日所用的很多MAC软件，如设计Adobe系列和Sketch，抓包Charles，思维Xmind等软件……都是在这个网站里下载的,全部免费哦！感谢这些网站为我们省了几千美金了！
  
-     - 苹果家园 ：http://www.machome.com.cn/forum.php?mod=viewthread&tid=138632&highlight=%B7%D6%CF%ED  （请尽快下载，防止链接无效）
-     - 爱情守望者网站 : http://www.waitsun.com  （据读者反馈，目前此站已改版，需要购买会员才可以下载)
+     - 苹果家园 ：http://www.machome.com.cn/forum.php?mod=viewthread&tid=138632&highlight=%B7%D6%CF%ED  
+     （下载到就是赚到！此类软件的下载地址很快就会被屏蔽或失效，所以请尽快下载，你懂的！）
+     
 
 ##Github-iOS代码备忘
 - 非常详尽的归纳整理了Github各种IOS相关的代码
