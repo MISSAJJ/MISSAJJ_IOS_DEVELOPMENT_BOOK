@@ -62,7 +62,7 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
 
 ```
 //只需要传一个NibNamed的字符串
-IPHONE4BUNDLE(@"MASignAndLoginViewController");
+LoadNib(@"MASignAndLoginViewController");
 
 ```
 
