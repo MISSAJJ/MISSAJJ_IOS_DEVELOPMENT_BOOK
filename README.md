@@ -85,7 +85,8 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
  
 ####Contact联系方式
  
-- 个人博客: http://www.MISSAJJ.com
+- 个人博客: http://www.MISSAJJ.com （此域名ICP备案中，暂时关闭）
+- 个人博客:http://cz.jiboit.com （临时博客地址，感谢技柏科技提供免费空间）
 - Github: https://github.com/MISSAJJ
 - GitBook: https://www.gitbook.com/@missajj
 
