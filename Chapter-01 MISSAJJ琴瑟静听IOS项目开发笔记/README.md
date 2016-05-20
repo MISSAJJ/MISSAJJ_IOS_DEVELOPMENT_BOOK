@@ -42,7 +42,10 @@ Update更新：2016年5月10日 By {MISSAJJ琴瑟静听}
   - 程序一启动，就会加载Main.storyboard文件
   - 会创建箭头所指的控制器，并且显示控制器所管理的软件界面
 
-
+## Xcode插件的安装路径
+```objc
+/Users/用户名/Library/Application Support/Developer/Shared/Xcode/Plug-ins
+```
 
 ##IOS项目的启动过程 
 创建项目的时候系统会默认创建一个Main.storyboard文件，当项目启动时会自动加载这个storyboard,当然我们也可以自己创建并决定使用哪个storyboard文件:
