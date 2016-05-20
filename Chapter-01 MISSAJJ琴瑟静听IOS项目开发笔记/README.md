@@ -1,7 +1,7 @@
 #Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记
 ---
 ```objc
-Update更新：2016年5月10日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ```
 ##项目的常见属性
 
