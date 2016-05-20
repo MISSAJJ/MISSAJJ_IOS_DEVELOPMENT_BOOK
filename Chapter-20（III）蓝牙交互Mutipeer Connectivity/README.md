@@ -2,7 +2,7 @@
 
 ---
 ```objc
-Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ```
  
 ##蓝牙MutipeerConnectivity
