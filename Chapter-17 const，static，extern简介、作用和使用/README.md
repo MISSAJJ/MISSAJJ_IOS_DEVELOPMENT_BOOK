@@ -1,7 +1,7 @@
 #Chapter-17 const，static，extern简介、作用和使用
 ---
 ```objc
-Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ```
 ### 一、const与宏的区别（面试题）:
 * `const简介`:之前常用的字符串常量，一般是抽成宏，但是苹果不推荐我们抽成宏，推荐我们使用const常量。
@@ -16,7 +16,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 	
 
 
-```
+```objc
 // 常见的常量：抽成宏
 #define XMGAccount @"account"
 
@@ -45,7 +45,7 @@ static NSString * const account = @"account";
 
 *  `const基本使用`
 
-```
+```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -102,7 +102,7 @@ static NSString * const account = @"account";
 	*	1.需求1:提供一个方法，这个方法的参数是地址，里面只能通过地址读取值,不能通过地址修改值
 	*	2.需求2:提供一个方法，这个方法的参数是地址，里面不能修改参数的地址。
 
-```
+```objc
 @implementation ViewController
 
 // const放*前面约束参数，表示*a只读
@@ -165,7 +165,7 @@ static NSString * const account = @"account";
  *	`extern工作原理`:
  	* 	先在当前文件查找有没有全局变量，没有找到，才会去其他文件查找。
  	
-```
+```objc
 // 全局变量：只有一份内存，所有文件共享，与extern联合使用。
 int a = 20;
 
@@ -198,7 +198,7 @@ I
 *	static与const作用:声明一个只读的静态变量
 *	开发使用场景:在`一个文件中`经常使用的字符串常量，可以使用static与const组合
 
-```
+```objc
 // 开发中常用static修饰全局变量,只改变作用域
 
 // 为什么要改变全局变量作用域，防止重复声明全局变量。
@@ -234,7 +234,7 @@ static  NSString const *key1 = @"name";
 
 * GlobeConst.h
 
-```
+```objc
 /*******************************首页****************************/
 
 extern NSString * const nameKey = @"name";
@@ -244,7 +244,7 @@ extern NSString * const nameKey = @"name";
 
 * GlobeConst.m
 
-```
+```objc
 #import <Foundation/Foundation.h>
 
 /*******************************首页****************************/
@@ -254,5 +254,4 @@ NSString * const nameKey = @"name";
 
 /*******************************首页****************************/
 
-```
-
+``` 
