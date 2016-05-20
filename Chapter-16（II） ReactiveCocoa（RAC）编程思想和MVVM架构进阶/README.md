@@ -1,7 +1,7 @@
 #Chapter-16(II)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
 ---
 ```objc
-Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 由于此章节笔记内容比较多，所以特地分了五篇文章，
 避免因文章太长而导致手机浏览器或微信内浏览崩溃
 ```
@@ -36,7 +36,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 7.7 代码演示
 
-```
+```objc
 
   	// 1.代替代理
     // 需求：自定义redView,监听红色view中按钮点击
@@ -110,7 +110,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 `基本用法`
 
-```
+```objc
 	// 只要文本框文字改变，就会修改label的文字
     RAC(self.labelView,text) = _textField.rac_textSignal;
 
@@ -120,7 +120,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 `基本用法`
 
-```
+```objc
 [RACObserve(self.view, center) subscribeNext:^(id x) {
 
         NSLog(@"%@",x);
@@ -133,7 +133,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 8.4 `RACTuplePack`：把数据包装成RACTuple（元组类）
 
 `基本用法`
-```
+```objc
 	// 把参数中的数据包装成元组
     RACTuple *tuple = RACTuplePack(@10,@20);
 ```
@@ -143,7 +143,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 8.5 `RACTupleUnpack`：把RACTuple（元组类）解包成对应的数据。
 
 `基本用法`
-```
+```objc
 	// 把参数中的数据包装成元组
     RACTuple *tuple = RACTuplePack(@"xmg",@20);
 
