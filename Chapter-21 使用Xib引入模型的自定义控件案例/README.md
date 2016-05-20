@@ -176,7 +176,7 @@ LoadNib(@"MASignAndLoginViewController");
 
 
 ```objc
-// 如果控件时通过xib或者storyboard加载出来的,那么就会执行该方法
+// 如果控件是通过xib或者storyboard加载出来的,那么就会执行该方法
 // 作用:在initWithCoder方法中添加子控件
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
