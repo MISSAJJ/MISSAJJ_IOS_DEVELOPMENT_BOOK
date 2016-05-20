@@ -1,7 +1,7 @@
 #Chapter-02 判断NSString字符串或NSArray数组是否为空
 ---
 ```objc
-Update更新：2016年5月9日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ```
 ## 条件判断的一些注意点
 ```objc
@@ -36,7 +36,7 @@ if (string) {
 #pragma mark ======ios 判断字符串为空和只为空格解决办法==
 /**
  *  @author MISSAJJ, 15-11-25 
- *
+ */
 + (BOOL)isBlankString:(NSString *)string{
     
     //字符串的长度为0表示空串
@@ -69,7 +69,7 @@ if (string) {
 ```objc
 /**
  *  @author MISSAJJ, 15-11-25 
- *
+ */
 #pragma mark ======ios 判断数组为空的解决办法==
 + (BOOL)isBlankArray:(NSArray *)array{
 
