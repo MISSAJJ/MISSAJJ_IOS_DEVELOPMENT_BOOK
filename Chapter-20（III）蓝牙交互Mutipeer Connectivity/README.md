@@ -25,7 +25,7 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 ###连接设备
 * 创建MCSession对象用于存放当前连接的会话
 
-```
+```objc
 // 创建MCSession对象
 // initWithPeer：设备的ID
 // 用于存放当前的连接的会话
@@ -34,7 +34,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 
 * 开启广播对象，通知正在搜索的设备他们是可用的
 
-```
+```objc
 /**
  *   只要开启了可被搜索的广播，那么连接蓝牙按钮就不可点
  */
@@ -61,7 +61,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 
 * 开始搜索蓝牙设备
 
-```
+```objc
 - (IBAction)connectBlueTooth {
     // 创建搜索蓝牙设备控制器
     MCBrowserViewController *mbVC = [[MCBrowserViewController alloc]initWithServiceType:SERVICE_TYPE session:self.mc_Session];
@@ -74,7 +74,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 
 ###选择数据
 
-```
+```objc
 - (IBAction)selectImage {
     // 1. 创建图片选择器
     UIImagePickerController *imgPicker = [[UIImagePickerController alloc]init];
@@ -91,7 +91,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 ```
 * 图片选择器代理中获取数据
 
-```
+```objc
 // 选择完毕调用
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
@@ -104,7 +104,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 ```
 * 在搜索控制器的连接完成的代理方法中隐藏搜索控制器
 
-```
+```objc
 /**
  *  连接完成
  *
@@ -120,7 +120,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 ###发送数据
 * 实现搜索控制器的代理方法，获取连接上的设备ID
 
-```
+```objc
 #pragma mark - MCBrowserViewControllerDelegate
 /**
  *  连接成功
@@ -143,7 +143,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 
 * 将图片发送给连接上的ID
 
-```
+```objc
 - (IBAction)sendImage {
     // 获取图片
     UIImage *image = self.showImage.image;
@@ -163,7 +163,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 ###接收数据
 * 实现MCSession的代理方法接受数据
 
-```
+```objc
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
 {
     NSLog(@"%s %d",__func__,__LINE__);
@@ -174,7 +174,7 @@ self.mc_Session = [ [MCSession alloc]initWithPeer:[[MCPeerID alloc] initWithDisp
 ###显示数据
 * 在MCSeesion代理方法中设置获取过来的数据
 
-```
+```objc
 // 接收的数据
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
 {
