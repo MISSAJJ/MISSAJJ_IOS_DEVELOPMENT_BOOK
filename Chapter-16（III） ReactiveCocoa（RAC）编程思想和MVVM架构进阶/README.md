@@ -1,7 +1,7 @@
 #Chapter-16(III)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
 ---
 ```objc
-Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 由于此章节笔记内容比较多，所以特地分了五篇文章，
 避免因文章太长而导致手机浏览器或微信内浏览崩溃
 ```
@@ -27,7 +27,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
     *   在开发中很少使用bind方法，bind属于RAC中的底层方法，RAC已经封装了很多好用的其他方法，底层都是调用bind，用法比bind简单.
     * `bind`方法简单介绍和使用。
 
-```
+```objc
     // 假设想监听文本框的内容，并且在每次输出结果的时候，都在文本框的内容拼接一段文字“输出：”
 
     // 方式一:在返回结果后，拼接。
@@ -91,7 +91,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 `flattenMap`简单使用
 
-```
+```objc
    // 监听文本框的内容改变，把结构重新映射成一个新值.
 
   // flattenMap作用:把源信号的内容映射成一个新的信号，信号可以是任意类型。
@@ -135,7 +135,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 
 
-```
+```objc
  // 监听文本框的内容改变，把结构重新映射成一个新值.
 
     // Map作用:把源信号的值映射成一个新的值
@@ -174,7 +174,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 *  `总结`：signalOfsignals用FlatternMap。
 
-```
+```objc
     // 创建信号中的信号
     RACSubject *signalOfsignals = [RACSubject subject];
     RACSubject *signal = [RACSubject subject];
@@ -204,7 +204,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 * 9.5 ReactiveCocoa操作方法之组合。
     * `concat`:按一定顺序拼接信号，当多个信号发出的时候，有顺序的接收信号。
 
-```
+```objc
     RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
         [subscriber sendNext:@1];
@@ -246,7 +246,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
    * `then`:用于连接两个信号，当第一个信号完成，才会连接then返回的信号。
 
-```
+```objc
      // then:用于连接两个信号，当第一个信号完成，才会连接then返回的信号
     // 注意使用then，之前信号的值会被忽略掉.
     // 底层实现：1、先过滤掉之前的信号发出的值。2.使用concat连接then返回的信号
@@ -270,7 +270,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 * `merge`:把多个信号合并为一个信号，任何一个信号有新值的时候就会调用.
 
-```
+```objc
     // merge:把多个信号合并成一个信号
     //创建多个信号
     RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
@@ -306,7 +306,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 * `zipWith`:把两个信号压缩成一个信号，只有当两个信号同时发出信号内容时，并且把两个信号的内容合并成一个元组，才会触发压缩流的next事件。
 
-```
+```objc
      RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
         [subscriber sendNext:@1];
@@ -339,7 +339,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
    * `combineLatest`:将多个信号合并起来，并且拿到各个信号的最新的值,必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。
 
-```
+```objc
       RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
         [subscriber sendNext:@1];
@@ -369,7 +369,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 * `reduce`聚合:用于信号发出的内容是元组，把信号发出元组的值聚合成一个值
 
-```
+```objc
      RACSignal *signalA = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
         [subscriber sendNext:@1];
