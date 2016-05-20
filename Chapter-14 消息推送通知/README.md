@@ -2,7 +2,7 @@
 #Chapter-14 消息推送通知
 ---
 ```objc
-Update更新：2016年5月11日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ```
 ###什么是推送通知?
 
@@ -54,7 +54,7 @@ Update更新：2016年5月11日 By {MISSAJJ琴瑟静听}
 - iOS8之后,如果想要发出通知(无论本地还是远程),必须先进行注册.(iOS8之前不需要)
 - 通常是在didFinishLaunchingWithOptions中进行注册
 - 代码如下:
-```
+```objc
 UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
 [application registerUserNotificationSettings:settings];
 ```
@@ -62,11 +62,11 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
 #####2.创建并且发出通知
 
 - 创建本地通知
-```
+```objc
     UILocalNotification *localNote = [[UILocalNotification alloc] init];
 ```
 - 设置本地通知的内容
-```
+```objc
       // 2.设置本地通知的信息
       // 2.1.设置提示信息
       localNote.alertBody = @"吃饭了吗?";
@@ -84,7 +84,7 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
       localNote.applicationIconBadgeNumber = 10;
 ```
 - 调度本地通知(调度之后某个时刻会弹出通知)
-```
+```objc
       // 3.调度通知
       [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
 ```
@@ -108,7 +108,7 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
     - 点击应用打开应用时,进行页面的跳转
 - 该代码为应用程序在前台或者后台时的做法
 
-```
+```objc
  // 应用在前台时,也会收到该通知,这时不应该进行页面的跳转
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
@@ -122,7 +122,7 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
 ```
 - 该代码为应用程序被杀死时的做法
 
-```
+```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // iOS8注册通知
     if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
@@ -228,7 +228,9 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
 ##获取DeviceToken
 - 1.在苹果的APNs服务器注册,以获取DeviceToken
  - 通常在didFinishLaunchingWithOptions中添加如下代码进行注册
-```
+
+
+```objc
 if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
         // 1.向用户请求可以给用户推送消息
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
@@ -242,7 +244,7 @@ if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
 ```
 - 2.注册之后在另外一个代理方法中,拿到DeviceToken
 
-```
+```objc
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
     // 5e8cf393 9e950137 86ac8375 12185078 19eb3ebd 936777e1 f061caec a48cb236
@@ -291,7 +293,7 @@ if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
     - 点击应用打开应用时,进行页面的跳转
 - 2.当应用程序出于后台时的监听
 
-```
+```objc
 // 和本地通知基本一致,只是这里是接收到远程通知
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
@@ -305,7 +307,7 @@ if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
 ```
 - 3.应用程序被杀死时的监听
 
-```
+```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     // 判断是否是通过点击通知打开了应用程序
