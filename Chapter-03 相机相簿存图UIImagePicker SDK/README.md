@@ -229,7 +229,4 @@ UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, @selector(image:didFi
 }
 ```
 
-## Xcode插件的安装路径
-```objc
-/Users/用户名/Library/Application Support/Developer/Shared/Xcode/Plug-ins
-```
+
