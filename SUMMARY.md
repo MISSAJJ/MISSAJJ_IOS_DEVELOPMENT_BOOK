@@ -29,5 +29,5 @@
 * [Chapter-20（I）蓝牙交互CoreBlueTooth](Chapter-20（I）蓝牙交互CoreBlueTooth/README.md)
 * [Chapter-20（II）蓝牙交互GameKit](Chapter-20（II）蓝牙交互GameKit/README.md)
 * [Chapter-20（III）蓝牙交互Mutipeer Connectivity](Chapter-20（III）蓝牙交互Mutipeer Connectivity/README.md)
-* Chapter-19（II）地图定位CoreLocation框架
+* Chapter-19（III）MISSAJJ整理的CoreLocation定位工具类
 
