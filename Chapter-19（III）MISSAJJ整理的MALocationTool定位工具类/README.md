@@ -14,20 +14,20 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 
 - 更新地理位置
 
-``` 
+```objc
     [[MALocationTool sharedMALocationTool]updatingLocation];
 ```
  
 - 获取地理定位坐标经纬度数据 
  
-```  
+```objc  
  [MALocationTool sharedMALocationTool].longitude; 
  [MALocationTool sharedMALocationTool].latitude;
 ```  
 
 - block返回地理定位坐标和地理编码
 
-```  
+```objc  
  [[MALocationTool sharedMALocationTool] getCurrentLocation:^(CLLocation *currentLoc, CLPlacemark *placemark, NSString *error) {
  if ([error length] == 0) {
  NSLog(@"%@   ----   %@", currentLoc, placemark.name);// 位置名
@@ -44,7 +44,7 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 
 - 若用户定位服务未开启，提示alert框
   
-```
+```objc
  //判断用户定位服务是否开启
     if (![[MALocationTool sharedMALocationTool]locationServicesEnabled]) {
         
@@ -60,7 +60,7 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ###MALocationTool完整代码：
 
 
-```
+```objc
 //  MALocationTool.h
 //  Created by MISSAJJ on 16/1/27.
 //  Copyright © 2016年 MISSAJJ. All rights reserved.
@@ -97,7 +97,7 @@ singleton_interface(MALocationTool);
 @end
 ```
 
-```
+```objc
 //
 //  MALocationTool.m
 //
