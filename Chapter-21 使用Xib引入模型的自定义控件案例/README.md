@@ -49,6 +49,54 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
     newsView1.frame = CGRectMake(0, 110, 375, 100);
     [self.view addSubview:newsView1];
 ```
+3、加载方式三: 快速宏加载
+
+####"程序猿的偷懒,最终为的是更效率!" 同意这句话的请举手!^_^
+####以下这个快速宏加载Xib的案例就是MISSAJJ为了偷懒而写的.
+
+
+- 宏定义代码
+```
+//加载iphone4的xib界面:[1]单独为iphone4创建的界面, [0]为iphone5界面,用其缩放适配其他大屏幕
+#define IPHONE4BUNDLE(nibName) \
+[[NSBundle mainBundle]loadNibNamed:(nibName) owner:self options:nil][1]
+```
+
+
+- 以下是MISSAJJ做屏幕适配的方案:
+
+```
+ 本方法用在iPhone上的话只需准备4，5的尺寸两套布局。效率高，也方便后期维护。
+ 5，6，6Plus三种屏幕的尺寸宽高比是差不多的，因此可以在5的基础上，按比例放大来兼容6和6Plus的屏幕
+ 比例按照iphone5的比例，iphone4单独做xib适配比例为1.0
+ 本方法iPad不适用，只适用于4，5，6，6Plus。
+ 参考文献: http://blog.it985.com/5121.html
+ 
+ ```
+ 
+ - xib文件如图
+
+![image](MISSAJJ快速宏加载xib案例.png)
+
+
+
+
+
+- 在与Xib对应的viewController以loadView方法判定读取哪一个xib内的view
+```
+-(void)loadView{
+    
+    [super loadView];
+  
+    //单独对iPhone4适配
+    if (kDeviceHeight == 480) {
+    
+        self.view = IPHONE4BUNDLE(@"MASignAndLoginViewController"); 
+        
+    } 
+}
+```
+
 
 ###使用Xib引入模型的自定义控件案例
 
