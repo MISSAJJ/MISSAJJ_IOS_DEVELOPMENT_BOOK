@@ -1,7 +1,7 @@
 #Chapter-16(IV)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
 ---
 ```objc
-Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 由于此章节笔记内容比较多，所以特地分了五篇文章，
 避免因文章太长而导致手机浏览器或微信内浏览崩溃
 ```
@@ -12,7 +12,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
     * `filter`:过滤信号，使用它可以获取满足条件的信号.
 
-    ```
+    ```objc
     // 过滤:
     // 每次信号发出，会先执行过滤条件判断.
     [_textField.rac_textSignal filter:^BOOL(NSString *value) {
@@ -22,7 +22,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
     * `ignore`:忽略完某些值的信号.
 
-    ```
+    ```objc
         // 内部调用filter过滤，忽略掉ignore的值
     [[_textField.rac_textSignal ignore:@"1"] subscribeNext:^(id x) {
 
@@ -33,7 +33,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
     * `distinctUntilChanged`:当上一次的值和当前的值有明显的变化就会发出信号，否则会被忽略掉。
 
-    ```
+    ```objc
         // 过滤，当上一次和当前的值不一样，就会发出内容。
     // 在开发中，刷新UI经常使用，只有两次数据不一样才需要刷新
     [[_textField.rac_textSignal distinctUntilChanged] subscribeNext:^(id x) {
@@ -45,7 +45,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
     * `take`:从开始一共取N次的信号
 
-    ```
+    ```objc
     // 1、创建信号
     RACSubject *signal = [RACSubject subject];
 
@@ -63,7 +63,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
     * `takeLast`:取最后N次的信号,前提条件，订阅者必须调用完成，因为只有完成，就知道总共有多少信号.
 
-    ```
+    ```objc
     // 1、创建信号
     RACSubject *signal = [RACSubject subject];
 
@@ -83,7 +83,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
     * `takeUntil`:(RACSignal *):获取信号直到执行完这个信号
 
-    ```
+    ```objc
     // 监听文本框的改变，知道当前对象被销毁
     [_textField.rac_textSignal takeUntil:self.rac_willDeallocSignal];
 
@@ -92,7 +92,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 * `skip`:(NSUInteger):跳过几个信号,不接受。
 
-    ```
+    ```objc
     // 表示输入第一次，不会被监听到，跳过第一次发出的信号
     [[_textField.rac_textSignal skip:1] subscribeNext:^(id x) {
 
@@ -122,7 +122,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
     * `doNext`: 执行Next之前，会先执行这个Block
 	* `doCompleted`: 执行sendCompleted之前，会先执行这个Block
 
-	```
+	```objc
  [[[[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         [subscriber sendNext:@1];
         [subscriber sendCompleted];
@@ -148,7 +148,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 * 9.9 ReactiveCocoa操作方法之时间。
     *  `timeout`：超时，可以让一个信号在一定的时间后，自动报错。
 
-    ```
+    ```objc
      RACSignal *signal = [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         return nil;
     }] timeout:1 onScheduler:[RACScheduler currentScheduler]];
@@ -165,7 +165,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
     *  `interval` 定时：每隔一段时间发出信号
 
-	```
+	```objc
 	[[RACSignal interval:1 onScheduler:[RACScheduler currentScheduler]] subscribeNext:^(id x) {
 
         NSLog(@"%@",x);
@@ -175,7 +175,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
     *  `delay` 延迟发送next。
 
-    ```
+    ```objc
         RACSignal *signal = [[[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
         [subscriber sendNext:@1];
@@ -190,7 +190,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 * 9.10 ReactiveCocoa操作方法之重复。
     * `retry`重试 ：只要失败，就会重新执行创建信号中的block,直到成功.
 
-```
+```objc
      __block int i = 0;
     [[[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
@@ -216,7 +216,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 * `replay`重放：当一个信号被多次订阅,反复播放内容
 
-```
+```objc
         RACSignal *signal = [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
 
@@ -242,7 +242,7 @@ Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
 
 * `throttle`节流:当某个信号发送比较频繁时，可以使用节流，在某一段时间不发送信号内容，过了一段时间获取信号的最新内容发出。
 
-```
+```objc
         RACSubject *signal = [RACSubject subject];
 
     _signal = signal;
