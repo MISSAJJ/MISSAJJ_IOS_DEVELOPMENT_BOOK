@@ -33,7 +33,7 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
 
 ###Xib的加载方式：
 - 1.如果一个View是从xib中加载出来的,没有设置尺寸,那么在xib中描述的尺寸,就是该View的尺寸
-- 2.如果mainBundle作为参数,可以传入nil.(了解)
+- 2.如果mainBundle作为参数,可以传入nil.(了解一下就可以)
 
 1、加载方式一:(常用)
 ```
@@ -41,19 +41,14 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
     [self.view addSubview:newsView];
 ```
 
-2、加载方式二:(了解)
-```
-  // 注意:如果mainBundle作为参数时,传入nil也可以
+2、加载方式二:(不常用,了解一下就可以)
+``` 
     UINib *nib = [UINib nibWithNibName:@"News" bundle:[NSBundle mainBundle]];
     UIView *newsView1 = [[nib instantiateWithOwner:nil options:nil] firstObject];
     newsView1.frame = CGRectMake(0, 110, 375, 100);
     [self.view addSubview:newsView1];
 ```
 3、加载方式三: 快速宏加载
-
-####"程序猿的偷懒,最终为的是更效率!" 同意这句话的童鞋请举手!^_^
-####以下这个快速宏加载Xib的案例就是MISSAJJ为了偷懒而写的,分享给大家拓展思路
-
 
 - 宏定义代码
 
@@ -70,13 +65,23 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
 IPHONE4BUNDLE(@"MASignAndLoginViewController");
 
 ```
-- 以下是MISSAJJ做屏幕适配的方案:
+
+###快速宏加载Xib的案例
 
 ```
- 本方法用在iPhone上的话只需准备4，5的尺寸两套布局。效率高，也方便后期维护。
- 5，6，6Plus三种屏幕的尺寸宽高比是差不多的，因此可以在5的基础上，按比例放大来兼容6和6Plus的屏幕
+"程序猿的偷懒,最终为的是更效率!" 同意这句话的童鞋请举手!^_^
+以下这个快速宏加载Xib的案例就是MISSAJJ为了偷懒而写的,分享给大家拓展思路
+
+```
+
+- MISSAJJ做屏幕适配的方案:
+
+```
+ 本屏幕适配方法用在iPhone上的话只需在xib文件内准备4，5尺寸两套布局,
+ 因为5，6，6Plus三种屏幕的尺寸宽高比是差不多的，
+ 所以可以在5的基础上按比例放大来兼容6和6Plus的屏幕,4为单独的一套布局
  比例按照iphone5的比例，iphone4单独做xib适配比例为1.0
- 本方法iPad不适用，只适用于4，5，6，6Plus。
+ 本方法效率高，也方便后期维护,但只适用于4，5，6，6Plus,不适用iPad.
  参考文献: http://blog.it985.com/5121.html
  
  ```
@@ -86,7 +91,7 @@ IPHONE4BUNDLE(@"MASignAndLoginViewController");
 ![image](MISSAJJ快速宏加载xib案例.png)
 
 
-- 对应的快速宏加载nib的宏定义
+- 快速宏加载nib的宏定义
 
 ```
 //加载iphone4的xib界面:[1]单独为iphone4创建的界面, [0]为iphone5界面,用其缩放适配其他大屏幕
@@ -94,7 +99,7 @@ IPHONE4BUNDLE(@"MASignAndLoginViewController");
 [[NSBundle mainBundle]loadNibNamed:(nibName) owner:self options:nil][1]
 ```
 
-- 在与Xib对应的viewController以loadView方法判定读取哪一个xib内的view
+- 在与Xib对应的viewController以loadView方法判定加载读取哪一个xib内的view
 ```
 -(void)loadView{
     
