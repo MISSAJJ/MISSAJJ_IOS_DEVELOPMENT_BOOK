@@ -1,7 +1,7 @@
 ###MISSAJJ整理的IOS项目开发电子书
 ---
 ```objc
-Update更新：2016年5月19日 By {MISSAJJ琴瑟静听} 
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听} 
 
 友情提示：
 “高效工具资源及分享”里的免费MAC软件下载地址随时会失效，
@@ -39,7 +39,7 @@ Update更新：2016年5月19日 By {MISSAJJ琴瑟静听}
 
 
 * [Introduction前言介绍](README.md)
-* [Share Resources 高效工具资源及分享](Share Resources 工具资源及分享/README.md)
+* [★Share Resources 高效工具资源及分享★](Share Resources 工具资源及分享/README.md)
 * [Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
 * [Chapter-02 判断NSString字符串或NSArray数组是否为空](Chapter-02 判断NSString字符串或NSArray数组是否为空/README.md)
 * [Chapter-03 相机相簿存图UIImagePicker SDK](Chapter-03 相机相簿存图UIImagePicker SDK/README.md)
@@ -64,6 +64,7 @@ Update更新：2016年5月19日 By {MISSAJJ琴瑟静听}
 * [Chapter-18 runtime简介和作用](Chapter-18 runtime简介和作用/README.md)
 * [Chapter-19（I）地图定位CoreLocation框架](Chapter-19（I）地图定位CoreLocation框架/README.md)
 * [Chapter-19（II）地图定位CoreLocation框架](Chapter-19（II）地图定位CoreLocation框架/README.md)
+* [Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类](Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类/README.md)
 * [Chapter-20（I）蓝牙交互CoreBlueTooth](Chapter-20（I）蓝牙交互CoreBlueTooth/README.md)
 * [Chapter-20（II）蓝牙交互GameKit](Chapter-20（II）蓝牙交互GameKit/README.md)
 * [Chapter-20（III）蓝牙交互Mutipeer Connectivity](Chapter-20（III）蓝牙交互Mutipeer Connectivity/README.md)
