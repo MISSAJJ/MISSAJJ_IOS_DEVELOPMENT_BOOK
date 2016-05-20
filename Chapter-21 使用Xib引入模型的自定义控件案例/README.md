@@ -51,18 +51,25 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
 ```
 3、加载方式三: 快速宏加载
 
-####"程序猿的偷懒,最终为的是更效率!" 同意这句话的请举手!^_^
-####以下这个快速宏加载Xib的案例就是MISSAJJ为了偷懒而写的.
+####"程序猿的偷懒,最终为的是更效率!" 同意这句话的童鞋请举手!^_^
+####以下这个快速宏加载Xib的案例就是MISSAJJ为了偷懒而写的,分享给大家拓展思路
 
 
 - 宏定义代码
-```
-//加载iphone4的xib界面:[1]单独为iphone4创建的界面, [0]为iphone5界面,用其缩放适配其他大屏幕
-#define IPHONE4BUNDLE(nibName) \
-[[NSBundle mainBundle]loadNibNamed:(nibName) owner:self options:nil][1]
+
+``` 
+//加载nib宏
+#define LoadNib(nibName) \
+[[NSBundle mainBundle]loadNibNamed:(nibName) owner:self options:nil][lastObject]
 ```
 
+- 使用方法
 
+```
+//只需要传一个NibNamed的字符串
+IPHONE4BUNDLE(@"MASignAndLoginViewController");
+
+```
 - 以下是MISSAJJ做屏幕适配的方案:
 
 ```
@@ -79,8 +86,13 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
 ![image](MISSAJJ快速宏加载xib案例.png)
 
 
+- 对应的快速宏加载nib的宏定义
 
-
+```
+//加载iphone4的xib界面:[1]单独为iphone4创建的界面, [0]为iphone5界面,用其缩放适配其他大屏幕
+#define IPHONE4BUNDLE(nibName) \
+[[NSBundle mainBundle]loadNibNamed:(nibName) owner:self options:nil][1]
+```
 
 - 在与Xib对应的viewController以loadView方法判定读取哪一个xib内的view
 ```
@@ -90,7 +102,7 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
   
     //单独对iPhone4适配
     if (kDeviceHeight == 480) {
-    
+
         self.view = IPHONE4BUNDLE(@"MASignAndLoginViewController"); 
         
     } 
