@@ -28,13 +28,13 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 ###开发步骤
 * 建立中心管家
 
-```
+```objc
 // 1. 创建中心管家,并且设置代理
 self.cmgr = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
 ```
 * 扫描外设（discover）
 
-```
+```objc
 // 2. 在代理方法中扫描外部设备
  /**
   *  scanForPeripheralsWithServices ：如果传入指定的数组，那么就只会扫描数组中对应ID的设备
@@ -49,7 +49,7 @@ self.cmgr = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
 }
 ```
 
-```
+```objc
 /**
  *  发现外部设备，每发现一个就会调用这个方法
  *  所以可以使用一个数组来存储每次扫描完成的数组
@@ -66,7 +66,7 @@ self.cmgr = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
 
 * 连接外设
 
-```
+```objc
 /**
  *  模拟开始连接方法
  */
@@ -88,7 +88,7 @@ self.cmgr = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
 	
 		`每个蓝牙4.0的设备都是通过服务和特征来展示自己的，一个设备必然包含一个或多个服务，每个服务下面又包含若干个特征。`
 
-```
+```objc
 /**
  *  连接外设成功调用
  */
@@ -99,7 +99,7 @@ self.cmgr = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
 }
 ```
 
-```
+```objc
 /**
  *  发现服务就会调用代理方法
  *
@@ -120,7 +120,7 @@ self.cmgr = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
 * 与外设做数据交互
 	- 在指定的特征下做相应的操作
 
-```
+```objc
 /**
  *  发现服务对应的特征
  */
@@ -139,7 +139,7 @@ self.cmgr = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
 ```
 * 断开连接
 
-```
+```objc
 /**
  *  断开连接
  */
