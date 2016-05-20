@@ -36,13 +36,13 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
 - 2.如果mainBundle作为参数,可以传入nil.(了解一下就可以)
 
 1、加载方式一:(常用)
-```
+```objc
     UIView *newsView = [[[NSBundle mainBundle] loadNibNamed:@"News" owner:nil options:nil] firstObject];
     [self.view addSubview:newsView];
 ```
 
 2、加载方式二:(不常用,了解一下就可以)
-``` 
+```objc
     UINib *nib = [UINib nibWithNibName:@"News" bundle:[NSBundle mainBundle]];
     UIView *newsView1 = [[nib instantiateWithOwner:nil options:nil] firstObject];
     newsView1.frame = CGRectMake(0, 110, 375, 100);
@@ -52,7 +52,7 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
 
 - 宏定义代码
 
-``` 
+```objc
 //加载nib宏
 #define LoadNib(nibName) \
 [[NSBundle mainBundle]loadNibNamed:(nibName) owner:self options:nil][lastObject]
@@ -60,7 +60,7 @@ Xib只能描述软件界面,必须创建一个和Xib文件同名的类文件来�
 
 - 使用方法
 
-```
+```objc
 //只需要传一个NibNamed的字符串
 LoadNib(@"MASignAndLoginViewController");
 
@@ -68,7 +68,7 @@ LoadNib(@"MASignAndLoginViewController");
 
 ###快速宏加载Xib的案例
 
-```
+```objc
 "程序猿的偷懒,最终为的是更效率!" 同意这句话的童鞋请举手!^_^
 以下这个快速宏加载Xib的案例就是MISSAJJ为了偷懒而写的,分享给大家拓展思路
 
@@ -76,7 +76,7 @@ LoadNib(@"MASignAndLoginViewController");
 
 - MISSAJJ做屏幕适配的方案:
 
-```
+```objc
  本屏幕适配方法用在iPhone上的话只需在xib文件内准备4，5尺寸两套布局,
  因为5，6，6Plus三种屏幕的尺寸宽高比是差不多的，
  所以可以在5的基础上按比例放大来兼容6和6Plus的屏幕,4为单独的一套布局
@@ -93,14 +93,16 @@ LoadNib(@"MASignAndLoginViewController");
 
 - 快速宏加载nib的宏定义
 
-```
+```objc
 //加载iphone4的xib界面:[1]单独为iphone4创建的界面, [0]为iphone5界面,用其缩放适配其他大屏幕
 #define IPHONE4BUNDLE(nibName) \
 [[NSBundle mainBundle]loadNibNamed:(nibName) owner:self options:nil][1]
 ```
 
 - 在与Xib对应的viewController以loadView方法判定加载读取哪一个xib内的view
-```
+
+
+```objc
 -(void)loadView{
     
     [super loadView];
@@ -123,7 +125,7 @@ LoadNib(@"MASignAndLoginViewController");
 
 - Xib对应的类.h文件
 
-``` 
+```objc 
 #import <UIKit/UIKit.h>
 @class MAProduct;
 @interface MAProductView : UIView
@@ -139,7 +141,7 @@ LoadNib(@"MASignAndLoginViewController");
 ```
 - Xib对应的类.m文件
 
-``` 
+```objc 
 #import "MAProductView.h"
 #import "MAProduct.h"
 
@@ -173,7 +175,7 @@ LoadNib(@"MASignAndLoginViewController");
 - 相关注意点:
 
 
-```
+```objc
 // 如果控件时通过xib或者storyboard加载出来的,那么就会执行该方法
 // 作用:在initWithCoder方法中添加子控件
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -199,7 +201,7 @@ LoadNib(@"MASignAndLoginViewController");
 - 其他注意点:
 
 
-```
+```objc
 /*
 #pragma mark - 设置数据的方法 (淘汰)
 - (void)setIcon:(NSString *)iconName
@@ -237,7 +239,7 @@ LoadNib(@"MASignAndLoginViewController");
 
 - 模型.h文件
 
-```
+```objc
 #import <Foundation/Foundation.h>
 
 @interface MAProduct : NSObject
@@ -255,7 +257,7 @@ LoadNib(@"MASignAndLoginViewController");
 ```
 - 模型.m文件
 
-```
+```objc
 #import "MAProduct.h"
 
 @implementation MAProduct
@@ -296,7 +298,7 @@ LoadNib(@"MASignAndLoginViewController");
 
 - 调用代码
 
-```
+```objc
     /********************** 2.添加商品的View *****************************/
     // 1.创建商品的View
     MAProductView *productView = [MAProductView productView];
@@ -309,7 +311,7 @@ LoadNib(@"MASignAndLoginViewController");
 ```
 - 完整的ViewController代码
 
-```
+```objc
 #import "ViewController.h"
 #import "MAProduct.h"
 #import "MAProductView.h"
