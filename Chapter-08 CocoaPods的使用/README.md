@@ -1,9 +1,9 @@
 #Chapter-08 CocoaPods的使用
 ---
 ```objc
-Update更新：2016年5月9日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ```
-
+```objc
 - Podfile.lock文件
     - 最后一次更新Pods时, 所有第三方框架的版本号
 - 常用指令的区别
@@ -17,3 +17,5 @@ Update更新：2016年5月9日 By {MISSAJJ琴瑟静听}
     - pod install --no-repo-update
     - pod update --no-repo-update
         - 安装框架之前, 不会执行pod repo update指令
+
+```
