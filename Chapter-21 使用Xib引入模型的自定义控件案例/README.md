@@ -159,7 +159,7 @@ LoadNib(@"MASignAndLoginViewController");
 }
 
 //设置模型传值
-- (void)setProduct:(XMGProduct *)product
+- (void)setProduct:(MAProduct *)product
 {
     //这一步很重要, 否则传值为空就无数据
     _product = product;
@@ -185,7 +185,7 @@ LoadNib(@"MASignAndLoginViewController");
     return self;
 }
 
-// 所以xib中的控件都加载好之后会执行该方法
+// 所有xib中的控件都加载好之后会执行该方法
 // 作用:初始化操作,比如设置背景,初始化一些数据
 - (void)awakeFromNib
 {
@@ -294,7 +294,7 @@ LoadNib(@"MASignAndLoginViewController");
 
 ###3, ViewController调用
 
-- 调动代码
+- 调用代码
 
 ```
     /********************** 2.添加商品的View *****************************/
@@ -379,7 +379,7 @@ LoadNib(@"MASignAndLoginViewController");
     self.addProductBtn.enabled = YES;
 }
 
-#pragma mark - 懒加载代码
+#pragma mark - 懒加载数据
 - (NSArray *)products
 {
     if (_products == nil) {
@@ -393,7 +393,8 @@ LoadNib(@"MASignAndLoginViewController");
         NSMutableArray *tempArray = [NSMutableArray array];
         for (NSDictionary *dict in _products) {
             // 3.1.创建模型对象,并且给属性赋值
-            // MAProduct *product = [MAProduct productWithIcon:dict[@"icon"] title:dict[@"title"]];
+            // MAProduct *product = [MAProduct productWithIcon:dict[@"icon"] title:dict[@"title"]];(淘汰)
+            
             MAProduct *product = [MAProduct productWithDict:dict];
             
             // 3.2.将模型对象放入数组中
