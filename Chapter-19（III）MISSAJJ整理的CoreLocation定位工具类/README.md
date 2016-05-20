@@ -1,23 +1,33 @@
-#Chapter-19（III）MISSAJJ整理的CoreLocation定位工具类
-
+#Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类
+---
+```objc
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
+ 
 ```
-//
-//  MALocationTool.h
-//
-//
-//  Created by MISSAJJ on 16/1/27.
-//  Copyright © 2016年 MISSAJJ. All rights reserved.
-//
-/**
- *  @author https://github.com/MISSAJJ (MISSAJJ), 更新日期: 16-05-20 11:05:38
- *
- *  MALocationTool代码优化：
- 1，优化性能：改写懒加载
- 2，增加block功能拓展返回传递地理位置数据
+
+###MALocationTool是MISSAJJ以单例方法实现的一个定位工具类
+- 1、支持普通方法和block传递两种方法获取用户定位坐标数据和地理编码
+- 2、用户未开启定位服务时，显示提示用户再次开启定位的提示框
+- 3、等空下来再写个DEMO演示下吧，暂时还未上传github，仅供学习参考
+
+###MALocationTool工具类使用方法：
+
+- 更新地理位置
+
+``` 
+    [[MALocationTool sharedMALocationTool]updatingLocation];
+```
  
- // 获取Block当前位置
+- 获取地理定位坐标经纬度数据 
  
- 使用方法：
+```  
+ [MALocationTool sharedMALocationTool].longitude; 
+ [MALocationTool sharedMALocationTool].latitude;
+```  
+
+- block返回地理定位坐标和地理编码
+
+```  
  [[MALocationTool sharedMALocationTool] getCurrentLocation:^(CLLocation *currentLoc, CLPlacemark *placemark, NSString *error) {
  if ([error length] == 0) {
  NSLog(@"%@   ----   %@", currentLoc, placemark.name);// 位置名
@@ -27,12 +37,35 @@
  //NSLog(@"locality,%@",placemark.name.locality);               // 市
  // NSLog(@"subLocality,%@",placemark.name.subLocality);         // 区
  //NSLog(@"country,%@",placemark.name.country);                 // 国家
- }
- 
+ } 
  }
  }];
+```
+
+- 若用户定位服务未开启，提示alert框
+  
+```
+ //判断用户定位服务是否开启
+    if (![[MALocationTool sharedMALocationTool]locationServicesEnabled]) {
+        
+        //显示开启位置服务提示,提示用户再次开启定位
+        [[MALocationTool sharedMALocationTool]showLocationAlert];
+        
+        return;
+    }
+    
+```
  
- */
+
+###MALocationTool完整代码：
+
+
+```
+//  MALocationTool.h
+//  Created by MISSAJJ on 16/1/27.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+//
+
 #import <Foundation/Foundation.h>
 #import "MASingleton.h"
 #import <CoreLocation/CoreLocation.h>
@@ -45,18 +78,11 @@ typedef void(^ResultBlock)(CLLocation *currentLoc, CLPlacemark *placemark, NSStr
 singleton_interface(MALocationTool);
 
 @property (nonatomic,assign)double longitude;//经度
-@property (nonatomic,assign)double latitude; //纬度
+@property (nonatomic,assign)double latitude; //纬度 
 
-
-/**
- *  获取当前位置
- *
- *  @param block 获取当前位置后处理的block
- */
+//获取当前位置后处理的block 
 - (void)getCurrentLocation:(ResultBlock)block;
-
-
-
+ 
 //开启定位更新坐标
 -(void)updatingLocation;
 
@@ -84,27 +110,9 @@ singleton_interface(MALocationTool);
  *
  *  MALocationTool代码优化：
  1，优化性能：改写懒加载
- 2，增加block功能拓展返回传递地理位置数据
+ 2，增加block功能拓展返回传递地理位置数据 
  
- // 获取Block当前位置
- 
- 使用方法：
- [[MALocationTool sharedMALocationTool] getCurrentLocation:^(CLLocation *currentLoc, CLPlacemark *placemark, NSString *error) {
- if ([error length] == 0) {
- NSLog(@"%@   ----   %@", currentLoc, placemark.name);// 位置名
- 
- // NSLog(@"thoroughfare,%@",placemark.name.thoroughfare);       // 街道
- // NSLog(@"subThoroughfare,%@",placemark.name.subThoroughfare); // 子街道
- //NSLog(@"locality,%@",placemark.name.locality);               // 市
- // NSLog(@"subLocality,%@",placemark.name.subLocality);         // 区
- //NSLog(@"country,%@",placemark.name.country);                 // 国家
- }
- 
- 
- }
- }];
- 
- */
+**/
 
 
 //用法： if(isIOS(8.0)) 表示用户IOS系统大于等于8.0
@@ -126,10 +134,7 @@ singleton_interface(MALocationTool);
 @end
 @implementation MALocationTool
 
-
-
-
-
+ 
 singleton_implementation(MALocationTool)
 
 #pragma mark -懒加载
@@ -217,6 +222,7 @@ singleton_implementation(MALocationTool)
     return _locationM;
 }
 
+//懒加载地理编码
 -(CLGeocoder *)geoCoder
 {
     if (_geoCoder == nil) {
@@ -225,8 +231,7 @@ singleton_implementation(MALocationTool)
     return _geoCoder;
 }
 
-
-
+//block返回地理定位数据
 - (void)getCurrentLocation:(ResultBlock)block
 {
     // 记录代码块
@@ -408,15 +413,11 @@ singleton_implementation(MALocationTool)
             break;
     }
 }
-
-
-
-
+ 
 
 //用户对于位置服务的设置状态
 -(BOOL)locationServicesEnabled{
-    
-    
+     
     CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
     // NSLog(@"=status====%d========",status);
     
