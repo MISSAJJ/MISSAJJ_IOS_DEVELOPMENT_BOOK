@@ -11,20 +11,20 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 ####1. 前台定位
 
 - 导入CoreLocation框架以及对应的主头文件
-```
+```objc
      #import <CoreLocation/CoreLocation.h>
 ```
 - 创建CLLocationManager对象并设置代理
-```
+```objc
      self.locationM = [[CLLocationManager alloc] init];
      self.locationM.delegate = self;
 ```
 - 调用方法,开始更新用户位置信息
-```
+```objc
      [self.locationM startUpdatingLocation];
 ```
 - 在对应的代理方法中获取位置信息
-```
+```objc
      -(void)locationManager:(nonnull CLLocationManager *)manager didUpdateLocations:(nonnull NSArray<CLLocation > *)locations  
      {
          NSLog(@"每当请求到位置信息时, 都会调用此方法");  
@@ -39,13 +39,13 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 ####3. 额外设置
 
 - 每隔多少米定位一次
-```
+```objc
 代码: self.locationM.distanceFilter = 100;
 功能: 只有当最新的位置与上一次获取的位置之间的距离, 大于这个值时, 才会通过代理告诉外界
 ```
 
 - 设置定位精确度
-```
+```objc
      代   码: self.locationM.desiredAccuracy = kCLLocationAccuracyBest;
      功   能: 通过设置此属性, 获取不同精确度的位置信息
      注意事项: 精确度越高，越耗电，定位所需时间越长
@@ -64,7 +64,7 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 
  
 ###3. 知识补充
-```
+```objc
 1. 定位常识
     1) 标准定位服务(基于gps/基站/wifi定位, 具体使用哪种,苹果有自己规则) 
         > 程序关闭,就没法获取位置 
@@ -77,13 +77,13 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
     2) 如果长时间监控用户位置,用户移动速度比较快(例如打车软件),可使用后者 
 ```
 ###4. 测试环境:
-```
+```objc
 1. XCode7.0之前版本,例如XCode6.4版本
 2. 模拟器选择iOS8.0之前的版本
     * 原因 : XCode7.0(包含7.0)之后不支持iOS8.0之前的模拟器
 ```
 ###5.常见问题总结
-```
+```objc
     定位不到, 对应的代理方法不执行:
     首先,检查运行的模拟器是否是iOS8.0之前的系统版本
     其次,检查模拟器是否设置位置数据
@@ -95,24 +95,24 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 ####1. 前台定位
 
 - 导入CoreLocation框架以及对应的主头文件
-```
+```objc
      #import <CoreLocation/CoreLocation.h>
 ```
 - 创建CLLocationManager对象并设置代理
-```
+```objc
      self.locationM = [[CLLocationManager alloc] init];
      self.locationM.delegate = self;
 ```
 - 请求前台定位授权, 并在Info.Plist文件中配置Key ( Nslocationwheninuseusagedescription )
-```
+```objc
      [self.locationM requestWhenInUseAuthorization];
 ```
 - 调用方法,开始更新用户位置信息
-```
+```objc
      [self.locationM startUpdatingLocation];
 ```
 - 在对应的代理方法中获取位置信息
-```
+```objc
      -(void)locationManager:(nonnull CLLocationManager *)manager didUpdateLocations:(nonnull NSArray<CLLocation > *)locations  
      {
          NSLog(@"每当请求到位置信息时, 都会调用此方法");  
@@ -132,7 +132,7 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 #####方案二:
 
 - 请求前后台定位授权,并在info.plist文件中配置KEY ( NSLocationAlwaysUsageDescription )
-```
+```objc
      [self.locationM requestAlwaysAuthorization];
 ```
 - 注意:不需要勾选后台模式, 也可以进行后台定位
@@ -142,7 +142,7 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 ####3. 监听用户授权状态
 
 - 实现以下代理方法即可
-```
+```objc
      // 当用户授权状态发生变化时调用
      -(void)locationManager:(nonnull CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
      {
@@ -199,14 +199,14 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 ```
 ####4. 测试环境:
 
-```
+```objc
 1. XCode版本无要求
 2. 模拟器选择iOS8.0之后的版本
 ```
 
 ####5. 常见问题总结
 
-```
+```objc
     定位不到, 对应的代理方法不执行:
     首先,检查是否请求授权, 并设置了对应的KEY
     其次,检查模拟器是否设置位置数据
@@ -216,7 +216,7 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 ###三. iOS9.0 定位补充
 ####1. 定位变化
 - 前台定位
-```
+```objc
     (同iOS8.0之后一致, 无任何变化, 都需要主动请求授权)
 ```
 - 后台定位
@@ -224,7 +224,7 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 #####方案一:
 
     在前台定位基础上, 勾选后台模式Location updates, 并且设置以下属性为YES
-```
+```objc
      if ([[UIDevice currentDevice].systemVersion floatValue] >= 9.0)
       {
           self.locationM.allowsBackgroundLocationUpdates = YES;
@@ -233,13 +233,13 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 #####方案二:
 
     请求前后台定位授权,并在info.plist文件中配置KEY ( NSLocationAlwaysUsageDescription )
-```
+```objc
      [self.locationM requestAlwaysAuthorization];
 ```
 ####2. 新的API
 
 - 单次定位请求;
-```
+```objc
      代   码: [self.locationM requestAlwaysAuthorization];
      功   能: 获取一次位置信息
      实现逻辑: 
@@ -252,13 +252,13 @@ Update更新：2016年5月17日 By {MISSAJJ琴瑟静听}
 
 ####3. 测试环境:
 
-```
+```objc
 1. XCode版本要求7.0版本以上
 2. 模拟器选择iOS9.0之后的版本
 ```
 
 ####4. 常见问题总结
-```
+```objc
     单次定位在模拟器上测试不出效果?
     答: 因为模拟器的位置是固定的, 所以无法测试出效果, 请使用真机进行测试.
 ```
