@@ -1,4 +1,4 @@
-#Chapter-21 使用Xib的自定义控件
+#Chapter-21 使用Xib引入模型的自定义控件案例
 
 ---
 ```objc
@@ -50,7 +50,7 @@ Xib只能描述软件界面,必须创建一个类管理这个xib,xib文件会被
     [self.view addSubview:newsView1];
 ```
 
-###Xib引入模型数据的使用案例
+###使用Xib引入模型的自定义控件案例
 
 ###1,Xib文件
 
@@ -222,6 +222,123 @@ Xib只能描述软件界面,必须创建一个类管理这个xib,xib文件会被
 + (instancetype)productWithDict:(NSDictionary *)dict
 {
     return [[self alloc] initWithDict:dict];
+}
+
+@end
+```
+
+###3, ViewController调用
+
+- 调动代码
+
+```
+    /********************** 2.添加商品的View *****************************/
+    // 1.创建商品的View
+    MAProductView *productView = [MAProductView productView];
+    productView.frame = CGRectMake(x, y, width, height);
+    [self.shopCartView addSubview:productView];
+    
+    // 2.设置数据
+    productView.product = self.products[index];
+
+```
+- 完整的ViewController代码
+
+```
+#import "ViewController.h"
+#import "MAProduct.h"
+#import "MAProductView.h"
+
+@interface ViewController ()
+
+// 购物车的View
+@property (weak, nonatomic) IBOutlet UIView *shopCartView;
+
+// 添加商品和移除商品的按钮
+@property (weak, nonatomic) IBOutlet UIButton *removeProductBtn;
+@property (weak, nonatomic) IBOutlet UIButton *addProductBtn;
+
+// 商品的数据
+@property (nonatomic, strong) NSArray *products;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+#pragma mark - 添加和移除商品
+#pragma mark 添加商品
+- (IBAction)addProduct:(UIButton *)sender {
+    /********************** 1.常量 *****************************/
+    // 1.1.定义一些常量
+    CGFloat width = 70;
+    CGFloat height = 100;
+    
+    // 1.2.计算常量
+    CGFloat hMargin = (self.shopCartView.frame.size.width - 3 * width) / 2;
+    CGFloat vMargin = (self.shopCartView.frame.size.height - 2 * height) / 1;
+    NSInteger index = self.shopCartView.subviews.count;
+    CGFloat x = index % 3 * (hMargin + width);
+    CGFloat y = index / 3 * (vMargin + height);
+    
+    
+    /********************** 2.添加商品的View *****************************/
+    // 1.创建商品的View
+    MAProductView *productView = [MAProductView productView];
+    productView.frame = CGRectMake(x, y, width, height);
+    [self.shopCartView addSubview:productView];
+    
+    // 2.设置数据
+    productView.product = self.products[index];
+    
+    /********************** 3.判断按钮的状态 *****************************/
+    // 3.1.判断添加商品的按钮状态
+    sender.enabled = self.shopCartView.subviews.count != 6;
+    // 3.2.让移除按钮可以点击
+    self.removeProductBtn.enabled = YES;
+}
+
+#pragma mark 移除商品
+- (IBAction)removeProduct:(UIButton *)sender {
+    // 1.取出最后一个商品,并且移除掉
+    UIView *lastProduct = [self.shopCartView.subviews lastObject];
+    [lastProduct removeFromSuperview];
+    
+    // 2.判断按钮的状态
+    // 2.1.判断移除按钮的状态
+    sender.enabled = self.shopCartView.subviews.count;
+    // 2.2.判断添加按钮的状态
+    self.addProductBtn.enabled = YES;
+}
+
+#pragma mark - 懒加载代码
+- (NSArray *)products
+{
+    if (_products == nil) {
+        // 1.获取plist文件的路径
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"products.plist" ofType:nil];
+        
+        // 2.读取plist文件
+        _products = [NSArray arrayWithContentsOfFile:plistPath];
+        
+        // 3.将字典转成模型对象
+        NSMutableArray *tempArray = [NSMutableArray array];
+        for (NSDictionary *dict in _products) {
+            // 3.1.创建模型对象,并且给属性赋值
+            // MAProduct *product = [MAProduct productWithIcon:dict[@"icon"] title:dict[@"title"]];
+            MAProduct *product = [MAProduct productWithDict:dict];
+            
+            // 3.2.将模型对象放入数组中
+            [tempArray addObject:product];
+        }
+        
+        _products = tempArray;
+    }
+    
+    return _products;
 }
 
 @end
