@@ -1,7 +1,7 @@
 #Chapter-16(I)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
 ---
 ```objc
-Update更新：2016年5月15日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 由于此章节笔记内容比较多，所以特地分了五篇文章，
 避免因文章太长而导致手机浏览器或微信内浏览崩溃
 ```
@@ -97,7 +97,7 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 
 *	`RACSiganl简单使用:`
 
-```
+```objc
 	// RACSignal使用步骤：
     // 1.创建信号 + (RACSignal *)createSignal:(RACDisposable * (^)(id<RACSubscriber> subscriber))didSubscribe
     // 2.订阅信号,才会激活信号. - (RACDisposable *)subscribeNext:(void (^)(id x))nextBlock
@@ -161,7 +161,7 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 
 *	`RACSubject和RACReplaySubject简单使用:`
 
-```
+```objc
     // RACSubject使用步骤
     // 1.创建信号 [RACSubject subject]，跟RACSiganl不一样，创建信号时没有block。
     // 2.订阅信号 - (RACDisposable *)subscribeNext:(void (^)(id x))nextBlock
@@ -224,7 +224,7 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 
 *	`RACSubject替换代理`
 
-```
+```objc
 	// 需求:
 	// 1.给当前控制器添加一个按钮，modal到另一个控制器界面
 	// 2.另一个控制器view中有个按钮，点击按钮，通知当前控制器
@@ -282,7 +282,7 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 
 `RACSequence和RACTuple简单使用`
 
-```
+```objc
     // 1.遍历数组
     NSArray *numbers = @[@1,@2,@3,@4];
 
@@ -368,7 +368,7 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 
 `RACMulticastConnection简单使用`:
 
-```
+```objc
     // RACMulticastConnection使用步骤:
     // 1.创建信号 + (RACSignal *)createSignal:(RACDisposable * (^)(id<RACSubscriber> subscriber))didSubscribe
     // 2.创建连接 RACMulticastConnection *connect = [signal publish];
@@ -451,7 +451,7 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 
 `RACCommand简单使用`
 
-```
+```objc
 
  	// 一、RACCommand使用步骤:
     // 1.创建命令 initWithSignalBlock:(RACSignal * (^)(id input))signalBlock
