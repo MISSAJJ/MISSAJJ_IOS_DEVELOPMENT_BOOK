@@ -22,7 +22,7 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 ###蓝牙互连：
 * 搜索蓝牙设备
 
-```
+```objc
 	// 初始化链接蓝牙控制器
     GKPeerPickerController *peerCtr = [[GKPeerPickerController alloc]init];
     // 显示匹配到的蓝牙设备
@@ -30,7 +30,7 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 ```
 * `GKPeerPickerController`最重要的两个代理
 
-```
+```objc
 /**
  *  链接成功
  *
@@ -55,7 +55,7 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 ###选择图片：
 * 选择图片方法
 
-```
+```objc
 // 选择图片
 - (IBAction)chooseImage {
     // 1.初始化图片选择控制器
@@ -74,7 +74,7 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 
 * 选择图片控制器的代理方法
 
-```
+```objc
 /**
  *  图片选择完成调用
  *
@@ -94,14 +94,14 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 ###图片相互发送：
 * 需要在连接成功代理方法中存储当前的会话
 
-```
+```objc
 // 保存当前回话
     self.m_Session = session;
 ```
 
 * 发送图片方法
 
-```
+```objc
 // 发送图片
 - (IBAction)sendImage {
     
@@ -127,7 +127,7 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 	* 需要监听接收传递过来的数据
 		* 在连接成功代理方法中设置监听
 		
-	```
+	```objc
 	
 	    /** 监听传递过来的数据
 	     *  setDataReceiveHandler: 由哪个对象来监听数据的接受
@@ -140,7 +140,7 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 	* 实现监听方法
 		* 只设置由谁监听传递过来的数据还是不足的，因为我们还是不能拿到传递过来的数据，进入监听方法的头文件可以看到
 			
-		```
+		```objc
 			// SEL = -receiveData:fromPeer:inSession:context:
 		```
 		* 所以我们必须实现这个方法才能拿到接收到的数据，这个回调方法方法在Xcode 7之前的版本的解释如图：
@@ -148,7 +148,7 @@ Update更新：2016年5月18日 By {MISSAJJ琴瑟静听}
 
 ![image](回调方法.png)
 
-```
+```objc
 
 
 /**
