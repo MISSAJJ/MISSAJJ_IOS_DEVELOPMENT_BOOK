@@ -26,7 +26,7 @@ Xib只能描述软件界面,必须创建一个类管理这个xib,xib文件会被
     [self.view addSubview:newsView];
 ```
 
-1、加载方式二:
+2、加载方式二:
 ```
   // 注意:如果mainBundle作为参数时,传入nil也可以
     UINib *nib = [UINib nibWithNibName:@"News" bundle:[NSBundle mainBundle]];
