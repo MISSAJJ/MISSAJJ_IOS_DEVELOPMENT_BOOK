@@ -5,6 +5,10 @@
 Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ```
 
+###Xib课程笔记思维导图：
+
+![image](xib笔记流程图.png)
+
 ###Xib的创建和设置：
 
 - 1,创建Xib文件
