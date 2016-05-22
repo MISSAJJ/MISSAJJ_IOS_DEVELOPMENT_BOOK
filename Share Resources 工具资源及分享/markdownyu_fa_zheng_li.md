@@ -281,7 +281,7 @@ a start and end fence lines to delimit the code block.
 
 A simple table looks like this:
 
-#####（MISSAJJ推荐:这种方法不但适用于GitBook还使用与github）
+#####（MISSAJJ推荐用这种:比较方便）
 ```
 First Header | Second Header | Third Header
 ------------ | ------------- | ------------
@@ -297,15 +297,14 @@ Content Cell | Content Cell  | Content Cell
 
 If you wish, you can add a leading and tailing pipe to each line of the table:
 
-#####（注意：这种方法适用于GitBook,但github无效）
+##### 
 ```
 | First Header | Second Header | Third Header |
 | ------------ | ------------- | ------------ |
 | Content Cell | Content Cell  | Content Cell |
 | Content Cell | Content Cell  | Content Cell |
 ```
-演示：
-
+演示： 
 
 | First Header | Second Header | Third Header |
 | ------------ | ------------- | ------------ |
