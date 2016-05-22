@@ -34,10 +34,13 @@ Update更新：2016年5月22日 By {MISSAJJ琴瑟静听}
 希望能帮助一些学习开发的新手攻城狮，
 也是一本用心良苦想送给儿子W的的IOS启蒙书……
 ```  
+
+
 ###Chapters目录章节 
- 
+
 * [Introduction前言介绍](README.md)
 * [★Share Resources 高效工具资源及分享★](Share Resources 工具资源及分享/README.md)
+   * [Markdown语法整理](Share Resources 工具资源及分享/markdownyu_fa_zheng_li.md)
 * [Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
 * [Chapter-02 判断NSString字符串或NSArray数组是否为空](Chapter-02 判断NSString字符串或NSArray数组是否为空/README.md)
 * [Chapter-03 相机相簿存图UIImagePicker SDK](Chapter-03 相机相簿存图UIImagePicker SDK/README.md)
@@ -68,6 +71,7 @@ Update更新：2016年5月22日 By {MISSAJJ琴瑟静听}
 * [Chapter-20（III）蓝牙交互Mutipeer Connectivity](Chapter-20（III）蓝牙交互Mutipeer Connectivity/README.md)
 * [Chapter-21 使用Xib引入模型的自定义控件案例](Chapter-21 使用Xib引入模型的自定义控件案例/README.md)
 * [Chapter-22 渐变动画UIViewAnimation的几种方法：位移，缩放，透明](Chapter-22 渐变动画UIViewAnimation的几种方法：位移，缩放，透明/README.md)
+
 
 
 ```
