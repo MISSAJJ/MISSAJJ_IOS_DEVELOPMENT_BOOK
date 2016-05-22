@@ -1,7 +1,7 @@
 ###MISSAJJ整理的IOS项目开发电子书
 ---
 ```objc
-Update更新：2016年5月20日 By {MISSAJJ琴瑟静听} 
+Update更新：2016年5月22日 By {MISSAJJ琴瑟静听} 
 
 友情提示：
 “高效工具资源及分享”里的免费MAC软件下载地址随时会失效，
@@ -36,8 +36,6 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ```  
 ###Chapters目录章节 
  
-
-
 * [Introduction前言介绍](README.md)
 * [★Share Resources 高效工具资源及分享★](Share Resources 工具资源及分享/README.md)
 * [Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
@@ -69,7 +67,7 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 * [Chapter-20（II）蓝牙交互GameKit](Chapter-20（II）蓝牙交互GameKit/README.md)
 * [Chapter-20（III）蓝牙交互Mutipeer Connectivity](Chapter-20（III）蓝牙交互Mutipeer Connectivity/README.md)
 * [Chapter-21 使用Xib引入模型的自定义控件案例](Chapter-21 使用Xib引入模型的自定义控件案例/README.md)
-
+* [Chapter-22 渐变动画UIViewAnimation的几种方法：位移，缩放，透明](Chapter-22 渐变动画UIViewAnimation的几种方法：位移，缩放，透明/README.md)
 
 
 ```
