@@ -8,3 +8,67 @@ Update更新：2016年5月22日 By {MISSAJJ琴瑟静听}
 ###渐变动画课程笔记思维导图：
 
 ![image](渐变动画笔记流程图.png)
+
+###位移动画
+
+- 1.方式一:(了解,不常用)
+
+
+  ```objc 
+    // 1.1.开始动画
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    
+    // 1.2.动画执行的代码
+    CGRect frame = self.orangeView.frame;
+    frame.origin.y += 100;
+    self.orangeView.frame = frame;
+    
+    // 1.3.提交动画
+    [UIView commitAnimations];
+```   
+    
+- 2.方式二:(掌握,常用)
+
+ 
+
+  ```objc 
+  //1,无block的动画方法
+    [UIView animateWithDuration:0.5 animations:^{
+        // 动画执行的代码
+        CGRect frame = self.orangeView.frame;
+        frame.origin.y += 100;
+        self.orangeView.frame = frame;
+    }];
+```
+
+```objc  
+//2,有block的动画方法：用于在执行动画之后还有其他动作
+    [UIView animateWithDuration:1.0 animations:^{
+        CGRect frame = self.orangeView.frame;
+        frame.origin.y += 100;
+        self.orangeView.frame = frame;
+    } completion:^(BOOL finished) { // 该block是动画执行完成后会调用
+        self.orangeView.backgroundColor = [UIColor redColor];
+    }];
+```
+```objc   
+
+//3，有option设置的动画方法：
+以下是几个常用的option，这些效果都不太明显，所以一般设置UIViewAnimationOptionCurveEaseInOut，也可根据需求修改option微调
+  /* 
+     UIViewAnimationOptionCurveEaseInOut            开始动画/结束动画-->比较缓慢
+     UIViewAnimationOptionCurveEaseIn               开始动画-->比较缓
+     UIViewAnimationOptionCurveEaseOut              结束动画-->比较缓慢
+     UIViewAnimationOptionCurveLinear               线性-->匀速
+     */
+    [UIView animateWithDuration:1.0 delay:2.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        CGRect frame = self.orangeView.frame;
+        frame.origin.y += 100;
+        self.orangeView.frame = frame;
+    } completion:^(BOOL finished) {
+        NSLog(@"动画执行完成");
+    }];
+}
+
+```
