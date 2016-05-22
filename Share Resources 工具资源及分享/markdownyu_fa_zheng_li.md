@@ -9,6 +9,11 @@ GitBook就是基于markdown语言编辑的网站，github的README更是支持�
  
 目前已经有很多开发者在使用Markdown语言写开发文档，文章博客，说明书等，此语言格式非常轻便简单，MISSAJJ编写这本IOS开发电子书也是使用的markdown语言，所以特地增加了这一章节汇总Markdown语法。
 
+（图片加载中， 请耐心等待……）
+
+![image](MISSAJJ-GitBook.png)
+
+
 ###使用 Markdown 的优点
 ```objc
     专注你的文字内容而不是排版样式。
@@ -65,6 +70,10 @@ Markdown的创始人是John Gruber，此语言是一种轻量级的「标记语�
 
 Mou是一个帮助开发者用Markdown语言编辑的编辑器，下载网址：http://25.io/mou/ 
 除了这个工具，该网站还有文本转换语音Toau工具，和网页压缩的工具smaller，有需要的童鞋们可以下载体验。
+
+（图片加载中， 请耐心等待……）
+
+![image](mou.png)
 
 以下是打开Mou应用默认的语法帮助内容，整理至此方便童鞋们查阅。
 
