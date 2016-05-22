@@ -10,7 +10,7 @@ GitBook就是基于markdown语言编辑的网站，github的README更是支持�
 目前已经有很多开发者在使用Markdown语言写开发文档，文章博客，说明书等，此语言格式非常轻便简单，MISSAJJ编写这本IOS开发电子书也是使用的markdown语言，所以特地增加了这一章节汇总Markdown语法。
 
 ###使用 Markdown 的优点
-```
+```objc
     专注你的文字内容而不是排版样式。
     轻松的导出 HTML、PDF 和本身的 .md 文件。
     纯文本内容，兼容所有的文本编辑器与字处理软件。
