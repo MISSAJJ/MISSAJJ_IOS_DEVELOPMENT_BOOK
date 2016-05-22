@@ -77,7 +77,7 @@ Mou是一个帮助开发者用Markdown语言编辑的编辑器，下载网址：
 
 以下是打开Mou应用默认的部分语法帮助内容，部分作了中文标注和提示，整理至此便于童鞋们查阅。
 
-![Mou icon](http://25.io/mou/Mou_128.png)
+![Mou icon](Mou_128.png)
 
 ## Overview
 
