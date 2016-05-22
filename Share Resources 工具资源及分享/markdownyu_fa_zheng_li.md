@@ -1,11 +1,30 @@
 # Markdown语法整理
 
- 
-GitBook就是基于markdown语言编辑的网站,github的README更是支持了markdown语法，除此之外还有Mou编辑器也是基于markdown的编辑工具，中国的简书博客类网站，也是支持markdown语言编辑的网站。
- 
- 目前已经有很多开发者在使用Markdown语言写开发文档，文章博客，说明书等，此语言格式非常轻便简单，MISSAJJ编写这本IOS开发电子书也是使用的markdown语言，所以特地增加了这一章节汇总Markdown语法。
 
-###支持Markdown语言编辑的网站：
+###MISSAJJ为什么要特意写Markdown？ 
+GitBook就是基于markdown语言编辑的网站，github的README更是支持了markdown语法，除此之外还有Mou编辑器也是基于markdown的编辑工具，中国的简书博客类网站，也是支持markdown语言编辑的网站。
+ 
+目前已经有很多开发者在使用Markdown语言写开发文档，文章博客，说明书等，此语言格式非常轻便简单，MISSAJJ编写这本IOS开发电子书也是使用的markdown语言，所以特地增加了这一章节汇总Markdown语法。
+
+###使用 Markdown 的优点
+```
+    专注你的文字内容而不是排版样式。
+    轻松的导出 HTML、PDF 和本身的 .md 文件。
+    纯文本内容，兼容所有的文本编辑器与字处理软件。
+    可读，直观。适合所有人的写作语言。
+```
+
+###Markdown语言简介
+ 
+Markdown的创始人是John Gruber，此语言是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。
+ 
+
+- 创始人 John Gruber 的 Markdown 语法说明
+ - http://daringfireball.net/projects/markdown/syntax
+- Markdown 中文版语法说明
+  - http://wowubuntu.com/markdown/#list
+
+###支持Markdown语言编辑的网站
 
 * Gitbook 网址： https://www.gitbook.com
 * Github 网址： https://www.github.com
@@ -14,9 +33,10 @@ GitBook就是基于markdown语言编辑的网站,github的README更是支持了m
 
 
 
-###相关Markdown语法的文献：
-
-* 简书:献给写作者的Markdown新手指南
+###相关Markdown语法的文献
+* 认识与入门 Markdown（MISSAJJ推荐阅读）
+ * http://sspai.com/25137
+* 简书:献给写作者的Markdown新手指南（MISSAJJ推荐阅读）
   * http://www.jianshu.com/p/q81RER
 * Markdown 简明语法
   * http://lutaf.com/markdown-simple-usage.htm
@@ -38,7 +58,7 @@ GitBook就是基于markdown语言编辑的网站,github的README更是支持了m
   * http://wowubuntu.com/markdown
 
 
-###Mou编辑器的语法： 
+###Mou编辑器的语法 
 
 Mou是一个帮助开发者用Markdown语言编辑的编辑器，下载网址：http://25.io/mou/ 
 除了这个工具，该网站还有文本转换语音Toau工具，和网页压缩的工具smaller，有需要的童鞋们可以下载体验。
