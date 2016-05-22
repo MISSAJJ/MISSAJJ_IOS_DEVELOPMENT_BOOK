@@ -16,7 +16,7 @@ GitBook就是基于markdown语言编辑的网站,github的README更是支持了m
 
 ###相关Markdown语法的文献：
 
-* 简书:献给写作者的Markdown新手指南 
+* 简书:献给写作者的Markdown新手指南
   * http://www.jianshu.com/p/q81RER
 
 
