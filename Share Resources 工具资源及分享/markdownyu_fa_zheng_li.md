@@ -1,5 +1,8 @@
 # Markdown语法整理
-
+```objc
+Update更新：2016年5月22日 By {MISSAJJ琴瑟静听}
+ 
+```
 
 ###MISSAJJ为什么要特意写Markdown？ 
 GitBook就是基于markdown语言编辑的网站，github的README更是支持了markdown语法，除此之外还有Mou编辑器也是基于markdown的编辑工具，中国的简书博客类网站，也是支持markdown语言编辑的网站。
