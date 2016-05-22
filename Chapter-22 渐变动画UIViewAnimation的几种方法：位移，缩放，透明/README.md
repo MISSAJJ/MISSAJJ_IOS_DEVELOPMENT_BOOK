@@ -56,14 +56,17 @@ Update更新：2016年5月22日 By {MISSAJJ琴瑟静听}
 ```
 ```objc   
 
-//3，有option设置的动画方法：
-以下是几个常用的option，这些效果都不太明显，所以一般设置UIViewAnimationOptionCurveEaseInOut，也可根据需求修改option微调
+//3，有delay延时和option设置的动画方法：
+
+以下是几个常用的option，真实效果其实都不太明显，所以一般设置UIViewAnimationOptionCurveEaseInOut，也可根据需求修改option微调
   /* 
      UIViewAnimationOptionCurveEaseInOut            开始动画/结束动画-->比较缓慢
      UIViewAnimationOptionCurveEaseIn               开始动画-->比较缓
      UIViewAnimationOptionCurveEaseOut              结束动画-->比较缓慢
      UIViewAnimationOptionCurveLinear               线性-->匀速
      */
+     
+    //delay:2.0延时2秒， option：UIViewAnimationOptionCurveEaseIn
     [UIView animateWithDuration:1.0 delay:2.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         CGRect frame = self.orangeView.frame;
         frame.origin.y += 100;
@@ -101,6 +104,37 @@ Update更新：2016年5月22日 By {MISSAJJ琴瑟静听}
         self.orangeView.alpha -= 0.5;
     } completion:^(BOOL finished) {
         NSLog(@"动画执行完成");
+    }];
+}
+
+```
+
+###指示器动画的使用案例分析：动画的多层套嵌
+
+```objc
+
+//动画效果：显示Label文字2秒后消失
+- (void)showHudInfo:(NSString *)hudStr
+{
+    // 3.1.改变指示器上面显示的文字
+    self.hudLabel.text = hudStr;
+    
+    // 3.2.出现动画和消失动画
+    [UIView animateWithDuration:1.0 animations:^{
+    
+       //先设置透明度为1.0（文字显示）
+        self.hudLabel.alpha = 1.0;
+        
+    } completion:^(BOOL finished) {
+    
+      //动画结束
+      //再次执行延时2秒的动画
+        [UIView animateWithDuration:1.0 delay:2.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+          //设置透明度为0.0,（文字消失）
+          self.hudLabel.alpha = 0.0;
+            
+        } completion:nil];//动画结束不需要执行动作，设置nil
     }];
 }
 
