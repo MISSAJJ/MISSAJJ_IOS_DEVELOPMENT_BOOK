@@ -18,6 +18,24 @@ GitBook就是基于markdown语言编辑的网站,github的README更是支持了m
 
 * 简书:献给写作者的Markdown新手指南
   * http://www.jianshu.com/p/q81RER
+* Markdown 简明语法
+  * http://lutaf.com/markdown-simple-usage.htm
+* Markdown之表格的处理
+  * http://www.ituring.com.cn/article/3452
+* Cmd Markdown 编辑阅读器
+  * http://www.zybuluo.com/mdeditor
+* Markdown语法说明（详解版）
+  * http://www.ituring.com.cn/article/504
+* 怎样使用Markdown
+  * http://www.ituring.com.cn/article/23
+* Markdown写作浅谈
+  * http://jianshu.io/p/PpDNMG
+* Markdown语法示例
+  * http://equation85.github.io/blog/markdown-examples
+* HTML转义字符对照表
+  * http://tool.oschina.net/commons?type=2
+* Markdown 语法说明(简体中文版)
+  * http://wowubuntu.com/markdown
 
 
 ###Mou编辑器的语法： 
