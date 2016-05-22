@@ -1,18 +1,33 @@
 # Markdown语法整理
 
+ 
+GitBook就是基于markdown语言编辑的网站,github的README更是支持了markdown语法，除此之外还有Mou编辑器也是基于markdown的编辑工具，中国的简书博客类网站，也是支持markdown语言编辑的网站。
+ 
+ 目前已经有很多开发者在使用Markdown语言写开发文档，文章博客，说明书等，此语言格式非常轻便简单，MISSAJJ编写这本IOS开发电子书也是使用的markdown语言，所以特地增加了这一章节汇总Markdown语法。
+
+###支持Markdown语言编辑的网站：
+
+* Gitbook 网址： https://www.gitbook.com
+* Github 网址： https://www.github.com
+* Mou  网址： http://25.io/mou
+* 简书 网址： http://www.jianshu.com
 
 
 
+###相关Markdown语法的文献：
 
-![Mou icon](http://25.io/mou/Mou_128.png)
-### Mou   
+* 简书:献给写作者的 Markdown 新手指南 
+  * http://www.jianshu.com/p/q81RER
+
+
+###Mou编辑器的语法： 
 
 Mou是一个帮助开发者用Markdown语言编辑的编辑器，下载网址：http://25.io/mou/ 
 除了这个工具，该网站还有文本转换语音Toau工具，和网页压缩的工具smaller，有需要的童鞋们可以下载体验。
 
 以下是打开Mou应用默认的语法帮助内容，整理至此方便童鞋们查阅。
 
-
+![Mou icon](http://25.io/mou/Mou_128.png)
 
 ## Overview
 
