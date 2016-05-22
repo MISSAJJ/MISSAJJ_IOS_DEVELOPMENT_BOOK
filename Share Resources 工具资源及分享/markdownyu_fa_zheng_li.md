@@ -10,6 +10,10 @@
 Mou是一个帮助开发者用Markdown语言编辑的编辑器，下载网址：http://25.io/mou/ 
 除了这个工具，该网站还有文本转换语音Toau工具，和网页压缩的工具smaller，有需要的童鞋们可以下载体验。
 
+以下是打开Mou应用默认的语法帮助内容，整理至此方便童鞋们查阅。
+
+
+
 ## Overview
 
 **Mou**, the missing Markdown editor for *web developers*.
