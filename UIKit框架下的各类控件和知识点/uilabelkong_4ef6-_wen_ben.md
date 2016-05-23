@@ -108,3 +108,10 @@ UIFont代表字体，常见创建方法有以下几个：
 - 
 
 ![image](UILabel基本设置3.png)
+
+
+## 计算文字的宽度
+```objc
+CGFloat titleW = [字符串 sizeWithFont:字体大小].width;
+CGFloat titleW = [字符串 sizeWithAttributes:@{NSFontAttributeName : 字体大小}].width;
+```
