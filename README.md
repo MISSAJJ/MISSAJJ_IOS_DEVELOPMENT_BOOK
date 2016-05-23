@@ -8,7 +8,7 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
  下载到就是赚到！你懂的！^_^
 ```
 
- ![image](../Images/MISSAJJHeartProject_200.png)
+ ![image](MISSAJJHeartProject_200.png)
 
 ```objc
  {  心乎爱矣, 
