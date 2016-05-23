@@ -19,7 +19,7 @@
    * [const，static，extern简介、作用和使用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
    * [使用Xib引入模型的自定义控件案例](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/shi_yong_xib_yin_ru_mo_xing_de_zi_ding_yi_kong_jia.md)
    * [渐变动画UIViewAnimation的几种方法：位移，缩放，透明](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/jian_bian_dong_hua_uiviewanimation_de_ji_zhong_fan.md)
-   * Runtime简介和作用
+   * [Runtime简介和作用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/runtimejian_jie_he_zuo_yong.md)
 * [【Chapter-02  UIKit框架下的各类控件和知识点】](Chapter-01 UIKit框架下的各类控件和知识点/README.md)
    * [所有控件的父类:UIView](Chapter-01 UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame和Bounds及尺寸位置](Chapter-01 UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
