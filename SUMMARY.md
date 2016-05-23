@@ -21,7 +21,7 @@
    * [消息推送通知](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiao_xi_tui_song_tong_zhi.md)
    * [Runtime简介和作用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/runtimejian_jie_he_zuo_yong.md)
 * [【Chapter-02  UIKit框架下的各类控件和知识点】](UIKit框架下的各类控件和知识点/README.md)
-   * [所有控件的父类:UIView](Chapter-01 UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
+   * [所有控件的父类:UIView](UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame和Bounds及尺寸位置](Chapter-01 UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
    * [UITextField UILabel 图文混排](Chapter-01 UIKit框架下的各类控件和知识点/uitextfield_uilabel_tu_wen_hun_pai.md)
 * [【Chapter-03 地图定位CoreLocation框架】](地图定位CoreLocation框架/README.md)
