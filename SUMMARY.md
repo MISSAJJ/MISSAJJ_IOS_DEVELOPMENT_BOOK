@@ -32,6 +32,7 @@
 * [Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类](Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类/README.md)
 * [Chapter-20（I）蓝牙交互CoreBlueTooth](Chapter-20（I）蓝牙交互CoreBlueTooth/README.md)
    * [（II）蓝牙交互GameKit](Chapter-20（I）蓝牙交互CoreBlueTooth/iiff09_lan_ya_jiao_hu_gamekit.md)
+   * （III）蓝牙交互Mutipeer Connectivity
 * [Chapter-20（II）蓝牙交互GameKit](Chapter-20（II）蓝牙交互GameKit/README.md)
 * [Chapter-20（III）蓝牙交互Mutipeer Connectivity](Chapter-20（III）蓝牙交互Mutipeer Connectivity/README.md)
 * [Chapter-21 使用Xib引入模型的自定义控件案例](Chapter-21 使用Xib引入模型的自定义控件案例/README.md)
