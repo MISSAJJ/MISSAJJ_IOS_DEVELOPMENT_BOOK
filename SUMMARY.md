@@ -6,6 +6,7 @@
    * [CocoaPods的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
    * [项目管理Git常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
 * [Chapter-01 MISSAJJ琴瑟静听IOS开发综合笔记](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
+   * PCH文件的设置创建
 * [Chapter-02 UIKit框架下的各类控件和知识点](Chapter-01 UIKit框架下的各类控件和知识点/README.md)
    * [所有控件的父类:UIView](Chapter-01 UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame和Bounds及尺寸位置](Chapter-01 UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
