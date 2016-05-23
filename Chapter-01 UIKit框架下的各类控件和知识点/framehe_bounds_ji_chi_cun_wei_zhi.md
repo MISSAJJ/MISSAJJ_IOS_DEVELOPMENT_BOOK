@@ -23,7 +23,7 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
     - scrollView.bounds.origin == scrollView.contentOffset
 
 ## bounds和frame的区别
-![](../Images/bounds和frame的区别.png)
+![](bounds和frame的区别.png)
 
 ## 矩形框和内容的理解
 - 矩形框
