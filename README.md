@@ -1,7 +1,7 @@
 ###MISSAJJ整理的IOS项目开发电子书
 ---
 ```objc
-Update更新：2016年5月22日 By {MISSAJJ琴瑟静听} 
+Update更新：2016年5月23日 By {MISSAJJ琴瑟静听} 
 
 友情提示：
 “高效工具资源及分享”里的免费MAC软件下载地址随时会失效，
@@ -38,39 +38,43 @@ Update更新：2016年5月22日 By {MISSAJJ琴瑟静听}
 
 ###Chapters目录章节 
 
+
 * [Introduction前言介绍](README.md)
-* [★Share Resources 高效工具资源及分享★](Share Resources 工具资源及分享/README.md)
+* [★MISSAJJ高效工具资源分享★](Share Resources 工具资源及分享/README.md)
    * [Markdown语法整理](Share Resources 工具资源及分享/markdownyu_fa_zheng_li.md)
-* [Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
-* [Chapter-02 判断NSString字符串或NSArray数组是否为空](Chapter-02 判断NSString字符串或NSArray数组是否为空/README.md)
-* [Chapter-03 相机相簿存图UIImagePicker SDK](Chapter-03 相机相簿存图UIImagePicker SDK/README.md)
-* [Chapter-04 PCH文件的设置创建](Chapter-04 PCH文件的设置创建/README.md)
-* [Chapter-05 颜色相关知识和宏代码](Chapter-05 颜色相关知识和宏代码/README.md)
-* [Chapter-06 frame和bounds及尺寸位置](Chapter-06 frame和bounds的重新认识/README.md)
-* [Chapter-07 NSDate NSCalendar时间日期换算](Chapter-07 NSDate NSCalendar时间日期换算/README.md)
-* [Chapter-08 CocoaPods的使用](Chapter-08 CocoaPods的使用/README.md)
-* [Chapter-09 UIAlertController的使用](Chapter-09 UIAlertController的使用/README.md)
-* [Chapter-10 在XIB中设置UIScrollView](Chapter-10 在XIB中设置UIScrollView/README.md)
-* [Chapter-11 UITextField UILabel 图文混排](Chapter-11 UITextField UILabel 图文混排 /README.md)
-* [Chapter-12 assign和weak的区别](Chapter-12 assign和weak的区别/README.md)
-* [Chapter-13 计算行页数 文本宽度 文件及文件夹大小](Chapter-13 计算行页数 文本宽度 文件及文件夹大小/README.md)
-* [Chapter-14 消息推送通知](Chapter-14 消息推送通知/README.md)
-* [Chapter-15 项目管理Git常用命令](Chapter-15 项目管理Git常用命令/README.md)
-* [Chapter-16（I） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（I） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
-* [Chapter-16（II） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（II） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
-* [Chapter-16（III） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（III） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
-* [Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
-* [Chapter-16（V） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（V） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
-* [Chapter-17 const，static，extern简介、作用和使用](Chapter-17 const，static，extern简介、作用和使用/README.md)
-* [Chapter-18 runtime简介和作用](Chapter-18 runtime简介和作用/README.md)
-* [Chapter-19（I）地图定位CoreLocation框架](Chapter-19（I）地图定位CoreLocation框架/README.md)
-* [Chapter-19（II）地图定位CoreLocation框架](Chapter-19（II）地图定位CoreLocation框架/README.md)
-* [Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类](Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类/README.md)
-* [Chapter-20（I）蓝牙交互CoreBlueTooth](Chapter-20（I）蓝牙交互CoreBlueTooth/README.md)
-* [Chapter-20（II）蓝牙交互GameKit](Chapter-20（II）蓝牙交互GameKit/README.md)
-* [Chapter-20（III）蓝牙交互Mutipeer Connectivity](Chapter-20（III）蓝牙交互Mutipeer Connectivity/README.md)
-* [Chapter-21 使用Xib引入模型的自定义控件案例](Chapter-21 使用Xib引入模型的自定义控件案例/README.md)
-* [Chapter-22 渐变动画UIViewAnimation的几种方法：位移，缩放，透明](Chapter-22 渐变动画UIViewAnimation的几种方法：位移，缩放，透明/README.md)
+   * [CocoaPods的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
+   * [项目管理Git常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
+* [【Chapter-01  MISSAJJ琴瑟静听IOS开发综合笔记】](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
+   * [PCH文件的设置创建](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
+   * [const，static，extern简介、作用和使用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
+   * [在XIB中设置UIScrollView](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/zaixib_zhong_she_zhi_uiscrollview.md)
+   * [使用Xib引入模型的自定义控件案例](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/shi_yong_xib_yin_ru_mo_xing_de_zi_ding_yi_kong_jia.md)
+   * [assign和weak的区别](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/assignhe_weak_de_qu_bie.md)
+   * [判断NSString字符串或NSArray数组是否为空](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/panduan_nsstring_zi_fu_chuan_huo_nsarray_shu_zu_sh.md)
+   * [颜色相关知识和宏代码](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/yan_se_xiang_guan_zhi_shi_he_hong_dai_ma.md)
+   * [渐变动画UIViewAnimation的几种方法：位移，缩放，透明](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/jian_bian_dong_hua_uiviewanimation_de_ji_zhong_fan.md)
+   * [NSDate NSCalendar时间日期换算](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/nsdate_nscalendarshi_jian_ri_qi_huan_suan.md)
+   * [UIAlertController的使用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/uialertcontrollerde_shi_yong.md)
+   * [计算行页数 文本宽度 文件及文件夹大小](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/ji_suan_xing_ye_shu_wen_ben_kuan_du_wen_jian_ji_we.md)
+   * [相机相簿存图UIImagePicker SDK](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiang_jixiang_bu_cun_tu_uiimagepicker_sdk.md)
+   * [消息推送通知](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiao_xi_tui_song_tong_zhi.md)
+   * [Runtime简介和作用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/runtimejian_jie_he_zuo_yong.md)
+* [【Chapter-02  UIKit框架下的各类控件和知识点】](UIKit框架下的各类控件和知识点/README.md)
+   * [所有控件的父类:UIView](UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
+   * [Frame和Bounds及尺寸位置](UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
+   * [UITextField UILabel 图文混排](UIKit框架下的各类控件和知识点/uitextfield_uilabel_tu_wen_hun_pai.md)
+* [【Chapter-03 地图定位CoreLocation框架】](地图定位CoreLocation框架/README.md)
+   * [（II）地图定位CoreLocation框架](地图定位CoreLocation框架/iiff09ditu_ding_wei_corelocation_kuang_jia.md)
+   * [（III）MISSAJJ整理的MALocationTool定位工具类](地图定位CoreLocation框架/iiimissajjzheng_li_de_malocationtool_ding_wei_gong.md)
+* [【Chapter-04 蓝牙交互CoreBlueTooth】](蓝牙交互CoreBlueTooth/README.md)
+   * [（II）蓝牙交互GameKit](蓝牙交互CoreBlueTooth/iiff09_lan_ya_jiao_hu_gamekit.md)
+   * [（III）蓝牙交互Mutipeer Connectivity](蓝牙交互CoreBlueTooth/iiiff09_lan_ya_jiaohu_mutipeer_connectivity.md)
+* [【Chapter-05 ReactiveCocoa(RAC)编程思想和MVVM架构进阶】](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
+   * [(II)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.md)
+   * [(III)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/iii_reactivecocoa_racff09_bian_cheng_si_xiang_he_m.md)
+   * [(IV)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/iv_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.md)
+   * [(V) ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/v_reactivecocoaracff09_bian_cheng_si_xiang_he_mvvm.md)
+
 
 
 
