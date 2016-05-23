@@ -33,7 +33,6 @@
 * [Chapter-20（I）蓝牙交互CoreBlueTooth](Chapter-20（I）蓝牙交互CoreBlueTooth/README.md)
    * [（II）蓝牙交互GameKit](Chapter-20（I）蓝牙交互CoreBlueTooth/iiff09_lan_ya_jiao_hu_gamekit.md)
    * [（III）蓝牙交互Mutipeer Connectivity](Chapter-20（I）蓝牙交互CoreBlueTooth/iiiff09_lan_ya_jiaohu_mutipeer_connectivity.md)
-* [Chapter-20（II）蓝牙交互GameKit](Chapter-20（II）蓝牙交互GameKit/README.md)
 * [Chapter-20（III）蓝牙交互Mutipeer Connectivity](Chapter-20（III）蓝牙交互Mutipeer Connectivity/README.md)
 * [Chapter-21 使用Xib引入模型的自定义控件案例](Chapter-21 使用Xib引入模型的自定义控件案例/README.md)
 * [Chapter-22 渐变动画UIViewAnimation的几种方法：位移，缩放，透明](Chapter-22 渐变动画UIViewAnimation的几种方法：位移，缩放，透明/README.md)
