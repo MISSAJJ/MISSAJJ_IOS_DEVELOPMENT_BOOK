@@ -1,5 +1,9 @@
 # UILabel控件-文本
-
+ 
+---
+```objc
+Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
+```
 ###什么是UILabel
 
 - UILabel极其常用，功能比较专一：显示文字
