@@ -21,7 +21,6 @@
 * [Chapter-13 计算行页数 文本宽度 文件及文件夹大小](Chapter-13 计算行页数 文本宽度 文件及文件夹大小/README.md)
 * [Chapter-14 消息推送通知](Chapter-14 消息推送通知/README.md)
 * [Chapter-16 (I) ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（I） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
-* (II)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
 * [Chapter-16（II） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（II） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
    * (II)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
 * [Chapter-16（III） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（III） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
