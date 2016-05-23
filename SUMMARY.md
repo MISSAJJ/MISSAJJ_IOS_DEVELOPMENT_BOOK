@@ -17,7 +17,6 @@
 * [Chapter-07 NSDate NSCalendar时间日期换算](Chapter-07 NSDate NSCalendar时间日期换算/README.md)
 * [Chapter-09 UIAlertController的使用](Chapter-09 UIAlertController的使用/README.md)
 * [Chapter-10 在XIB中设置UIScrollView](Chapter-10 在XIB中设置UIScrollView/README.md)
-* [Chapter-11 UITextField UILabel 图文混排](Chapter-11 UITextField UILabel 图文混排 /README.md)
 * [Chapter-12 assign和weak的区别](Chapter-12 assign和weak的区别/README.md)
 * [Chapter-13 计算行页数 文本宽度 文件及文件夹大小](Chapter-13 计算行页数 文本宽度 文件及文件夹大小/README.md)
 * [Chapter-14 消息推送通知](Chapter-14 消息推送通知/README.md)
