@@ -24,6 +24,7 @@
    * [所有控件的父类:UIView](UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame和Bounds及尺寸位置](UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
    * [UITextField UILabel 图文混排](UIKit框架下的各类控件和知识点/uitextfield_uilabel_tu_wen_hun_pai.md)
+   * UILabel控件-文本
 * [【Chapter-03 地图定位CoreLocation框架】](地图定位CoreLocation框架/README.md)
    * [（II）地图定位CoreLocation框架](地图定位CoreLocation框架/iiff09ditu_ding_wei_corelocation_kuang_jia.md)
    * [（III）MISSAJJ整理的MALocationTool定位工具类](地图定位CoreLocation框架/iiimissajjzheng_li_de_malocationtool_ding_wei_gong.md)
