@@ -26,7 +26,7 @@
    * [UITextField UILabel 图文混排](Chapter-01 UIKit框架下的各类控件和知识点/uitextfield_uilabel_tu_wen_hun_pai.md)
 * [【Chapter-03 地图定位CoreLocation框架】](地图定位CoreLocation框架/README.md)
    * [（II）地图定位CoreLocation框架](地图定位CoreLocation框架/iiff09ditu_ding_wei_corelocation_kuang_jia.md)
-   * [（III）MISSAJJ整理的MALocationTool定位工具类](Chapter-19（I）地图定位CoreLocation框架/iiimissajjzheng_li_de_malocationtool_ding_wei_gong.md)
+   * [（III）MISSAJJ整理的MALocationTool定位工具类](地图定位CoreLocation框架/iiimissajjzheng_li_de_malocationtool_ding_wei_gong.md)
 * [【Chapter-04 蓝牙交互CoreBlueTooth】](Chapter-20（I）蓝牙交互CoreBlueTooth/README.md)
    * [（II）蓝牙交互GameKit](Chapter-20（I）蓝牙交互CoreBlueTooth/iiff09_lan_ya_jiao_hu_gamekit.md)
    * [（III）蓝牙交互Mutipeer Connectivity](Chapter-20（I）蓝牙交互CoreBlueTooth/iiiff09_lan_ya_jiaohu_mutipeer_connectivity.md)
