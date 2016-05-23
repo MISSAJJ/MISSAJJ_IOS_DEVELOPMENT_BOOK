@@ -11,7 +11,6 @@
 * [Chapter-03 相机相簿存图UIImagePicker SDK](Chapter-03 相机相簿存图UIImagePicker SDK/README.md)
 * [Chapter-04 PCH文件的设置创建](Chapter-04 PCH文件的设置创建/README.md)
 * [Chapter-05 颜色相关知识和宏代码](Chapter-05 颜色相关知识和宏代码/README.md)
-* [Chapter-06 frame和bounds及尺寸位置](Chapter-06 frame和bounds的重新认识/README.md)
 * [Chapter-07 NSDate NSCalendar时间日期换算](Chapter-07 NSDate NSCalendar时间日期换算/README.md)
 * [Chapter-08 CocoaPods的使用](Chapter-08 CocoaPods的使用/README.md)
 * [Chapter-09 UIAlertController的使用](Chapter-09 UIAlertController的使用/README.md)
