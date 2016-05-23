@@ -211,11 +211,3 @@ UIView可以称之为控件/视图，屏幕上所有能看到的东西都是UIVi
     self.btn.frame = frame;
 }
 ```
-###UIKit坐标系
-
-
-```objc
-在UIKit中，坐标系的原点(0，0)在左上角，x值向右正向延伸，y值向下正向延伸
-
-```
-![image](UIkit坐标系.png)
