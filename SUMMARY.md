@@ -9,6 +9,7 @@
 * [Chapter-02 UIKit框架下的各类控件和知识点](Chapter-01 UIKit框架下的各类控件和知识点/README.md)
    * [所有控件的父类:UIView](Chapter-01 UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame和Bounds及尺寸位置](Chapter-01 UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
+   * UITextField UILabel 图文混排
 * [Chapter-03 相机相簿存图UIImagePicker SDK](Chapter-03 相机相簿存图UIImagePicker SDK/README.md)
 * [Chapter-04 PCH文件的设置创建](Chapter-04 PCH文件的设置创建/README.md)
 * [Chapter-05 颜色相关知识和宏代码](Chapter-05 颜色相关知识和宏代码/README.md)
