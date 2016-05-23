@@ -29,6 +29,7 @@
 * [Chapter-18 runtime简介和作用](Chapter-18 runtime简介和作用/README.md)
 * [Chapter-19（I）地图定位CoreLocation框架](Chapter-19（I）地图定位CoreLocation框架/README.md)
    * [（II）地图定位CoreLocation框架](Chapter-19（I）地图定位CoreLocation框架/iiff09_di_tu_ding_wei_corelocation_kuang_jia.md)
+   * （III）MISSAJJ整理的MALocationTool定位工具类
 * [Chapter-19（II）地图定位CoreLocation框架](Chapter-19（II）地图定位CoreLocation框架/README.md)
 * [Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类](Chapter-19（III）MISSAJJ整理的MALocationTool定位工具类/README.md)
 * [Chapter-20（I）蓝牙交互CoreBlueTooth](Chapter-20（I）蓝牙交互CoreBlueTooth/README.md)
