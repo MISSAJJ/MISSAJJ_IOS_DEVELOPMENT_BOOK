@@ -5,12 +5,10 @@
 Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
  
 ```
-
-
+  
+UIView可以称之为控件/视图，屏幕上所有能看到的东西都是UIView，按钮（UIButton）、文本（UILabel）都是控件。
 
 所有控件的父类都是UIView，在开发中我们会将有共同属性的类抽取出一个父类（猫/狗/蟑螂抽出一个动物类）。苹果将拥有共同属性的控件类抽取出了UIView类，所有的控件都是继承自UIView类，UIButton/UILabel都继承自UIView(查看头文件)
-
-UIView可以称之为控件/视图，屏幕上所有能看到的东西都是UIView，按钮（UIButton）、文本（UILabel）都是控件。
 
 控件都有一些共同的属性：
 - 尺寸，
