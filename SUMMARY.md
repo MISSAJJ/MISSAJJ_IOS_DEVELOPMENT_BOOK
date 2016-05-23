@@ -13,7 +13,6 @@
 * [Chapter-05 颜色相关知识和宏代码](Chapter-05 颜色相关知识和宏代码/README.md)
 * [Chapter-06 判断NSString字符串或NSArray数组是否为空](Chapter-02 判断NSString字符串或NSArray数组是否为空/README.md)
 * [Chapter-07 NSDate NSCalendar时间日期换算](Chapter-07 NSDate NSCalendar时间日期换算/README.md)
-* [Chapter-08 CocoaPods的使用](Chapter-08 CocoaPods的使用/README.md)
 * [Chapter-09 UIAlertController的使用](Chapter-09 UIAlertController的使用/README.md)
 * [Chapter-10 在XIB中设置UIScrollView](Chapter-10 在XIB中设置UIScrollView/README.md)
 * [Chapter-11 UITextField UILabel 图文混排](Chapter-11 UITextField UILabel 图文混排 /README.md)
