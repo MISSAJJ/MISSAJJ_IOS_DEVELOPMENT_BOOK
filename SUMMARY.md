@@ -23,7 +23,7 @@
 * [Chapter-16 (I) ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（I） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
    * [(II)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（I） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.md)
 * [Chapter-16（II） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（II） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
-   * (II)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
+   * (III)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
 * [Chapter-16（III） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（III） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 * [Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（IV） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
 * [Chapter-16（V） ReactiveCocoa（RAC）编程思想和MVVM架构进阶](Chapter-16（V） ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
