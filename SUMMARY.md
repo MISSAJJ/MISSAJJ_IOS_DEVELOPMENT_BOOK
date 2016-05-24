@@ -40,7 +40,7 @@
    * [Swift 入门介绍](MISSAJJ琴瑟静听Swift基础语言课程笔记/README.md)
    * [常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.md)
    * [逻辑分支](MISSAJJ琴瑟静听Swift基础语言课程笔记/02.md)
-   * 循环
+   * [循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
    * 数组
    * 字典
    * 字符串
