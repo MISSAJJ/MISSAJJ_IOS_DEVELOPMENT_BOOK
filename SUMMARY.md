@@ -7,7 +7,7 @@
    * [CocoaPods的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
    * [项目管理Git常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
 * [★【Chapter-02  MISSAJJ琴瑟静听IOS开发综合笔记】](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
-   * IOS项目开发综合笔记
+   * [IOS项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
    * [PCH文件的设置创建](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
    * [const，static，extern简介、作用和使用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
    * [在XIB中设置UIScrollView](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/zaixib_zhong_she_zhi_uiscrollview.md)
