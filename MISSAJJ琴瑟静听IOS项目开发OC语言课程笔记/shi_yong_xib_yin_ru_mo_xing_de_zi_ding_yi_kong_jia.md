@@ -9,23 +9,23 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 
 ###Xib课程笔记思维导图：
 
-![image](xib笔记流程图.png)
+![image](Images/xib笔记流程图.png)
 
 ###Xib的创建和设置：
 
 - 1,创建Xib文件
 
-![image](Xib文件创建.png)
+![image](Images/Xib文件创建.png)
 
 - 2,创建与Xib对应的类文件
 
 (注意:必须要和Xib文件同名)
 
-![image](Xib类文件创建.png)
+![image](Images/Xib类文件创建.png)
 
 - 3,创建与Xib对应的类文件
 
-![image](Xib设置.png)  
+![image](Images/Xib设置.png)  
 
 ###Xib的使用注意点：
  
@@ -94,7 +94,7 @@ LoadNib(@"MASignAndLoginViewController");
  
  - xib文件如图
 
-![image](MISSAJJ快速宏加载xib案例.png)
+![image](Images/MISSAJJ快速宏加载xib案例.png)
 
 
 - 快速宏加载nib的宏定义
@@ -127,7 +127,7 @@ LoadNib(@"MASignAndLoginViewController");
 
 ###1,Xib文件
 
-![image](案例-Xib文件.png)
+![image](Images/案例-Xib文件.png)
 
 - Xib对应的类.h文件
 
