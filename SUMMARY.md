@@ -31,7 +31,7 @@
    * [（I）不同IOS系统地图定位的注意点](地图定位CoreLocation框架/iff09_bu_tong_ios_xi_tong_di_tu_ding_wei_de_zhu_yi.md)
    * [（II）地图定位CoreLocation框架](地图定位CoreLocation框架/iiff09ditu_ding_wei_corelocation_kuang_jia.md)
    * [（III）MISSAJJ整理的MALocationTool定位工具类](地图定位CoreLocation框架/iiimissajjzheng_li_de_malocationtool_ding_wei_gong.md)
-* [★【Chapter-05 蓝牙交互CoreBlueTooth】](蓝牙交互CoreBlueTooth/README.md)
+* [★【Chapter-05 蓝牙交互BlueTooth】](蓝牙交互CoreBlueTooth/README.md)
    * [（I）蓝牙交互CoreBlueTooth](蓝牙交互CoreBlueTooth/iff09_lan_ya_jiaohu_corebluetooth.md)
    * [（II）蓝牙交互GameKit](蓝牙交互CoreBlueTooth/iiff09_lan_ya_jiao_hu_gamekit.md)
    * [（III）蓝牙交互Mutipeer Connectivity](蓝牙交互CoreBlueTooth/iiiff09_lan_ya_jiaohu_mutipeer_connectivity.md)
