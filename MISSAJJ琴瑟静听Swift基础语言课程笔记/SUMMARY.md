@@ -11,6 +11,8 @@ MISSAJJ整理的Swift基础语言的课程笔记,
 希望能帮助童鞋们巩固记忆!
 ``` 
 ###Chapters目录章节
+
+* [★【Chapter-07 MISSAJJ琴瑟静听Swift基础语言课程笔记】](SUMMARY.md)
    * [Swift-入门介绍](README.md)
    * [Swift-数据类型](12.md)
    * [Swift-常量&变量](01.md)
