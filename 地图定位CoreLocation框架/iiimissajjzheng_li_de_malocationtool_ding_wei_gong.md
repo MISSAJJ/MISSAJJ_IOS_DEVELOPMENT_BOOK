@@ -443,12 +443,6 @@ singleton_implementation(MALocationTool)
     return YES;
 }
 
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    //跳转设置位置授权界面
-    [self showLocationPermissionSetting];
-    
-}
 
 
 #pragma mark===显示位置授权alert
@@ -459,6 +453,15 @@ singleton_implementation(MALocationTool)
     alvertView.delegate = self;
     [alvertView show];
 }
+
+#pragma mark===UIAlertView delegate
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    //跳转设置位置授权界面
+    [self showLocationPermissionSetting];
+    
+}
+
 #pragma mark===跳转设置位置授权界面
 -(void)showLocationPermissionSetting;
 {
