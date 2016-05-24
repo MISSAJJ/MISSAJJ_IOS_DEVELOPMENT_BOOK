@@ -1,7 +1,11 @@
 # Summary
-
-
-
+---
+```objc
+Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
+此Swift基础语言笔记融合了不同版本的课程笔记
+希望能帮助童鞋们巩固记忆!
+```
+  
    * [Swift 入门介绍](README.md)
    * [Swift中的数据类型](12.md)
    * [常量&变量](01.md)
