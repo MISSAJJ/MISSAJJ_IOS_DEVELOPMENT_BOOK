@@ -196,7 +196,7 @@ vc.tabBarItem.selectedImage = selectedImage;
 ```
 
 - 直接在xcassets文件中配置
-![image](../Images/Snip20151105_1.png)
+![image](Snip20151105_1.png)
 
 ## 设置TabBarItem的文字属性
 - 直接设置每一个tabBarItem对象
