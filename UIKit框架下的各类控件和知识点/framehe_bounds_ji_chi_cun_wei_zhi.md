@@ -11,7 +11,7 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
 在UIKit中，坐标系的原点(0，0)在左上角，x值向右正向延伸，y值向下正向延伸
 
 ```
-![image](UIkit坐标系.png)
+![image](Images/UIkit坐标系.png)
 
 
 - frame
@@ -23,7 +23,7 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
     - scrollView.bounds.origin == scrollView.contentOffset
 
 ## bounds和frame的区别
-![](bounds和frame的区别.png)
+![](Images/bounds和frame的区别.png)
 
 ## 矩形框和内容的理解
 - 矩形框
