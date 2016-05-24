@@ -8,11 +8,11 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
 
 - UILabel极其常用，功能比较专一：显示文字
 
-![image](UILabel图片 1.png)
+![image](Images/UILabel图片 1.png)
 
 ###UILabel知识点
 
-![image](UILabel.png)
+![image](Images/UILabel.png)
 
 ###UILabel的常见属性
 ```objc
@@ -98,16 +98,16 @@ UIFont代表字体，常见创建方法有以下几个：
 
 - 要想让UILabel自动换行，设置Lines为0即可
 
-![image](UILabel基本设置1.png)
+![image](Images/UILabel基本设置1.png)
 
 -  让UILabel的文字居中显示
 
-![image](UILabel基本设置2.png)
+![image](Images/UILabel基本设置2.png)
 
 - UILabel更多设置
 - 
 
-![image](UILabel基本设置3.png)
+![image](Images/UILabel基本设置3.png)
 
 
 ## 计算文字的宽度
