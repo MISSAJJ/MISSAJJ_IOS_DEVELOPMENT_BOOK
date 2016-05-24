@@ -1,7 +1,7 @@
 ###MISSAJJ整理的IOS项目开发电子书
 ---
 ```objc
-Update更新：2016年5月23日 By {MISSAJJ琴瑟静听} 
+Update更新：2016年5月24日 By {MISSAJJ琴瑟静听} 
 
 友情提示：
 “高效工具资源及分享”里的免费MAC软件下载地址随时会失效，
@@ -32,7 +32,7 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
 亦抒发和宣泄自己对于IOS开发的喜爱。
 
 希望能帮助一些学习开发的新手攻城狮，
-也是一本用心良苦想送给儿子W的的IOS启蒙书……
+也是一本用心良苦想送给儿子Winnie的IOS启蒙书……
 ```  
 
 
@@ -40,10 +40,14 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
 
 
 * [Introduction前言介绍](README.md)
+
+
 * [★MISSAJJ高效工具资源分享★](Share Resources 工具资源及分享/README.md)
    * [Markdown语法整理](Share Resources 工具资源及分享/markdownyu_fa_zheng_li.md)
    * [CocoaPods的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
    * [项目管理Git常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
+
+
 * [【Chapter-01  MISSAJJ琴瑟静听IOS开发综合笔记】](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
    * [PCH文件的设置创建](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
    * [const，static，extern简介、作用和使用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
@@ -59,22 +63,50 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
    * [相机相簿存图UIImagePicker SDK](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiang_jixiang_bu_cun_tu_uiimagepicker_sdk.md)
    * [消息推送通知](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiao_xi_tui_song_tong_zhi.md)
    * [Runtime简介和作用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/runtimejian_jie_he_zuo_yong.md)
+
+
 * [【Chapter-02  UIKit框架下的各类控件和知识点】](UIKit框架下的各类控件和知识点/README.md)
    * [所有控件的父类:UIView](UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame和Bounds及尺寸位置](UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
    * [UITextField UILabel 图文混排](UIKit框架下的各类控件和知识点/uitextfield_uilabel_tu_wen_hun_pai.md)
    * [UILabel控件-文本](UIKit框架下的各类控件和知识点/uilabelkong_4ef6-_wen_ben.md)
+
+
 * [【Chapter-03 地图定位CoreLocation框架】](地图定位CoreLocation框架/README.md)
    * [（II）地图定位CoreLocation框架](地图定位CoreLocation框架/iiff09ditu_ding_wei_corelocation_kuang_jia.md)
    * [（III）MISSAJJ整理的MALocationTool定位工具类](地图定位CoreLocation框架/iiimissajjzheng_li_de_malocationtool_ding_wei_gong.md)
+
+
 * [【Chapter-04 蓝牙交互CoreBlueTooth】](蓝牙交互CoreBlueTooth/README.md)
    * [（II）蓝牙交互GameKit](蓝牙交互CoreBlueTooth/iiff09_lan_ya_jiao_hu_gamekit.md)
    * [（III）蓝牙交互Mutipeer Connectivity](蓝牙交互CoreBlueTooth/iiiff09_lan_ya_jiaohu_mutipeer_connectivity.md)
+
+
 * [【Chapter-05 ReactiveCocoa(RAC)编程思想和MVVM架构进阶】](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
    * [(II)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.md)
    * [(III)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/iii_reactivecocoa_racff09_bian_cheng_si_xiang_he_m.md)
    * [(IV)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/iv_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.md)
    * [(V) ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/v_reactivecocoaracff09_bian_cheng_si_xiang_he_mvvm.md)
+
+
+* [【Chapter-06 MISSAJJ琴瑟静听Swift基础语言课程笔记】](MISSAJJ琴瑟静听Swift基础语言课程笔记/SUMMARY.md)
+   * [Swift 入门介绍](MISSAJJ琴瑟静听Swift基础语言课程笔记/README.md)
+   * [Swift中的数据类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/12.md)
+   * [常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.md)
+   * [逻辑分支](MISSAJJ琴瑟静听Swift基础语言课程笔记/02.md)
+   * [循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
+   * [字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.md)
+   * [数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.md)
+   * [字典](MISSAJJ琴瑟静听Swift基础语言课程笔记/06.md)
+   * [元祖](MISSAJJ琴瑟静听Swift基础语言课程笔记/13.md)
+   * [可选类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/14.md)
+   * [函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/07.md)
+   * [Swift中类的定义](MISSAJJ琴瑟静听Swift基础语言课程笔记/15.md)
+   * [类的构造函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/16.md)
+   * [闭包](MISSAJJ琴瑟静听Swift基础语言课程笔记/08.md)
+   * [懒加载](MISSAJJ琴瑟静听Swift基础语言课程笔记/09.md)
+   * [getter & setter](MISSAJJ琴瑟静听Swift基础语言课程笔记/10.md)
+   * [ATS](MISSAJJ琴瑟静听Swift基础语言课程笔记/11.md)
 
 
 
@@ -98,7 +130,7 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
 
 ```objc 
 本人目前正在尝试将过去的项目陆续编译成Swift语言，
-同时也会陆续整理一本相关Swift语言开发的电子书, 
+同时也会陆续整理相关Swift语言开发的课程笔记, 
 希望能有更多的狮子一起共勉探讨学习，愉快奔跑！ 
 联系方式: QQ 996174446 ［验证：IOS攻城狮］
 ``` 
