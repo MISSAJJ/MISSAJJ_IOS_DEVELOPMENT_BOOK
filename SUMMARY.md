@@ -44,7 +44,7 @@
    * [字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.md)
    * [数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.md)
    * [字典](MISSAJJ琴瑟静听Swift基础语言课程笔记/06.md)
-   * 函数
+   * [函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/07.md)
    * 闭包
    * 懒加载
    * getter & setter
