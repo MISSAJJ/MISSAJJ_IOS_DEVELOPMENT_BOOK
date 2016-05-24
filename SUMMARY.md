@@ -48,7 +48,7 @@
    * [Swift-逻辑分支](MISSAJJ琴瑟静听Swift基础语言课程笔记/02.md)
    * [Swift-循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
    * [Swift-字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.md)
-   * [Swift数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.md)
+   * [Swift-数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.md)
    * [Swift-字典](MISSAJJ琴瑟静听Swift基础语言课程笔记/06.md)
    * [元祖](MISSAJJ琴瑟静听Swift基础语言课程笔记/13.md)
    * [可选类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/14.md)
