@@ -65,6 +65,32 @@
 * 到 2015 年底，iOS 9.0 正式发布的同时，Swift 势必大行其道！
 * 但是国内大部分公司还在观望
 
+### Swift与Objective-C
+
+- 是否要从0开始呢?
+  - 很多人有个疑惑，新的Swift语言一出，大家都要从开始学语法
+  - 现在使用Objective-C的iOS程序员 跟 其他行业的非iOS程序员站在了同一条起跑线？大家从零开始
+
+
+- 个人观点
+  - Swift是一门新的语言，语法难度对每个程序员都差不多，从学习Swift的语法角度看，大家是站在同一条起跑线
+  - 从使用Swift做iOS开发的角度看，使用Objective-C的老牌iOS程序员更占优势，因为从Objective-C转为Swift去做iOS开发，仅仅是书写的格式变换了，iOS开发的步骤、思想、框架，都没有改变
+
+###重要性
+
+- 苹果目前在大力推广Swift
+- 斯坦福大学的公开课目前也是使用Swift在授课.因为以后Swift必将代替OC
+- 题外话:我们同学去面试,面试官问是否会Swift,如果会,我们下个项目直接用Swift来写.你可以教我们Swift.
+- 个人建议:
+  - 先掌握Swift最基本的语法
+  - 高级/特殊的功能随着学习的深入再深入研究
+  - 千万不要浮躁(前面班级经验)
+    - Swift并不难
+    - 但是语法和OC区别非常非常大
+    - 如果是一个听一听,听不懂就算了的心态.一定是学不好的
+    - 如果想要学习,就认真听讲,好好练习
+
+
 ### 资源网站
 
 * 《The Swift Programming Language》中文版 [http://numbbbbb.gitbooks.io/-the-swift-programming-language-/](http://numbbbbb.gitbooks.io/-the-swift-programming-language-/)
