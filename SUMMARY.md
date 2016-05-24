@@ -53,7 +53,7 @@
    * [Swift-元祖](MISSAJJ琴瑟静听Swift基础语言课程笔记/13.md)
    * [Swift-可选类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/14.md)
    * [Swift-函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/07.md)
-   * [Swift中类的定义](MISSAJJ琴瑟静听Swift基础语言课程笔记/15.md)
+   * [Swift-类的定义](MISSAJJ琴瑟静听Swift基础语言课程笔记/15.md)
    * [类的构造函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/16.md)
    * [闭包](MISSAJJ琴瑟静听Swift基础语言课程笔记/08.md)
    * [懒加载](MISSAJJ琴瑟静听Swift基础语言课程笔记/09.md)
