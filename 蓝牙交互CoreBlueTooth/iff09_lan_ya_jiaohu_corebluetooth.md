@@ -26,7 +26,7 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 * CBCentralManager：中心设备（用来连接到外部设备的管家）
 * CBPeripheralManager：外部设备（第三方的蓝牙4.0设备）
 
-![image](BLE.jpeg)
+![image](Images/BLE.jpeg)
 
 ###开发步骤
 * 建立中心管家
