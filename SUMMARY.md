@@ -47,10 +47,10 @@
    * [字典](MISSAJJ琴瑟静听Swift基础语言课程笔记/06.md)
    * [元祖](MISSAJJ琴瑟静听Swift基础语言课程笔记/13.md)
    * [可选类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/14.md)
+   * [Swift中类的定义](MISSAJJ琴瑟静听Swift基础语言课程笔记/15.md)
    * [函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/07.md)
    * [闭包](MISSAJJ琴瑟静听Swift基础语言课程笔记/08.md)
    * [懒加载](MISSAJJ琴瑟静听Swift基础语言课程笔记/09.md)
    * [getter & setter](MISSAJJ琴瑟静听Swift基础语言课程笔记/10.md)
    * [ATS](MISSAJJ琴瑟静听Swift基础语言课程笔记/11.md)
-   * [Swift中类的定义](MISSAJJ琴瑟静听Swift基础语言课程笔记/15.md)
 
