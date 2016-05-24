@@ -35,7 +35,7 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 
 - 在前台定位基础上, 勾选后台模式Location updates image
 
-![image](勾选后台模式location udpates.png)
+![image](Images/勾选后台模式location udpates.png)
 
 ####3. 额外设置
 
