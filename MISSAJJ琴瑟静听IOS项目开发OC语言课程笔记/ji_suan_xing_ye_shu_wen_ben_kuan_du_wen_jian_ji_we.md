@@ -81,7 +81,7 @@ rowsCount = (总数  +  每行显示的最大数量 - 1) / 每行显示的最大
 }
 @end
 
-XMGLog(@"%zd", @"/Users/xiaomage/Desktop".fileSize);
+XMGLog(@"%zd", @"/Users/MISSAJJ/Desktop".fileSize);
 ```
 
 ## 计算文字的宽度
