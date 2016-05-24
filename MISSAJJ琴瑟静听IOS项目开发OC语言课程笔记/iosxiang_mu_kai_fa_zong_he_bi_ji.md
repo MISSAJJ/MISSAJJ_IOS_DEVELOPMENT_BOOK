@@ -52,12 +52,12 @@ Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
 
 选中项目—>General—>Main Interface->选择加载storyboard
 
-![image](Main Interface.png) 
+![image](Images/Main Interface.png) 
 storyboard内可以添加多个控制器，但项目启动的时候加载哪一个控制器可以这样设置:
 
 选中storyboard—>如果没有VC控制器就自己拖入一个—>选中控制器—>右侧第三个按钮(Attributes)—>is Initial View Controller （打钩）
 
-![image](is Initial View Controller.png)
+![image](Images/is Initial View Controller.png)
 
 ##控制器
 
@@ -196,7 +196,7 @@ vc.tabBarItem.selectedImage = selectedImage;
 ```
 
 - 直接在xcassets文件中配置
-![image](Snip20151105_1.png)
+![image](Images/Snip20151105_1.png)
 
 ## 设置TabBarItem的文字属性
 - 直接设置每一个tabBarItem对象
@@ -324,12 +324,12 @@ self.interactivePopGestureRecognizer.delegate = self;
     - 错误地将一个UIViewController当做UITableViewController来用
 - 错误做法
 
-![](../Images/Snip20151108_134.png)
+![image](Images/Snip20151108_134.png)
 
 - 正确做法
 
-![](../Images/Snip20151108_135.png)
-![](../Images/Snip20151108_137.png)
+![image](Images/Snip20151108_135.png)
+![image](Images/Snip20151108_137.png)
 
 ## contentInset的调整
 - 默认情况下, 如果一个控制器A处在导航控制器管理中, 并且控制器A的第一个子控件是UIScrollView, 那么就会自动调整这个UIScrollView的contentInset
@@ -355,12 +355,12 @@ self.label.text = @"534534534\n5345345\n5345";
 
 ## 修改状态栏样式
 - 使用UIApplication来管理
-![](../Images/Snip20151108_152.png)
+![image](Images/Snip20151108_152.png)
 ```objc
 [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 ```
 在Info.plist中做了图中的配置,可能会出现以下警告信息
-![](../Images/Snip20151108_153.png)
+![image](Images/Snip20151108_153.png)
 
 - 使用UIViewController来管理
 
@@ -374,7 +374,7 @@ self.label.text = @"534534534\n5345345\n5345";
 ```
 
 ## 在xib\storyboard中使用KVC
-![](../Images/Snip20151108_177.png)
+![image](Images/Snip20151108_177.png)
 
 
 
