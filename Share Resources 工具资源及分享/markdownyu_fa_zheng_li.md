@@ -12,7 +12,7 @@ GitBook就是基于markdown语言编辑的网站，github的README更是支持�
 
 （图片加载中， 请耐心等待……）
 
-![image](MISSAJJ-GitBook.png)
+![image](Images/MISSAJJ-GitBook.png)
 
 
 ###使用 Markdown 的优点
@@ -74,11 +74,11 @@ Mou是一个帮助开发者用Markdown语言编辑的编辑器，下载网址：
 
 （图片加载中， 请耐心等待……）
 
-![image](mou.png)
+![image](Images/mou.png)
 
 以下是打开Mou应用默认的部分语法帮助内容，部分作了中文标注和提示，整理至此便于童鞋们查阅。
 
-![Mou icon](Mou_128.png)
+![Mou icon](Images/Mou_128.png)
 
 ## Overview
 
