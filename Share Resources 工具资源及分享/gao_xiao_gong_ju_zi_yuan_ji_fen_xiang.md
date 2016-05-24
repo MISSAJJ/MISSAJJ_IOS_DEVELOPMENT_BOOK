@@ -73,8 +73,7 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，帮助�
 以下就是Demo演示的Gif动画图（GIF动画演示图有1.5M,请耐心等待demo动画加载）
 
 
-
-![image](Images/MAButtonTool2.gif)
+![image](https://raw.githubusercontent.com/MISSAJJ/MAButtonTool/master/MAButtonTool2.gif)
 
 - 录制这个gif图片的工具是LiceCap
  - 分享给大家百度网盘下载地址（免费的哦！）
