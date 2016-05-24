@@ -1,7 +1,7 @@
 # Summary
 
-   * [Swift 入门介绍](MISSAJJ琴瑟静听Swift基础语言课程笔记/README.md)
-   * [Swift中的数据类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/12.md)
+   * [Swift 入门介绍](README.md)
+   * [Swift中的数据类型](12.md)
    * [常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.md)
    * [逻辑分支](MISSAJJ琴瑟静听Swift基础语言课程笔记/02.md)
    * [循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
