@@ -23,13 +23,13 @@ IOS系统的UIKit基础控件有很多(如图: UIKit控件概览)
 
 
 ###UIKit框架知识点
-![image](UIKIT.png)
+![image](Images/UIKIT.png)
 
 
 
 ###UIKit控件概览
 
-![image](控件概述.png)
+![image](Images/控件概述.png)
 
 
 
