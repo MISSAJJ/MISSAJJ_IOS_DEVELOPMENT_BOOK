@@ -14,7 +14,7 @@
    * [使用Xib引入模型的自定义控件案例](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/shi_yong_xib_yin_ru_mo_xing_de_zi_ding_yi_kong_jia.md)
    * [assign和weak的区别](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/assignhe_weak_de_qu_bie.md)
    * [判断NSString字符串或NSArray数组是否为空](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/panduan_nsstring_zi_fu_chuan_huo_nsarray_shu_zu_sh.md)
-   * [颜色相关知识和宏代码](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/yan_se_xiang_guan_zhi_shi_he_hong_dai_ma.md)
+   * [颜色相关知识和宏代码](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/yan_se_xiang_guan_zhi_shi_he_hong_dai_ma.md)
    * [渐变动画UIViewAnimation的几种方法：位移，缩放，透明](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/jian_bian_dong_hua_uiviewanimation_de_ji_zhong_fan.md)
    * [NSDate NSCalendar时间日期换算](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/nsdate_nscalendarshi_jian_ri_qi_huan_suan.md)
    * [UIAlertController的使用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/uialertcontrollerde_shi_yong.md)
