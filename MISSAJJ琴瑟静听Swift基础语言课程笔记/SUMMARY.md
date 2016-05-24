@@ -1,6 +1,6 @@
 # Summary
 
-* [Swift 入门](README.md)
+* [Swift 入门介绍](README.md)
    * [常量&变量](01.md)
    * [逻辑分支](02.md)
    * [循环](03.md)
