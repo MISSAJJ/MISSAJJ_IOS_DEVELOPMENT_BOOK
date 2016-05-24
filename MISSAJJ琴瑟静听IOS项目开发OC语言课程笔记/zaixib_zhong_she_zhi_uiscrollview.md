@@ -11,25 +11,25 @@ Update更新：2016年5月9日 By {MISSAJJ琴瑟静听}
 - 设置A距离UIScrollView上下左右间距都为0
 - 往A中再添加其他子控件
 
-![](Snip20151109_228.png)
+![image](Images/Snip20151109_228.png)
 - 上下滚动(垂直滚动)
     - 设置A的高度(这个高度就是UIScrollView的内容高度: contentSize.height)
 
-    ![](Snip20151109_202.png)
+    ![image](Images/Snip20151109_202.png)
     - 设置A在UIScrollView中左右居中(水平居中)
 
-    ![](Snip20151109_203.png)
+    ![image](Images/Snip20151109_203.png)
 - 左右滚动(水平滚动)
     - 设置A的宽度(这个宽度就是UIScrollView的内容宽度: contentSize.width)
 
-    ![](Snip20151109_231.png)
+    ![image](Images/Snip20151109_231.png)
     - 设置A在UIScrollView中上下居中(垂直居中)
 
-    ![](Snip20151109_230.png)
+    ![image](Images/Snip20151109_230.png)
 - 上下左右滚动(水平垂直滚动)
     - 设置A的宽度(这个宽度就是UIScrollView的内容宽度: contentSize.width)
     - 设置A的高度(这个高度就是UIScrollView的内容高度: contentSize.height)
 
-    ![](Snip20151109_232.png)
+    ![image](Images/Snip20151109_232.png)
     
-    ![](Snip20151109_229.png)
+    ![image](Images/Snip20151109_229.png)
