@@ -7,6 +7,7 @@ Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
 
 ```objc
 IOS系统的UIKit基础控件有很多,
+如图: UIKit控件概览
 会陆续添加各种控件的知识点,不定期更新......
  
 ```
@@ -18,3 +19,12 @@ IOS系统的UIKit基础控件有很多,
    * [Frame和Bounds及尺寸位置](framehe_bounds_ji_chi_cun_wei_zhi.md)
    * [UITextField UILabel 图文混排](uitextfield_uilabel_tu_wen_hun_pai.md)
    * [UILabel控件-文本](uilabelkong_4ef6-_wen_ben.md)
+
+
+
+###UIKit控件概览
+
+![image](控件概述.png)
+
+
+
