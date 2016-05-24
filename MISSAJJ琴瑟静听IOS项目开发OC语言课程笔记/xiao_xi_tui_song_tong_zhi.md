@@ -25,13 +25,13 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 - 推送通知的呈现样式(了解)
    - 在屏幕顶部显示一块横幅
     
-![image](Snip20151027_56.png)
+![image](Images/Snip20151027_56.png)
    - 在屏幕中间弹出一个UIAlertView
    
-![image](Snip20151027_57.png)
+![image](Images/Snip20151027_57.png)
    - 锁屏界面也可以显示
    
-![image](Snip20151027_58.png)
+![image](Images/Snip20151027_58.png)
    - 收到通知时,同时播放音效.
    - 收到通知时,改变APP图标上的数字
 
@@ -157,7 +157,7 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
 
 - 原理图
 
- ![image](Snip20151027_60.png)
+ ![image](Images/Snip20151027_60.png)
 
 - 为什么淘宝服务器不直接推消息给用户?
   - 在通常情况下服务器端是不能主动向客户端推消息的.
@@ -180,7 +180,7 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
     - 客户端到苹果的APNs注册即可获得.
 - 完整的流程图
 
-![image](Snip20151027_61.png)
+![image](Images/Snip20151027_61.png)
 ####四.如何做远程通知
 
 - 首先,BundleID对应的APPID必须是明确的(特殊功能)
@@ -196,32 +196,32 @@ UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTy
 
 - 选择明确的APPID,并且将远程通知功能选中
 
-![image](Snip20151027_62.png)
+![image](Images/Snip20151027_62.png)
 
-![image](Snip20151027_64.png)
+![image](Images/Snip20151027_64.png)
 - 显示Push Notifications并非Enabled,而是Configurable.
 
-![image](Snip20151027_65.png)
+![image](Images/Snip20151027_65.png)
  - 需要配置对应的证书
 
 ####二.证书的配置
 
 - 在Certificates中配置证书
  - 选择证书的类型(调试和发布都需要配置)
- ![image](Snip20151027_66.png)
+ ![image](Images/Snip20151027_66.png)
  - 选择为哪一个APPID配置证书
 
-![image](Snip20151027_68.png)
+![image](Images/Snip20151027_68.png)
  - 其他步骤同真机调试和发布程序
  - 配置完成后获得两个证书文件
 
-![image](Snip20151027_69.png)
+![image](Images/Snip20151027_69.png)
  - 回到APPID处,已经变成了enabled
 
 - 配置描述文件
  - 和真机描述文件完全一致
 
-![image](Snip20151027_71.png)
+![image](Images/Snip20151027_71.png)
 
 
 
@@ -263,13 +263,13 @@ if ([UIDevice currentDevice].systemVersion.doubleValue >= 8.0) {
 - 使用该程序需要修改一些内容
  - 编译程序,报错的行注释掉
 
-![image](Snip20151027_72.png)
+![image](Images/Snip20151027_72.png)
  - 将调试的cer证书,拖入该项目的mainBundle中,并且修改名字为apn.cer
 
-![image](Snip20151028_74.png)
+![image](Images/Snip20151028_74.png)
 - 运动pushMeBaby程序
 
-![image](Snip20151028_75.png)
+![image](Images/Snip20151028_75.png)
 - 注意:填写的内容
  - 填写推送给的DeviceToken
  - 添加推送的内容:固定格式
