@@ -36,8 +36,12 @@ Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
 ```  
 
 
-###Chapters目录章节 
-
+###Chapters目录章节
+```
+注意: 如果是通过电脑在GitBook网站在线阅读,
+点以下章节目录链接会无效,请直接点网站右边【READ】按钮开始阅读
+手机端和github阅读可以点以下目录章节链接跳转阅读。
+```
 
 * [Introduction前言介绍](README.md)
 
