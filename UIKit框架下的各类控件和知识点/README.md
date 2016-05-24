@@ -12,8 +12,7 @@ IOS系统的UIKit基础控件有很多(如图: UIKit控件概览)
 ```
 
 
-* [★【Chapter-03  UIKit框架下的各类控件和知识点】](README.md)
-   * [UIKit框架下的各类控件和知识点](uikitkuang_jia_xia_de_ge_lei_kong_jian_he_zhi_shi_.md)
+* [★【Chapter-03  UIKit框架下的各类控件和知识点】](README.md) 
    * [所有控件的父类:UIView](suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame和Bounds及尺寸位置](framehe_bounds_ji_chi_cun_wei_zhi.md)
    * [UITextField UILabel 图文混排](uitextfield_uilabel_tu_wen_hun_pai.md)
