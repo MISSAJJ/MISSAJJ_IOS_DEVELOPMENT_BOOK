@@ -1,4 +1,4 @@
-#Chapter-05 蓝牙交互CoreBlueTooth
+#Chapter-05 蓝牙交互BlueTooth
 
 ---
 ```objc
