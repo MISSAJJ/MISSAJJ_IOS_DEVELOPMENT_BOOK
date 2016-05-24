@@ -9,7 +9,7 @@
 * [★【Chapter-02  MISSAJJ琴瑟静听IOS开发综合笔记】](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/README.md)
    * [IOS项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
    * [PCH文件的设置创建](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
-   * [const，static，extern简介、作用和使用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
+   * [const，static，extern简介、作用和使用](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
    * [在XIB中设置UIScrollView](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/zaixib_zhong_she_zhi_uiscrollview.md)
    * [使用Xib引入模型的自定义控件案例](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/shi_yong_xib_yin_ru_mo_xing_de_zi_ding_yi_kong_jia.md)
    * [assign和weak的区别](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/assignhe_weak_de_qu_bie.md)
