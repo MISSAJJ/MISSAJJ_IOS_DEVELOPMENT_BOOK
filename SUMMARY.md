@@ -18,7 +18,7 @@
    * [渐变动画UIViewAnimation的几种方法：位移，缩放，透明](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/jian_bian_dong_hua_uiviewanimation_de_ji_zhong_fan.md)
    * [NSDate NSCalendar时间日期换算](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/nsdate_nscalendarshi_jian_ri_qi_huan_suan.md)
    * [UIAlertController的使用](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/uialertcontrollerde_shi_yong.md)
-   * [计算行页数 文本宽度 文件及文件夹大小](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/ji_suan_xing_ye_shu_wen_ben_kuan_du_wen_jian_ji_we.md)
+   * [计算行页数 文本宽度 文件及文件夹大小](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/ji_suan_xing_ye_shu_wen_ben_kuan_du_wen_jian_ji_we.md)
    * [相机相簿存图UIImagePicker SDK](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiang_jixiang_bu_cun_tu_uiimagepicker_sdk.md)
    * [消息推送通知](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiao_xi_tui_song_tong_zhi.md)
    * [Runtime简介和作用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/runtimejian_jie_he_zuo_yong.md)
