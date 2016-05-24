@@ -20,7 +20,7 @@
    * [UIAlertController的使用](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/uialertcontrollerde_shi_yong.md)
    * [计算行页数 文本宽度 文件及文件夹大小](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/ji_suan_xing_ye_shu_wen_ben_kuan_du_wen_jian_ji_we.md)
    * [相机相簿存图UIImagePicker SDK](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/xiang_jixiang_bu_cun_tu_uiimagepicker_sdk.md)
-   * [消息推送通知](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiao_xi_tui_song_tong_zhi.md)
+   * [消息推送通知](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/xiao_xi_tui_song_tong_zhi.md)
    * [Runtime简介和作用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/runtimejian_jie_he_zuo_yong.md)
 * [★【Chapter-03  UIKit框架下的各类控件和知识点】](UIKit框架下的各类控件和知识点/README.md)
    * [所有控件的父类:UIView](UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
