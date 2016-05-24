@@ -43,10 +43,10 @@
    * [循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
    * [字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.md)
    * [数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.md)
+   * 字典
    * 函数
    * 闭包
    * 懒加载
    * getter & setter
    * ATS
-   * 字典
 
