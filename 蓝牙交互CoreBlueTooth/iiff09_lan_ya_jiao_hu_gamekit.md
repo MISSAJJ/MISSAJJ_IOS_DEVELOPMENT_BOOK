@@ -150,7 +150,7 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 		* 所以我们必须实现这个方法才能拿到接收到的数据，这个回调方法方法在Xcode 7之前的版本的解释如图：
 
 
-![image](回调方法.png)
+![image](Images/回调方法.png)
 
 ```objc
 
