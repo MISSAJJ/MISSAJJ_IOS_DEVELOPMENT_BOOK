@@ -44,7 +44,7 @@
 * [★【Chapter-07 MISSAJJ琴瑟静听Swift基础语言课程笔记】](MISSAJJ琴瑟静听Swift基础语言课程笔记/SUMMARY.md)
    * [Swift-入门介绍](MISSAJJ琴瑟静听Swift基础语言课程笔记/README.md)
    * [Swift-数据类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/12.md)
-   * [Swift常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.md)
+   * [Swift-常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.md)
    * [Swift逻辑分支](MISSAJJ琴瑟静听Swift基础语言课程笔记/02.md)
    * [Swift循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
    * [Swift字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.md)
