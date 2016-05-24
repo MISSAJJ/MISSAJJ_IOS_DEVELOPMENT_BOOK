@@ -5,10 +5,11 @@ Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
 ```
 
 ```
-MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，
-帮助大家一起提高开发效率及提升技术能力，
-欢迎大家联系分享资源。 
+MISSAJJ整理的OC语言部分的课程笔记,
+整理笔记的同时也是在温故而知新,
+融入了所学过的IOS视频教程笔记和自己的点滴体会
 ```
+###Chapters目录章节
 
 * [★【Chapter-02  MISSAJJ琴瑟静听IOS开发综合笔记】](README.md)
    * [IOS项目开发综合笔记](iosxiang_mu_kai_fa_zong_he_bi_ji.md)
