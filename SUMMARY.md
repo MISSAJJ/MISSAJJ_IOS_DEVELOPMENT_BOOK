@@ -41,8 +41,8 @@
    * [常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.md)
    * [逻辑分支](MISSAJJ琴瑟静听Swift基础语言课程笔记/02.md)
    * [循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
-   * [数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.md)
    * [字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.md)
+   * [数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.md)
    * 函数
    * 闭包
    * 懒加载
