@@ -7,6 +7,7 @@
    * [CocoaPods的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
    * [项目管理Git常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
 * [★【Chapter-02  MISSAJJ琴瑟静听IOS开发综合笔记】](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/README.md)
+   * IOS项目开发综合笔记
    * [PCH文件的设置创建](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
    * [const，static，extern简介、作用和使用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
    * [在XIB中设置UIScrollView](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/zaixib_zhong_she_zhi_uiscrollview.md)
@@ -21,7 +22,6 @@
    * [相机相簿存图UIImagePicker SDK](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiang_jixiang_bu_cun_tu_uiimagepicker_sdk.md)
    * [消息推送通知](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/xiao_xi_tui_song_tong_zhi.md)
    * [Runtime简介和作用](Chapter-01 MISSAJJ琴瑟静听IOS项目开发笔记/runtimejian_jie_he_zuo_yong.md)
-   * IOS项目开发综合笔记
 * [★【Chapter-03  UIKit框架下的各类控件和知识点】](UIKit框架下的各类控件和知识点/README.md)
    * [所有控件的父类:UIView](UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame和Bounds及尺寸位置](UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
