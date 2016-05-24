@@ -46,7 +46,7 @@
    * [Swift中的数据类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/12.md)
    * [Swift常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.md)
    * [Swift逻辑分支](MISSAJJ琴瑟静听Swift基础语言课程笔记/02.md)
-   * [循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
+   * [Swift循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.md)
    * [字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.md)
    * [数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.md)
    * [字典](MISSAJJ琴瑟静听Swift基础语言课程笔记/06.md)
