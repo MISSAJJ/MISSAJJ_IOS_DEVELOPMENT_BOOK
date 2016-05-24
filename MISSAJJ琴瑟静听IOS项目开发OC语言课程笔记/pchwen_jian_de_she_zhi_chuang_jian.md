@@ -27,7 +27,7 @@ Xcode老版本会自动为我们创建PCH文件，但自Xcode6之后创建项目
 
 ![image](设置PCH文件目录.png)
 ## PCH文件可能引发的错误
-![image](../Images/Snip20151105_8.png)
+![image](Snip20151105_8.png)
 - 解决方案
 
 ```objc
@@ -50,12 +50,12 @@ Xcode老版本会自动为我们创建PCH文件，但自Xcode6之后创建项目
 
 ## 在Build Setting中配置宏
 - 如果项目中有些宏找不到, 可能是配置在Build Setting中
-![image](../Images/Snip20151105_9.png)
+![image](Snip20151105_9.png)
 
 - 注意点:宏的名字不能全部是小写字母
 
 - 如果宏的名字全部是小写, 会出现以下错误
-![image](../Images/Snip20151105_10.png)
+![image](Snip20151105_10.png)
 ## 常用PCH文件内的宏定义
 
 请参考这份MISSAJJ整理的PCH文件
