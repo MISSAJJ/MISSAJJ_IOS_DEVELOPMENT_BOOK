@@ -174,3 +174,17 @@ defaults write com.apple.finder AppleShowAllFiles -bool false 此命令关闭显
 
 ![image](images/CreateProject/看到隐藏文件.png)
 
+###在Xcode创建创建和Git克隆下来的项目同步的Swift项目
+
+- Xcode创建项目
+
+
+![image](images/CreateProject/创建Swift项目.png)
+
+- 选择 Git克隆下来的项目文件夹
+
+![image](images/CreateProject/选择Swift项目文件夹.png)
+
+- 项目创建成功
+
+![image](images/CreateProject/项目创建成功.png)
