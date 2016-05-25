@@ -76,7 +76,7 @@
        * [0.4.3. 设置未登录信息](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-03-loginlogic.md)
        * [0.4.4. 首页动画](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-04-homeanimation.md)
        * [0.4.5. 登录&注册代理回调](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-05-logindelegate.md)
-       * 0.4.6. 设置全局外观
+       * [0.4.6. 设置全局外观](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-06-setupappearance.md)
        * 0.4.7. 阶段性小结
    * 0.5. 代码评审(Code Review)
 
