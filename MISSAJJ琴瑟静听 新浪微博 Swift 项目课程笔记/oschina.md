@@ -120,19 +120,34 @@ $ git clone git@git.oschina.net:xxx/ProjectName.git
     + ssh方式：git@git.oschina.net:MISSAJJ/MASINAWEIBO.git
 
 
-* 添加 `gitignore`
+
+* 终端拷贝 `gitignore`的例句 
 ```bash
-# /Users/NJ-Lee/Desktop/gitignore-master/ 是保存 gitignore 的目录
-$ cp /Users/NJ-Lee/Desktop/gitignore-master/Swift.gitignore .gitignore
+#/Users/NJ-Lee/Desktop/gitignore-master/ 是保存 gitignore 的目录
+# $ cp /Users/NJ-Lee/Desktop/gitignore-master/Swift.gitignore .gitignore
+server01:~ sl-office$ cp /Volumes/Other备份/MISSAJJ新浪微博Swift项目代码/gitignore-master/Swift.gitignore /Volumes/Other备份/MISSAJJ新浪微博Swift项目代码/MASINAWEIBO/.gitignore
+```
+
+* 拷贝后添加 `gitignore`  
+```bash
 $ git add .
 $ git commit -m"添加gitignore"
 $ git push
 ```
-* 终端添加 `gitignore`的例句
-```bash
-server01:~ sl-office$ cp /Volumes/Other备份/MISSAJJ新浪微博Swift项目代码/gitignore-master/Swift.gitignore /Volumes/Other备份/MISSAJJ新浪微博Swift项目代码/MASINAWEIBO/.gitignore
-```
+- [加载截图]添加gitignore成功 
+
+
 ![image](添加gitignore成功.png)
+
+- [加载截图]提交文件
+
+![image](提交文件.png)
+
+
+* 提示：
+    * 可以从 `https://github.com/github/gitignore` 获取最新版本的 `gitignore` 文件
+    * 添加 `.gitignore` 文件之后，每次提交时不会将个人的项目设置信息（例如：末次打开的文件，调试断点等）提交到服务器，在团队开发中非常重要
+
 
 ### [重要:]如果看不到隐藏文件.gitignore怎么办?
  
@@ -151,7 +166,4 @@ defaults write com.apple.finder AppleShowAllFiles -bool false 此命令关闭显
 
 
 ![image](看到隐藏文件.png)
-* 提示：
-    * 可以从 `https://github.com/github/gitignore` 获取最新版本的 `gitignore` 文件
-    * 添加 `.gitignore` 文件之后，每次提交时不会将个人的项目设置信息（例如：末次打开的文件，调试断点等）提交到服务器，在团队开发中非常重要
 
