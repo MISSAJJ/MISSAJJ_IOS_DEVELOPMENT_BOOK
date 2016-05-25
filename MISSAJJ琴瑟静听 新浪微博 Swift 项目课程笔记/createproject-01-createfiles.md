@@ -45,7 +45,9 @@
 * 每个 ViewController 继承自 `UITableViewController`
 * 搭建完成的文件结构图如下：
 
-![](./images/CreateProject/功能模块文件结构.png)
+![image](./images/CreateProject/目录结构.png)
+
+ 
 
 * 修改 `AppDelegate` 中的 `didFinishLaunchingWithOptions` 函数，设置启动控制器
 
