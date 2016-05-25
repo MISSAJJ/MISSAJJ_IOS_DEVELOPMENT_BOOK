@@ -158,7 +158,7 @@ Update 更新：2016年5月25日 By {MISSAJJ琴瑟静听}
 ####Thanks 特别感谢 
   
 ```objc
-感谢 Jobs 的激励，感谢 Limon 和 邦Ben 的指正,
+感谢 Jobs 的激励，感谢 Limon 和 邦Ben 的建议,
 感谢传智、小码哥、MJ 等各种视频课程及资料的启发，
 感谢美国朋友 Matt 分享资源，越南极客 Brian 的帮助。
 ```
