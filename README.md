@@ -1,7 +1,7 @@
 ###MISSAJJ琴瑟静听（ Swift 和 Objective-C ）iOS 开发项目电子书
 ---
 
-
+####★近期正在研究新浪微博的Swift项目,会陆续更新笔记哦,欢迎关注更新★
 ```objc
 Update 更新：2016年5月25日 By {MISSAJJ琴瑟静听} 
 
@@ -49,6 +49,8 @@ Update 更新：2016年5月25日 By {MISSAJJ琴瑟静听}
 
 ```
 ###Chapters 目录章节
+
+
 ```
 注意: 如果是通过电脑在 GitBook 官方网站在线阅读,
 点以下章节目录链接无效,请点网站右边【READ】按钮阅读,
