@@ -145,7 +145,9 @@ $ git push
 
 ![image](images/CreateProject/更新push项目.png)
 
+- 检查开源中国平台是否push成功
 
+![image](images/CreateProject/push成功.png)
 
 * 提示：
     * 可以从 `https://github.com/github/gitignore` 获取最新版本的 `gitignore` 文件
