@@ -1,4 +1,4 @@
-# iOS项目开发综合笔记
+# iOS 项目开发综合笔记
 ---
 ```objc
 Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
@@ -32,45 +32,45 @@ Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
 
  
 ##项目的图片资源
-- 可以利用一个Mac软件解压
+- 可以利用一个 Mac 软件解压
  - https://github.com/devcxm/iOS-Images-Extractor
 
 
-##storyboard文件的认识
+##storyboard 文件的认识
 - 作用：描述软件界面
 - 程序启动的简单过程
-  - 程序一启动，就会加载Main.storyboard文件
+  - 程序一启动，就会加载 Main.storyboard 文件
   - 会创建箭头所指的控制器，并且显示控制器所管理的软件界面
 
-## Xcode插件的安装路径
+## Xcode 插件的安装路径
 ```objc
 /Users/用户名/Library/Application Support/Developer/Shared/Xcode/Plug-ins
 ```
 
-##IOS项目的启动过程 
-创建项目的时候系统会默认创建一个Main.storyboard文件，当项目启动时会自动加载这个storyboard,当然我们也可以自己创建并决定使用哪个storyboard文件:
+##iOS 项目的启动过程 
+创建项目的时候系统会默认创建一个iMain.storyboard 文件，当项目启动时会自动加载这个 storyboard ,当然我们也可以自己创建并决定使用哪个 storyboard 文件:
 
-选中项目—>General—>Main Interface->选择加载storyboard
+选中项目 —> General —> Main Interface -> 选择加载 storyboard
 
 ![image](Images/Main Interface.png) 
-storyboard内可以添加多个控制器，但项目启动的时候加载哪一个控制器可以这样设置:
+storyboard 内可以添加多个控制器，但项目启动的时候加载哪一个控制器可以这样设置:
 
-选中storyboard—>如果没有VC控制器就自己拖入一个—>选中控制器—>右侧第三个按钮(Attributes)—>is Initial View Controller （打钩）
+选中 storyboard —> 如果没有VC控制器就自己拖入一个 —> 选中控制器 —> 右侧第三个按钮(Attributes)—>is Initial View Controller （打钩）
 
 ![image](Images/is Initial View Controller.png)
 
 ##控制器
 
-   -  概念：凡是继承自UIViewController的对象，都叫做控制器
+   -  概念：凡是继承自 UIViewController 的对象，都叫做控制器
    -  注意：每一个控制器都会专门管理一个软件界面
    -  作用：负责处理软件界面的各种事件、负责软件界面的创建和销毁
 
 ##IBAction
 
 - 只能修饰方法的返回值类型
-- 被IBAction修饰的方法
-  - 能拖线到storyboard中
-  - 返回值类型实际是void
+- 被 IBAction 修饰的方法
+  - 能拖线到 storyboard 中
+  - 返回值类型实际是 void
 
 
 - 使用格式
@@ -84,8 +84,8 @@ storyboard内可以添加多个控制器，但项目启动的时候加载哪一�
 ##IBOutlet 
 
 - 只能修饰属性
-- 被IBOutlet修饰的属性
-  - 能拖线到storyboard中
+- 被 IBOutlet 修饰的属性
+  - 能拖线到 storyboard 中
   
   
 - 使用格式
@@ -93,11 +93,11 @@ storyboard内可以添加多个控制器，但项目启动的时候加载哪一�
 ```objc
 @property (nonatomic, weak) IBOutlet UILabel *label;
 ```
-##关于IBAction、IBOutlet前缀IB的解释
+##关于 IBAction、IBOutlet 前缀 IB 的解释
 
 - 全称：Interface Builder
 - 以前的UI界面开发模式：Xcode3 + Interface Builder
-- 从Xcode4开始，Interface Builder已经整合到Xcode中了
+- 从 Xcode4 开始，Interface Builder 已经整合到 Xcode 中了
 
 ##常见错误
 
@@ -109,7 +109,7 @@ storyboard内可以添加多个控制器，但项目启动的时候加载哪一�
         this class is not key value coding-compliant for the key label.
 ```
         
- - 原因：IBOutlet属性代码被删掉了，但是属性连线还在
+ - 原因：IBOutlet 属性代码被删掉了，但是属性连线还在
  - 解决：将残留的连线删掉
  
 
@@ -127,7 +127,7 @@ storyboard内可以添加多个控制器，但项目启动的时候加载哪一�
 
 - 作用
   - 能为某个类增加额外的属性、成员变量、方法声明
-  - 一般将类扩展写到.m文件中
+  - 一般将类扩展写到 .m 文件中
   - 一般将一些私有的属性写到类扩展
 
 
@@ -144,7 +144,7 @@ storyboard内可以添加多个控制器，但项目启动的时候加载哪一�
 
  - 分类的小括号必须有名字
  - 分类只能扩充方法
- - 如果在分类中声明了一个属性，分类只会生成这个属性的get\set方法声明
+ - 如果在分类中声明了一个属性，分类只会生成这个属性的 get \ set 方法声明
 
 ```objc
 @interface 类名(分类名字)
@@ -159,25 +159,25 @@ storyboard内可以添加多个控制器，但项目启动的时候加载哪一�
   
 ## 应用程序的图标
 - 旧项目中的图标只要符合1个条件即可
- - 图片名叫做Icon.png
+ - 图片名叫做 Icon.png
 
-## 从iOS9开始的常见报错
+## 从 iOS9 开始的常见报错
 ```objc
 Application windows are expected to
 have a root view controller 
 at the end of application launch
 ```
-- 从iOS9开始, 在`程序启动完毕那一刻`显示出来的窗口`必须`要设置`根控制器`
+- 从 iOS9 开始, 在`程序启动完毕那一刻`显示出来的窗口`必须`要设置`根控制器`
 
 ## 有些图片显示出来会自动渲染成蓝色
 #### 比如
-- 设置tabBarItem的选中图片
+- 设置 tabBarItem 的选中图片
 
 ```objc
 vc.tabBarItem.selectedImage = image;
 ```
 
-- 设置UIButtonTypeSystem样式按钮的image时
+- 设置 UIButtonTypeSystem 样式按钮的 image 时
 
 ```objc
 UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -195,11 +195,13 @@ UIImage *selectedImage = [tempImage imageWithRenderingMode:UIImageRenderingModeA
 vc.tabBarItem.selectedImage = selectedImage;
 ```
 
-- 直接在xcassets文件中配置
+- 直接在 xcassets 文件中配置
+
+
 ![image](Images/Snip20151105_1.png)
 
-## 设置TabBarItem的文字属性
-- 直接设置每一个tabBarItem对象
+## 设置 TabBarItem 的文字属性
+- 直接设置每一个 tabBarItem 对象
 
 ```objc
 // 普通状态下的文字属性
@@ -223,10 +225,10 @@ selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
 - 规律:NSXXXAttributeName
 ```
 
-- 通过UITabBarItem的appearance对象统一设置
+- 通过 UITabBarItem的appearance 对象统一设置
 
 ```objc
-/**** 设置所有UITabBarItem的文字属性 ****/
+/**** 设置所有 UITabBarItem 的文字属性 ****/
 UITabBarItem *item = [UITabBarItem appearance];
 // 普通状态下的文字属性
 NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
@@ -241,8 +243,8 @@ selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
 
 
 
-## Appearance的使用场合
-- 只要后面带有`UI_APPEARANCE_SELECTOR`的方法或者属性,都可以通过appearance对象统一设置
+## Appearance 的使用场合
+- 只要后面带有`UI_APPEARANCE_SELECTOR`的方法或者属性,都可以通过 appearance 对象统一设置
 - 比如
 
 ```objc
@@ -270,7 +272,7 @@ CUICatalog: Invalid asset name supplied:
 
 
 
-## 替换UITabBarController内部的tabBar
+## 替换 UITabBarController 内部的 tabBar
 ```objc
 // 这里的self是UITabBarController
 [self setValue:[[XMGTabBar alloc] init] forKeyPath:@"tabBar"];
@@ -300,7 +302,7 @@ button.currentTitleColor;
 @property(nonatomic) UIEdgeInsets imageEdgeInsets;
 ```
 
-## 解决导航控制器pop手势失效
+## 解决导航控制器 pop 手势失效
 ```
 self.interactivePopGestureRecognizer.delegate = self;
 
@@ -312,7 +314,7 @@ self.interactivePopGestureRecognizer.delegate = self;
 ```
 
 
-## 在使用UITableViewController过程中,可能会出现的错误
+## 在使用 UITableViewController 过程中,可能会出现的错误
 ```obj
 @interface TestTableViewController : UITableViewController
 
@@ -321,7 +323,7 @@ self.interactivePopGestureRecognizer.delegate = self;
 '-[UITableViewController loadView] instantiated view controller with identifier "UIViewController-BYZ-38-t0r" from storyboard "Main", but didn't get a UITableView.'
 ```
 - 造成这个错误的原因
-    - 错误地将一个UIViewController当做UITableViewController来用
+    - 错误地将一个 UIViewController 当做 UITableViewController 来用
 - 错误做法
 
 ![image](Images/Snip20151108_134.png)
@@ -331,11 +333,11 @@ self.interactivePopGestureRecognizer.delegate = self;
 ![image](Images/Snip20151108_135.png)
 ![image](Images/Snip20151108_137.png)
 
-## contentInset的调整
-- 默认情况下, 如果一个控制器A处在导航控制器管理中, 并且控制器A的第一个子控件是UIScrollView, 那么就会自动调整这个UIScrollView的contentInset
+## contentInset 的调整
+- 默认情况下, 如果一个控制器A处在导航控制器管理中, 并且控制器A的第一个子控件是 UIScrollView , 那么就会自动调整这个 UIScrollView 的 contentInset
     - UIEdgeInsetsMake(64, 0, 0, 0) // 有导航栏
     - UIEdgeInsetsMake(20, 0, 0, 0) // 没有导航栏
-- 默认情况下, 如果一个控制器A处在导航控制器管理中, 并且导航控制器又处在UITabBarController管理中, 并且控制器A的第一个子控件是UIScrollView, 那么就会自动调整这个UIScrollView的contentInset
+- 默认情况下, 如果一个控制器A处在导航控制器管理中, 并且导航控制器又处在 UITabBarController 管理中, 并且控制器A的第一个子控件是 UIScrollView , 那么就会自动调整这个 UIScrollView 的 contentInset
     - UIEdgeInsetsMake(64, 0, 49, 0)
 - 如何禁止上述的默认问题?
 
@@ -344,17 +346,17 @@ self.interactivePopGestureRecognizer.delegate = self;
 ```
 
 ## 文字内容换行
-- 如何让storyboard\xib中的文字内容换行
+- 如何让 storyboard\xib 中的文字内容换行
     - 快捷键: option + 回车键
-    - 在storyboard\xib输入\n是无法实现换行的
-- 在代码中输入\n是可以实现换行的
+    - 在 storyboard\xib 输入 \n 是无法实现换行的
+- 在代码中输入 \n 是可以实现换行的
 
 ```objc
 self.label.text = @"534534534\n5345345\n5345";
 ```
 
 ## 修改状态栏样式
-- 使用UIApplication来管理
+- 使用 UIApplication 来管理
 ![image](Images/Snip20151108_152.png)
 ```objc
 [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -362,7 +364,7 @@ self.label.text = @"534534534\n5345345\n5345";
 在Info.plist中做了图中的配置,可能会出现以下警告信息
 ![image](Images/Snip20151108_153.png)
 
-- 使用UIViewController来管理
+- 使用 UIViewController 来管理
 
 ```objc
 @implementation XMGLoginRegisterViewController
@@ -373,13 +375,15 @@ self.label.text = @"534534534\n5345345\n5345";
 @end
 ```
 
-## 在xib\storyboard中使用KVC
+## 在 xib\storyboard 中使用 KVC
+
+
 ![image](Images/Snip20151108_177.png)
 
 
 
 ## 枚举值的某个规律
-- 凡是使用了1 << n格式的枚举值, 都可以使用|进行组合使用
+- 凡是使用了 1 << n 格式的枚举值, 都可以使用|进行组合使用
 
 ```objc
 UIControlEventEditingDidBegin                                   = 1 << 16,
@@ -391,7 +395,7 @@ UIControlEventEditingDidEndOnExit                               = 1 << 19,
 ```
 
 ## 通知相关的补充
-### 使用block监听通知
+### 使用 block 监听通知
 ```obj
 // object对象发出了名字为name的通知, 就在queue队列中执行block
 self.observer = [[NSNotificationCenter defaultCenter] addObserverForName:UITextFieldTextDidBeginEditingNotification object:self queue:[[NSOperationQueue alloc] init] usingBlock:^(NSNotification * _Nonnull note) {
@@ -424,14 +428,14 @@ dispatch_async(dispatch_get_global_queue(0, 0), ^{
 
 
 
-## 利用SDWebImage设置UIButton的图片
+## 利用 SDWebImage 设置 UIButton 的图片
 - 正确用法
 
 ```objc
 [button sd_setImageWithURL:[NSURL URLWithString:url] forState:UIControlStateNormal placeholderImage:image];
 ```
 
-## 解决tableView设置tableFooterView时contentSize不正确的问题
+## 解决 tableView 设置 tableFooterView 时 contentSize 不正确的问题
 ```objc
 tableView.tableFooterView = footerView;
 // 重新刷新数据(会重新计算contentSize)
@@ -453,7 +457,7 @@ tableView.tableFooterView = footerView;
 
 
 
-## viewWithTag:内部的大致实现思路
+## viewWithTag: 内部的大致实现思路
 ```objc
 @implementation UIView
 - (UIView *)viewWithTag:(NSInteger)tag
@@ -466,7 +470,7 @@ tableView.tableFooterView = footerView;
 }
 @end
 ```
-## addObject:和addObjectsFromArray:的区别
+## addObject :和 addObjectsFromArray :的区别
 ```objc
 self.topics = @[20, 19, 18]
 moreTopics = @[17, 16, 15]
@@ -494,7 +498,7 @@ self.topics = @[20, 19, 18, 17, 16, 15]
 第2页数据 == @[15, 14, 13, 12, 11]
 ```
 
-## 集成MJRefresh
+## 集成 MJRefresh
 - [github](https://github.com/CoderMJLee/MJRefresh)
 - 基本用法
 
@@ -505,7 +509,7 @@ self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:sel
 self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 ```
 
-## 利用AFN取消请求
+## 利用 AFN 取消请求
 ```objc
 // 取消所有请求
 for (NSURLSessionTask *task in self.manager.tasks) {
@@ -526,15 +530,15 @@ for (NSURLSessionTask *task in self.manager.tasks) {
 
 
 ## 自动拉伸问题
-- 从xib中加载进来的控件的`autoresizingMask`属性值默认是
+- 从 xib 中加载进来的控件的`autoresizingMask`属性值默认是
     - `UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight`
-- 如果一个控件显示出来的大小和当初设置的frame大小不一致,有可能是因为`autoresizingMask`属性值包含了`UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight`,解决方案
+- 如果一个控件显示出来的大小和当初设置的 frame 大小不一致,有可能是因为`autoresizingMask`属性值包含了`UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight`,解决方案
 
 ```objc
 控件.autoresizingMask = UIViewAutoresizingNone;
 ```
 ## 属性名注意点
-- 对象属性名不能以new开头
+- 对象属性名不能以 new 开头
 ```objc
 @property (nonatomic, strong) NSMutableArray<XMGComment *> *newComments;
 ```
@@ -545,7 +549,7 @@ for (NSURLSessionTask *task in self.manager.tasks) {
 // 错误地将NSArray当做NSDictionary来使用了
 ```
 
-## block细节
+## block 细节
 - 如果【block内部】使用【外部声明的强引用】访问【对象A】, 那么【block内部】会自动产生一个【强引用】指向【对象A】
 - 如果【block内部】使用【外部声明的弱引用】访问【对象A】, 那么【block内部】会自动产生一个【弱引用】指向【对象A】
 
