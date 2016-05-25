@@ -27,7 +27,7 @@ window?.makeKeyAndVisible()
 ![](./images/Icons/appicons.png)
 
 ---
-## App 名称修改
+## App 名称修改 
 - APP名称在 Plist 文件的修改
 
 ![image](./images/Icons/APP名称plist修改.png)
