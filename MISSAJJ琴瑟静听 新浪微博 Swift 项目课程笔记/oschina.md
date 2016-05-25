@@ -128,7 +128,29 @@ $ git add .
 $ git commit -m"添加gitignore"
 $ git push
 ```
+* 终端添加 `gitignore`的例句
+```bash
+server01:~ sl-office$ cp /Volumes/Other备份/MISSAJJ新浪微博Swift项目代码/gitignore-master/Swift.gitignore /Volumes/Other备份/MISSAJJ新浪微博Swift项目代码/MASINAWEIBO/.gitignore
+```
+![image](添加gitignore成功.png)
 
+### [重要:]如果看不到隐藏文件.gitignore怎么办?
+ 
+
+![image](无隐藏文件.png)
+
+```bash
+打开终端，输入：
+defaults write com.apple.finder AppleShowAllFiles -bool true 此命令显示隐藏文件
+defaults write com.apple.finder AppleShowAllFiles -bool false 此命令关闭显示隐藏文件
+```
+![image](显示隐藏文件.png)
+
+
+ + 命令运行之后需要重新加载Finder：快捷键option+command+esc，选中Finder，重新启动即可 
+
+
+![image](看到隐藏文件.png)
 * 提示：
     * 可以从 `https://github.com/github/gitignore` 获取最新版本的 `gitignore` 文件
     * 添加 `.gitignore` 文件之后，每次提交时不会将个人的项目设置信息（例如：末次打开的文件，调试断点等）提交到服务器，在团队开发中非常重要
