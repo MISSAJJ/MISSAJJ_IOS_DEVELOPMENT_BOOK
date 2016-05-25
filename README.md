@@ -1,4 +1,4 @@
-###MISSAJJ琴瑟静听（Swift和Objective-C）IOS开发项目电子书
+###MISSAJJ琴瑟静听（Swift和Objective-C）iOS开发项目电子书
 ---
 
 
@@ -27,14 +27,14 @@ Update更新：2016年5月25日 By {MISSAJJ琴瑟静听}
 一直想为自己写一本书，
 传记，散文，诗集，小说，
 可最终决定执笔而写的，
-却是这本关于IOS开发的电子书^_^
+却是这本关于iOS开发的电子书^_^
 
-这本书整合学习过的IOS开发教程笔记，
-融入所接触的IOS项目中的点滴体会，
-亦抒发和宣泄自己对于IOS开发的喜爱。
+这本书整合学习过的iOS开发教程笔记，
+融入所接触的iOS项目中的点滴体会，
+亦抒发和宣泄自己对于iOS开发的喜爱。
 
 希望能帮助一些学习开发的新手攻城狮，
-也是一本用心良苦想送给儿子Winnie的IOS启蒙书……
+也是一本用心良苦想送给儿子Winnie的iOS启蒙书……
 ```  
 
 ###Update更新札记
@@ -68,8 +68,8 @@ Update更新：2016年5月25日 By {MISSAJJ琴瑟静听}
    * [项目管理Git常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
 
 
-* [★【Chapter-02  MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记】](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/README.md)
-   * [IOS项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
+* [★【Chapter-02  MISSAJJ琴瑟静听iOS项目开发OC语言课程笔记】](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/README.md)
+   * [iOS项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
    * [PCH文件的设置创建](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
    * [const，static，extern简介、作用和使用](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
    * [在XIB中设置UIScrollView](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/zaixib_zhong_she_zhi_uiscrollview.md)
@@ -156,7 +156,7 @@ Update更新：2016年5月25日 By {MISSAJJ琴瑟静听}
 本人目前正在尝试将过去的项目陆续编译成Swift语言，
 同时也会陆续整理相关Swift语言开发的课程笔记, 
 希望能有更多的狮子一起共勉探讨学习，愉快奔跑！ 
-联系方式: QQ 996174446 ［验证：IOS攻城狮］
+联系方式: QQ 996174446 ［验证：iOS攻城狮］
 ``` 
 ####Thanks特别感谢 
   
