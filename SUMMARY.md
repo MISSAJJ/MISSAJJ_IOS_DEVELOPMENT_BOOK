@@ -73,7 +73,7 @@
    * [0.4. 未登录页面处理](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor.md)
        * [0.4.1. 表格视图控制器基类](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-01-basetableviewcontroller.md)
        * [0.4.2. 用户登录视图](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-02-userloginview.md)
-       * 0.4.3. 设置未登录信息
+       * [0.4.3. 设置未登录信息](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-03-loginlogic.md)
        * 0.4.4. 首页动画
        * [0.4.5. 登录&注册代理回调](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-05-logindelegate.md)
        * 0.4.6. 设置全局外观
