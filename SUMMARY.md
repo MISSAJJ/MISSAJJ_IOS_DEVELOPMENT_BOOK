@@ -68,7 +68,7 @@
        * [0.3.2. 添加子控制器](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-02-addchildcontrollers.md)
            * [0.3.2.1. throw catch](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/throw_catch.md)
            * [0.3.2.2. 变量类型推导](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/variablestype.md)
-       * 0.3.3. 添加加号按钮
+       * [0.3.3. 添加加号按钮](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-03-costommaintabbar.md)
        * 0.3.4. 阶段性小结
    * 0.4. 未登录页面处理
        * 0.4.1. 表格视图控制器基类
