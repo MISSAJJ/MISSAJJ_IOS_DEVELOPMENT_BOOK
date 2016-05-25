@@ -141,6 +141,12 @@ $ git push
 ![image](提交文件.png)
 
 
+- push更新项目
+
+![image](更新push项目.png)
+
+
+
 * 提示：
     * 可以从 `https://github.com/github/gitignore` 获取最新版本的 `gitignore` 文件
     * 添加 `.gitignore` 文件之后，每次提交时不会将个人的项目设置信息（例如：末次打开的文件，调试断点等）提交到服务器，在团队开发中非常重要
