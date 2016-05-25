@@ -10,9 +10,11 @@ Update更新：2016年5月25日 By {MISSAJJ琴瑟静听}
 所以将这份课程笔记汇总分享出来,
 希望能帮助童鞋们巩固记忆!
 ``` 
-###Chapters目录章节
+###Chapters目录章节 
 
+####(近期正在看新浪微博的Swift教程,这几天会陆续更新项目笔记)
 
+ 
 
 * [★【Chapter-08 MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记】](README.md)
    * [0.1. 项目部署](oschina.md)
