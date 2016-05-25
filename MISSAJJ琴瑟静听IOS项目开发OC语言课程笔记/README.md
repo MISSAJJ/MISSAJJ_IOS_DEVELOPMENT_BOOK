@@ -1,10 +1,10 @@
-# Chapter-02  MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记
+# Chapter-02  MISSAJJ琴瑟静听 iOS 项目开发 OC 语言课程笔记
 ---
 ```objc
 Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
 ```
 
-```
+```objc
 MISSAJJ整理的 OC 语言部分的课程笔记,
 整理笔记的同时也是在温故而知新,
 融入了所学过的 iOS 视频教程笔记和自己的点滴体会
