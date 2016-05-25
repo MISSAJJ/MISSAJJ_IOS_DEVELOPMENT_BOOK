@@ -65,11 +65,11 @@ Update更新：2016年5月25日 By {MISSAJJ琴瑟静听}
    * [项目管理Git常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
 
 
-* [★【Chapter-02  MISSAJJ琴瑟静听iOS项目开发OC语言课程笔记】](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/README.md)
-   * [iOS项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
-   * [PCH文件的设置创建](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
+* [★【Chapter-02  MISSAJJ琴瑟静听 iOS 项目开发 OC 语言课程笔记】](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/README.md)
+   * [iOS 项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
+   * [PCH 文件的设置创建](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
    * [const，static，extern简介、作用和使用](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/conststaticexternjian_jie_3001_zuo_yong_he_shi_yon.md)
-   * [在XIB中设置UIScrollView](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/zaixib_zhong_she_zhi_uiscrollview.md)
+   * [在 Xib 中设置UIScrollView](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/zaixib_zhong_she_zhi_uiscrollview.md)
    * [使用Xib引入模型的自定义控件案例](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/shi_yong_xib_yin_ru_mo_xing_de_zi_ding_yi_kong_jia.md)
    * [assign和weak的区别](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/assignhe_weak_de_qu_bie.md)
    * [判断NSString字符串或NSArray数组是否为空](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/panduan_nsstring_zi_fu_chuan_huo_nsarray_shu_zu_sh.md)
