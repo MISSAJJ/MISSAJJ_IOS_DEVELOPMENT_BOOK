@@ -193,7 +193,10 @@ defaults write com.apple.finder AppleShowAllFiles -bool false 此命令关闭显
 
 ![image](images/CreateProject/最后git部署项目文件.png)
 
-- 去开源中国项目网址检查
-- 
-- https://git.oschina.net/MISSAJJ/MASINAWEIBO
+- Git部署项目上传文件成功
+
+
+  - 去网站检查是否上传成功: https://git.oschina.net/MISSAJJ/MASINAWEIBO
+
+
 ![image](images/CreateProject/Git部署项目上传文件成功.png)
