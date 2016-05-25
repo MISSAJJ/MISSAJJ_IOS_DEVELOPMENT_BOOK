@@ -134,16 +134,16 @@ $ git push
 - 添加gitignore成功 
 
 
-![image](添加gitignore成功.png)
+![image](images/CreateProject/添加gitignore成功.png)
 
 - 提交文件
 
-![image](提交文件.png)
+![image](images/CreateProject/提交文件.png)
 
 
 - push更新项目
 
-![image](更新push项目.png)
+![image](images/CreateProject/更新push项目.png)
 
 
 
@@ -155,7 +155,7 @@ $ git push
 ### [重要:]如果看不到隐藏文件.gitignore怎么办?
  
 
-![image](无隐藏文件.png)
+![image](images/CreateProject/无隐藏文件.png)
 
 ```bash
 打开终端，输入：
@@ -165,10 +165,10 @@ defaults write com.apple.finder AppleShowAllFiles -bool false 此命令关闭显
 
 
  + 命令运行之后需要重新加载Finder：快捷键option+command+esc，选中Finder，重新启动即可 
-![image](显示隐藏文件.png)
+![image](images/CreateProject/显示隐藏文件.png)
 
 
 - 搞定,可以看到隐藏文件了
 
-![image](看到隐藏文件.png)
+![image](images/CreateProject/看到隐藏文件.png)
 
