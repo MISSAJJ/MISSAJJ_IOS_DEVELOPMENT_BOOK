@@ -72,7 +72,7 @@ $ cat ~/.ssh/id_rsa.pub
 # 测试 SSH 连接
 $ ssh -T git@git.oschina.net
 
-# 终端提示 Welcome to Git@OSC, MISSAJJ琴瑟静听!` 说明连接成功
+# 终端提示 Welcome to Git@OSC, MISSAJJ琴瑟静听! 说明连接成功
 ```
 
 (图片加载中, 请耐性等待...)
@@ -87,16 +87,37 @@ $ ssh -T git@git.oschina.net
 
 ---
 * 在oschina新建项目
+
+
+(图片加载中, 请耐性等待...)
+
+
+![image](images/CreateProject/创建项目.png)
 * 克隆项目
 
 配置好sshkey之后， 以后只需要拷贝ssh链接地址，然后利用git指令即可进行相关操作
+
+
+- 拷贝SSH链接地址
+
+(图片加载中, 请耐性等待...)
+
+![image](images/CreateProject/拷贝SSH链接地址.png)
+
+
 ```bash
 $ git clone git@git.oschina.net:xxx/ProjectName.git
 ```
 
+(图片加载中, 请耐性等待...)
+
+
+![image](images/CreateProject/git克隆.png)
+
+
 *  注意：oschina仓库对应多种地址，一个是通过http访问的地址，一个是通过ssh访问的地址
-    + http方式：https://git.oschina.net/leaderlee/OC_Advanced_Prepares_Lessons.git
-    + ssh方式：git@git.oschina.net:leaderlee/OC_Advanced_Prepares_Lessons.git
+    + http方式：https://git.oschina.net/MISSAJJ/MASINAWEIBO.git
+    + ssh方式：git@git.oschina.net:MISSAJJ/MASINAWEIBO.git
 
 
 * 添加 `gitignore`
