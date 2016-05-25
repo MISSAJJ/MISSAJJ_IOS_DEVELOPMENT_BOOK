@@ -64,7 +64,7 @@
    * [0.2. 图片素材](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/imagesassets.md)
        * [0.2.1. 图标素材 & App 名称](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/imagesassets-01-icon_default.md)
    * [0.3. 项目搭建](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject.md)
-       * 0.3.1. 创建文件
+       * [0.3.1. 创建文件](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-01-createfiles.md)
            * 0.3.2.2. 变量类型推导
        * 0.3.2. 添加子控制器
            * 0.3.2.1. throw catch
