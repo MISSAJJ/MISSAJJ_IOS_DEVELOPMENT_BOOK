@@ -1,4 +1,4 @@
-# Chapter-02  MISSAJJ琴瑟静听 iOS 项目开发 OC 语言课程笔记
+# Chapter-02 MISSAJJ琴瑟静听 iOS 项目开发 OC 语言课程笔记
 ---
 ```objc
 Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
