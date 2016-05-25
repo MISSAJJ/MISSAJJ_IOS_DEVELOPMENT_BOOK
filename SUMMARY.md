@@ -35,7 +35,7 @@
    * [（I）蓝牙交互CoreBlueTooth](蓝牙交互CoreBlueTooth/iff09_lan_ya_jiaohu_corebluetooth.md)
    * [（II）蓝牙交互GameKit](蓝牙交互CoreBlueTooth/iiff09_lan_ya_jiao_hu_gamekit.md)
    * [（III）蓝牙交互Mutipeer Connectivity](蓝牙交互CoreBlueTooth/iiiff09_lan_ya_jiaohu_mutipeer_connectivity.md)
-* [★【Chapter-06 ReactiveCocoa(RAC)编程思想和MVVM架构进阶】](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
+* [★【Chapter-06 ReactiveCocoa ( RAC ) 编程思想和 MVVM 架构进阶】](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
    * [(I)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/i_reactivecocoa_racff09_bian_cheng_si_xiang_he_mvv.md)
    * [(II)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.md)
    * [(III)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/iii_reactivecocoa_racff09_bian_cheng_si_xiang_he_m.md)
