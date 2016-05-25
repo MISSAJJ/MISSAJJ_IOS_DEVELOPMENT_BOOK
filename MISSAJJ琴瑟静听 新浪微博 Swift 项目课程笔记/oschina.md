@@ -23,9 +23,9 @@ Update更新：2016年5月25日 By {MISSAJJ琴瑟静听}
 1. 服务器在国内，速度更快
 2. 免费账户同样可以建立 `私有` 项目，而 `GitHUB` 上要建立私有项目必须 `付费`
 
-### 使用
+### 使用开源中国Git
 
-* 注册账号
+* 注册账号 [如何注册就不演示了]
     * 建议不要使用新浪邮箱，使用新浪邮箱可能会收不到验证邮件
 
 * 添加 SSH 公钥，进入终端，并输入以下命令
@@ -42,10 +42,7 @@ $ mkdir ~/.ssh
 $ ls 
 ```
 * 终端显示
-
-
-(图片加载中, 请耐性等待...)
-
+ 
 
  
  ![image](images/CreateProject/进入.ssh目录.png)
@@ -60,10 +57,7 @@ $ ssh-keygen -t rsa -C "你的邮箱@xxx.com"
 ```bash
 $ cat ~/.ssh/id_rsa.pub
 ```
-
-
-(图片加载中, 请耐性等待...)
-
+ 
 
 ![image](images/CreateProject/密钥.png)
 
@@ -71,14 +65,12 @@ $ cat ~/.ssh/id_rsa.pub
     + 注意：公钥内容以ssh-rsa开头，你的邮箱结尾， 拷贝时不能多一个空格，也不能少一个空格，格式等必须和生成的公钥一致
     + https://git.oschina.net/profile/sshkeys
 
-
-(图片加载中, 请耐性等待...)
-
+ 
 
 ![image](images/CreateProject/添加公钥.png)
 
 
-* 测试公钥
+ * 测试公钥
 
 ```bash
 # 测试 SSH 连接
@@ -86,13 +78,11 @@ $ ssh -T git@git.oschina.net
 
 # 终端提示 Welcome to Git@OSC, MISSAJJ琴瑟静听! 说明连接成功
 ```
-
-(图片加载中, 请耐性等待...)
+ 
 
 ![image](images/CreateProject/测试公钥.png)
 
-(图片加载中, 请耐性等待...)
-
+* 测试成功
 
 ![image](images/CreateProject/公钥测试成功.png)
 
@@ -100,9 +90,7 @@ $ ssh -T git@git.oschina.net
 ---
 * 在oschina新建项目
 
-
-(图片加载中, 请耐性等待...)
-
+ 
 
 ![image](images/CreateProject/创建项目.png)
 * 克隆项目
@@ -111,8 +99,7 @@ $ ssh -T git@git.oschina.net
 
 
 - 拷贝SSH链接地址
-
-(图片加载中, 请耐性等待...)
+ 
 
 ![image](images/CreateProject/拷贝SSH链接地址.png)
 
@@ -120,9 +107,7 @@ $ ssh -T git@git.oschina.net
 ```bash
 $ git clone git@git.oschina.net:xxx/ProjectName.git
 ```
-
-(图片加载中, 请耐性等待...)
-
+ 
 
 ![image](images/CreateProject/git克隆.png)
 
@@ -146,12 +131,12 @@ $ git add .
 $ git commit -m"添加gitignore"
 $ git push
 ```
-- [加载截图]添加gitignore成功 
+- 添加gitignore成功 
 
 
 ![image](添加gitignore成功.png)
 
-- [加载截图]提交文件
+- 提交文件
 
 ![image](提交文件.png)
 
@@ -171,11 +156,13 @@ $ git push
 defaults write com.apple.finder AppleShowAllFiles -bool true 此命令显示隐藏文件
 defaults write com.apple.finder AppleShowAllFiles -bool false 此命令关闭显示隐藏文件
 ```
-![image](显示隐藏文件.png)
 
 
  + 命令运行之后需要重新加载Finder：快捷键option+command+esc，选中Finder，重新启动即可 
+![image](显示隐藏文件.png)
 
+
+- 搞定,可以看到隐藏文件了
 
 ![image](看到隐藏文件.png)
 
