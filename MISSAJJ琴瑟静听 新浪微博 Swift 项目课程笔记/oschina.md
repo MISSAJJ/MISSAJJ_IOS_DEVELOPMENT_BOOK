@@ -30,6 +30,11 @@ $ mkdir ~/.ssh
 $ ls 
 ```
 * 终端显示
+
+
+(图片加载中, 请耐性等待...)
+
+
  
  ![image](images/CreateProject/进入.ssh目录.png)
  
@@ -44,9 +49,22 @@ $ ssh-keygen -t rsa -C "你的邮箱@xxx.com"
 $ cat ~/.ssh/id_rsa.pub
 ```
 
+
+(图片加载中, 请耐性等待...)
+
+
+![image](images/CreateProject/密钥.png)
+
 * 将公钥内容复制并粘贴至
     + 注意：公钥内容以ssh-rsa开头，你的邮箱结尾， 拷贝时不能多一个空格，也不能少一个空格，格式等必须和生成的公钥一致
     + https://git.oschina.net/profile/sshkeys
+
+
+(图片加载中, 请耐性等待...)
+
+
+![image](images/CreateProject/添加公钥.png)
+
 
 * 测试公钥
 
@@ -54,8 +72,18 @@ $ cat ~/.ssh/id_rsa.pub
 # 测试 SSH 连接
 $ ssh -T git@git.oschina.net
 
-# 终端提示 Welcome to Git@OSC, 极客江南!` 说明连接成功
+# 终端提示 Welcome to Git@OSC, MISSAJJ琴瑟静听!` 说明连接成功
 ```
+
+(图片加载中, 请耐性等待...)
+
+![image](images/CreateProject/测试公钥.png)
+
+(图片加载中, 请耐性等待...)
+
+
+![image](images/CreateProject/公钥测试成功.png)
+
 
 ---
 * 在oschina新建项目
