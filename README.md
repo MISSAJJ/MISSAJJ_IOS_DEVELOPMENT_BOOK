@@ -33,7 +33,7 @@ Update 更新：2016年5月25日 By {MISSAJJ琴瑟静听}
 融入所接触的 iOS 项目中的点滴体会，
 亦抒发和宣泄自己对于 iOS 开发的喜爱。
 
-希望能帮助一些学习开发的新手攻城狮，
+希望能帮助一些学习开发的 "新手攻城狮" 温故而知新，
 也是一本用心良苦想送给儿子 Winnie 的 iOS 启蒙书……
 ```  
 
@@ -129,6 +129,28 @@ Update 更新：2016年5月25日 By {MISSAJJ琴瑟静听}
    * [Swift-getter & setter](MISSAJJ琴瑟静听Swift基础语言课程笔记/10.md)
    * [Swift-ATS 应用传输安全](MISSAJJ琴瑟静听Swift基础语言课程笔记/11.md)
 
+
+
+* [★【Chapter-08 MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记】](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/README.md)
+   * [0.1. 项目部署](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/oschina.md)
+   * [0.2. 图片素材](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/imagesassets.md)
+       * [0.2.1. 图标素材 & App 名称](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/imagesassets-01-icon_default.md)
+   * [0.3. 项目搭建](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject.md)
+       * [0.3.1. 创建文件](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-01-createfiles.md)
+       * [0.3.2. 添加子控制器](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-02-addchildcontrollers.md)
+           * [0.3.2.1. throw catch](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/throw_catch.md)
+           * [0.3.2.2. 变量类型推导](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/variablestype.md)
+       * [0.3.3. 添加加号按钮](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-03-costommaintabbar.md)
+       * [0.3.4. 阶段性小结](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-04-summary.md)
+   * [0.4. 未登录页面处理](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor.md)
+       * [0.4.1. 表格视图控制器基类](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-01-basetableviewcontroller.md)
+       * [0.4.2. 用户登录视图](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-02-userloginview.md)
+       * [0.4.3. 设置未登录信息](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-03-loginlogic.md)
+       * [0.4.4. 首页动画](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-04-homeanimation.md)
+       * [0.4.5. 登录&注册代理回调](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-05-logindelegate.md)
+       * [0.4.6. 设置全局外观](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-06-setupappearance.md)
+       * [0.4.7. 阶段性小结](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-07-summary.md)
+   * [0.5. 代码评审(Code Review)](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/code_review.md)
 
 
 ```
