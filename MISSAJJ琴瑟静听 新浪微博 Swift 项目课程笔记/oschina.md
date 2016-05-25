@@ -27,9 +27,12 @@ $ cd ~/.ssh
 #如果.ssh文件夹不存在，可以执行指令自行创建
 $ mkdir ~/.ssh
 # 查看当前目录文件
-$ ls
+$ ls 
 ```
-
+* 终端显示
+ 
+ ![image](images/CreateProject/进入.ssh目录.png)
+ 
 * 生成 RSA 密钥对
 ```bash
 $ ssh-keygen -t rsa -C "你的邮箱@xxx.com"
