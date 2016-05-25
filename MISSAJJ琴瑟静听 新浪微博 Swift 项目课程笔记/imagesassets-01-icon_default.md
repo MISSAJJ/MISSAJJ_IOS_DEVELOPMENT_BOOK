@@ -27,18 +27,29 @@ window?.makeKeyAndVisible()
 ![](./images/Icons/appicons.png)
 
 ---
-## App 名称
+## App 名称修改
+- APP名称在 Plist 文件的修改
 
-![](./images/Icons/applicationname.png)
+![image](./images/Icons/APP名称plist修改.png)
+
+- APP名称在 Build Setting 中修改
+
+
+![image](./images/Icons/APP名称buildSetting修改.png)
+
+
+
 
 * 提示
     * 此处修改的内容是 `Info.plist` 中 `CFBundleName` 对应的内容
     * 注意不要超过6个中文，否则会影响用户体验
 
 ---
-### 添加启动图片
+### 添加启动LaunchImage图
 
-![](./images/Icons/defaults.png)
+![image](./images/Icons/defaults.png)
+
+ 
 
 * 提示
     * 关于启动图片的设置，需要注意上课的操作细节
