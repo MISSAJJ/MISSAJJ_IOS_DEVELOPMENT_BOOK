@@ -1,12 +1,12 @@
-# 项目管理Git常用命令
+# 项目管理 Git 常用命令
  
 ---
 ```objc
 Update更新：2016年5月23日 By {MISSAJJ琴瑟静听}
 ```
-Git是一个很强大的分布式版本控制系统,它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。
+Git 是一个很强大的分布式版本控制系统,它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。
 
-###Git常用操作命令：
+###Git 常用操作命令：
 
 
 - 1) 远程仓库相关命令
@@ -31,7 +31,7 @@ $git push origin test:master // 提交本地test分支作为远程的master分�
 $git push origin test:test // 提交本地test分支作为远程的test分支
 
 ```
-- 2）分支(branch)操作相关命令
+- 2）分支 (branch) 操作相关命令
 
 ```objc 
 查看本地分支：$ git branch
@@ -61,7 +61,7 @@ $rm .git/index
 $git clean -fdx
 
 ```
-- 3）版本(tag)操作相关命令
+- 3）版本 (tag) 操作相关命令
 
 ```objc
 查看版本：$ git tag
@@ -83,7 +83,7 @@ $git clean -fdx
 创建带注释的tag：$ git tag -a [name] -m 'yourMessage'
 
 ```
-- 4) 子模块(submodule)相关操作命令
+- 4) 子模块 (submodule) 相关操作命令
 
 ```objc
 
