@@ -62,5 +62,5 @@
 * [★【Chapter-08 MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记】](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/README.md)
    * [0.1. 项目部署](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/oschina.md)
    * [0.2. 图片素材](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/imagesassets.md)
-       * 0.2.1. 图标素材 & App 名称
+       * [0.2.1. 图标素材 & App 名称](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/imagesassets-01-icon_default.md)
 
