@@ -164,7 +164,20 @@ print(NSBundle.mainBundle().infoDictionary)
 let namespace = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
 ```
 
-###命名空间代码案例
+##Swift命名空间代码案例:
+---
+###Swift通过guard来避免重复嵌套判定 
+```swift
+guard 条件表达式 else {
+//            需要执行的语句
+//            只有条件为假才会执行{}中的内容
+            return
+        }
+        guard可以有效的解决可选绑定容易形成{}嵌套问题
+        
+```
+
+###代码案例
 ```Swift
 /// 添加一个子控制器
 //    func addChildViewController(childController: UIViewController, title: String, imageName: String) {
