@@ -160,8 +160,8 @@ let namespace = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! 
     + 在 swift 中，类名是包含命名空间的
     + 命名空间默认是项目名称，同一个命名空间全局共享
     + 如果新建项目时，项目名称中包含有中文，可以按照下图修改
-    + ![](./images/未登录界面截图/命名空间.jpg)
-
+    + 
+![image](images/CreateProject/命名空间.png)
 
 * 调整创建控制器代码，根据类名动态创建类
 
