@@ -31,3 +31,16 @@
 
 ![image](Images/ScreenShot3.gif)
 ![image](Images/ScreenShot2.gif)
+
+
+
+##日志框架 CocoaLumberjack
+- CocoaLumberjack是Mac和iOS上一个集快捷、简单、强大和灵活于一身的日志框架。CocoaLumberjack类似于流行的日志框架（如log4j），但它是专为Objective-C设计的，利用了多线程、GCD（如果可用）、无锁原子操作Objective-C运行时的动态特性。
+  - 作者源代码： https://github.com/CocoaLumberjack/CocoaLumberjack
+  - 相关中文资料：http://www.cocoachina.com/industry/20140414/8157.html
+
+##让你的日志变成彩色的 XcodeColors
+- 很有趣的插件，可以试一下哦~
+  - 作者源代码： https://github.com/DeepIT/XcodeColors
+
+![image](XcodeColors.png)
