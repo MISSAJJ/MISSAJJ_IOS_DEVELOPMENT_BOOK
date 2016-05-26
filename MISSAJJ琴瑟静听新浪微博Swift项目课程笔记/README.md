@@ -16,15 +16,15 @@ Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
 
  
 
-* [★【Chapter-08 MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记】](README.md)
-   * [0.1. 项目Git部署（使用OSChina开源中国)](oschina.md)
-   * [0.2. 图片素材](imagesassets.md)
-       * [0.2.1. 图标素材 & App 名称](imagesassets-01-icon_default.md)
-   * [0.3. 项目搭建](createproject.md)
-       * [0.3.1. 创建文件](createproject-01-createfiles.md)
-         * [0.3.1.1 创建自定义Log](0311_chuang_jian_zi_ding_yi_log.md)
-       * [0.3.2. 添加子控制器](createproject-02-addchildcontrollers.md)
-           * [0.3.2.0.Name Space 命名空间](0320name_space_ming_ming_kong_jian.md)
+* [★【Chapter-08 MISSAJJ琴瑟静听新浪微博Swift项目课程笔记】](README.md)
+   * [0.1. 项目Git部署（使用OSChina开源中国)](oschina.md)   (更新)
+   * [0.2. 图片素材](imagesassets.md)   (更新)
+       * [0.2.1. 图标素材 & App 名称](imagesassets-01-icon_default.md)  (更新)
+   * [0.3. 项目搭建](createproject.md)  (更新)
+       * [0.3.1. 创建文件](createproject-01-createfiles.md)  (更新)
+           * [0.3.1.1 创建自定义Log](0311_chuang_jian_zi_ding_yi_log.md)  (更新)
+       * [0.3.2. 添加子控制器](createproject-02-addchildcontrollers.md)  (更新)
+           * [0.3.2.0.Name Space 命名空间](0320name_space_ming_ming_kong_jian.md)  (更新)
            * [0.3.2.1. throw catch](throw_catch.md)
            * [0.3.2.2. 变量类型推导](variablestype.md)
        * [0.3.3. 添加加号按钮](createproject-03-costommaintabbar.md)
@@ -39,7 +39,7 @@ Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
        * [0.4.7. 阶段性小结](visitor-07-summary.md)
    * [0.5. 代码评审(Code Review)](code_review.md)
 
-
+ 
 
 
 
