@@ -63,7 +63,7 @@
 
      window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.whiteColor()
-        window?.rootViewController = MainViewController() //改为继承与TabbbarController的MainViewController
+        window?.rootViewController = MainViewController() //改为继承与UITabBarController的MainViewController
         
         window?.makeKeyAndVisible()
  
