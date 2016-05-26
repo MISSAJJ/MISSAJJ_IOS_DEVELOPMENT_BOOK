@@ -16,7 +16,7 @@ Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
  
 在 OC 语言中有宏定义可以简单定义 Log, 但是在 Swift 语言内是没有宏定义的, 所以我们需要通过其他办法来自定义 Log, 下面介绍几种相关自定义 Log 的工具
 
-##自定义 MALog
+##1.自定义 MALog
 
 ```swift
 import UIKit 
@@ -32,15 +32,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 } 
    
-   func MALog<T>(message : T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line)  {
+    func MALog<T>(message : T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line)  {
         
-        #if DEBUG
+        #if DEBUG  //swift 系统已经不支持宏定义了,所以需要用 DEBUG 必须在 Build Setting 搜索 custom flag, 点开 Other Swift Flags, 在 DEbug 处添加 `-D DEBUG`
+            
             //    print("\((fileName as NSString).pathComponents.last!).\(methodName)[\(lineNumber)]:\(message)")
+            
             print("\(methodName)[\(lineNumber)]: \(message)")
         #endif
         
     }
+ ```
  
+ ###自定义 MALog详解
+ ```Swift
      自定义LOG的目的:
      在开发阶段自动显示LOG
      在发布阶段自动屏蔽LOG
@@ -65,9 +70,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
 ```
 
-####注意: 自定义 MALog 必须自定义 Debug 标记
+###注意: 自定义 MALog 必须自定义 Debug 标记
 
-- 如图:在Build Setting 搜索custom flag, 点开 Other Swift Flags, 在 DEbug 处添加 `-D DEBUG`
+- 如图:在Build Setting 搜索 custom flag, 点开 Other Swift Flags, 在 DEbug 处添加 `-D DEBUG`
 
 ![image](images/CreateProject/添加 DEBUG.png)
 
@@ -82,7 +87,7 @@ application(_:didFinishLaunchingWithOptions:)[36]: []
 application(_:didFinishLaunchingWithOptions:)[37]: 123
 ```
 
-##CocoaPods 安装日志工具 QorumLogs
+##2.CocoaPods 安装日志工具 QorumLogs
 
 ![image](images/CreateProject/cocoaPods 安装.png)
 
@@ -177,7 +182,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ----
 
-##日志插件工具下载链接
+##3.日志插件工具下载链接
 ---
 ###日志工具QorumLogs
 
