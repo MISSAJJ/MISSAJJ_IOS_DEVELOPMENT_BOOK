@@ -35,6 +35,10 @@
 | ------ | ------ |
 | Main | MainViewController.swift(`:UITabBarController`) |
 
+
+![image](images/CreateProject/目录结构1.png)
+
+
 ### 功能模块
 
 | 目录 | Controller |
@@ -49,12 +53,21 @@
 * 每个 ViewController 继承自 `UITableViewController`
 * 搭建完成的文件结构图如下：
 
-![image](images/CreateProject/目录结构.png)
+![image](images/CreateProject/目录结构2.png)
 
  
 
 * 修改 `AppDelegate` 中的 `didFinishLaunchingWithOptions` 函数，设置启动控制器
 
-```swift
-window?.rootViewController = MainViewController()
+```swift     
+
+     window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = UIColor.whiteColor()
+        window?.rootViewController = MainViewController() //改为继承与TabbbarController的MainViewController
+        
+        window?.makeKeyAndVisible()
+ 
 ```
+* 模拟器启动项目截图
+
+![image](images/CreateProject/创建工程-模拟器.png)
