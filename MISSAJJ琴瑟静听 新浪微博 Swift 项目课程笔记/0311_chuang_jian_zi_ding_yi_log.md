@@ -4,56 +4,87 @@
 Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
   
 ```
+
+ 
+    打印LOG的弊端:
+    1.非常消耗性能
+    2.如果app部署到AppStore之后用户是看不到LOG的
+    
+    所以
+    开发阶段: 显示LOG
+    部署阶段: 隐藏LOG
+ 
 在 OC 语言中有宏定义可以简单定义 Log, 但是在 Swift 语言内是没有宏定义的, 所以我们需要通过其他办法来自定义 Log, 下面介绍几种相关自定义 Log 的工具
 
-##自定义 Log
+##自定义 MALog
 
 ```swift
 import UIKit 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate { 
 
-    var window: UIWindow?
-
-
+    var window: UIWindow? 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // 1.初始化LOG
-        //自定义 Log
-        MALog("test")
-        
-        // 2.初始化window
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.backgroundColor = UIColor.whiteColor()
-        
-        window?.rootViewController = MainViewController()
-        window?.makeKeyAndVisible()
-        
+     
+        //自定义 MALog
+        MALog("test")  
         return true
     }
-}
-
-/*
-自定义LOG的目的:
-在开发阶段自动显示LOG
-在发布阶段自动屏蔽LOG
-
-print(__FUNCTION__)  // 打印所在的方法
-print(__LINE__)     // 打印所在的行
-print(__FILE__)     // 打印所在文件的路径
-
-方法名称[行数]: 输出内容
-*/
-    func MALog<T>(message: T, method: String = #function, line: Int = #line)
-    {
+} 
+   
+   func MALog<T>(message : T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line)  {
+        
         #if DEBUG
-            print("\(method)[\(line)]: \(message)")
+            //    print("\((fileName as NSString).pathComponents.last!).\(methodName)[\(lineNumber)]:\(message)")
+            print("\(methodName)[\(lineNumber)]: \(message)")
         #endif
+        
     }
+ 
+     自定义LOG的目的:
+     在开发阶段自动显示LOG
+     在发布阶段自动屏蔽LOG
+     
+     print(#function)  // 打印所在的方法
+     print(#line)     // 打印所在的行
+     print(#file)     // 打印所在文件的路径
+     
+     方法名称[行数]: 输出内容
+     函数的默认值: 如果调用者没有传递对应的参数, 那么系统就会使用默认值, 如果调用者传递了参数, 那么就会使用传递的参数
+     
+     由于编译器可以通过赋值的类型自动推导出数据的真实类型, 所以在Swift开发中, 能不写数据类型就不写数据类型
+     优点: 可以减少冗余代码
+     
+     泛型:
+     如果想在函数中使用泛型, 那么必须告诉系统者是一个泛型函数
+     func 函数名称<T>(形参列表) -> 返回值类型
+     {
+     }
+     message : T
+     T具体是什么类型由调用者来确定, 调用者传递的是什么类型, T就是什么类型
+  
+```
+
+####注意: 自定义 MALog 必须自定义 Debug 标记
+
+- 如图:在Build Setting 搜索custom flag,添加 Debug
+
+![image](images/CreateProject/添加 DEBUG.png)
+
+- 日志输出
 
 ```
+application(_:didFinishLaunchingWithOptions:)[30]: test
+application(_:didFinishLaunchingWithOptions:)[33]: abc
+application(_:didFinishLaunchingWithOptions:)[34]: 1
+application(_:didFinishLaunchingWithOptions:)[35]: 10.1
+application(_:didFinishLaunchingWithOptions:)[36]: []
+application(_:didFinishLaunchingWithOptions:)[37]: 123
+```
+
 ##CocoaPods 安装日志工具 QorumLogs
 
-![image](cocoaPods 安装.png)
+![image](images/CreateProject/cocoaPods 安装.png)
 
 - 1.编辑 Podfile: 如图内1所示,打开编辑 Podfile 文件,输入以下代码并保存关闭
 
