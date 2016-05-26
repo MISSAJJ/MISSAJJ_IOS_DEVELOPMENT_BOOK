@@ -1,12 +1,15 @@
-# 创建文件
+# 创建项目文件
 
 ## 准备工作
 
 ### 删除模板文件
+此新浪微博 Swift 项目前期以全代码形式书写，后期会陆续改为StoryBoard形式的写法
 
 * ViewController.swift
 * Main.storyboard
 * LaunchScreen.xib
+
+
 
 ### 创建项目结构
 
@@ -46,7 +49,7 @@
 * 每个 ViewController 继承自 `UITableViewController`
 * 搭建完成的文件结构图如下：
 
-![image](./images/CreateProject/目录结构.png)
+![image](images/CreateProject/目录结构.png)
 
  
 
