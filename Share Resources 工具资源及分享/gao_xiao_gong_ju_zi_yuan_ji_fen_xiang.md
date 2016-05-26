@@ -9,9 +9,15 @@ Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
 MISSAJJ 分享给大家一些用下来觉得非常得心应手的工具，帮助大家一起提高开发效率及提升技术能力，欢迎大家联系分享资源。
  
 ----
-##项目的图片资源
-- 可以利用一个 Mac 软件解压 
- - https://github.com/devcxm/iOS-Images-Extractor
+##获取项目的图片资源iOS Images Extractor
+
+```
+Support Files 
+    png、jpg
+    ipa
+    car(Assets.car)
+``` 
+ - 下载地址：  https://github.com/devcxm/iOS-Images-Extractor
 
 ##生成 PNG 图标的工具
 - 可以根据需求对应 @2X，@3X 的尺寸生成对应的图标，平时用这个比较多，快速高效。
