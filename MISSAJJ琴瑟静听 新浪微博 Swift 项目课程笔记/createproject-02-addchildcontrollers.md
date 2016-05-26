@@ -152,14 +152,16 @@ class MainViewController: UITabBarController {
 print(vc)
 ```
 
--  将info.plist 的 key 值,显示真实 key 值的方法
-![](infolist 显示真实 key.png)
+* 将info.plist 的 key 值,显示真实 key 值的方法
 
-- 显示真实 Key 值的截图
 
-![image](命名空间 key.png)
+![image](images/CreateProject/infolist 显示真实 key.png)
 
-* 小结
+* 显示真实 Key 值的截图
+
+![image](images/CreateProject/命名空间 key.png)
+
+* namespace 对应的是 `CFBundleExecutable`
     * 在 swift 中，类名的组成格式是 `namespace.类名`
     * namespace 对应的是 `CFBundleExecutable`
 
