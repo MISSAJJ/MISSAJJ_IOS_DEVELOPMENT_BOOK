@@ -24,8 +24,10 @@ override func viewDidLoad() {
 
 ///  添加子控制器
 private func addChildViewController() {
-    tabBar.tintColor = UIColor.orangeColor()
 
+  // iOS7以后只需要设置tintColor, 那么图片和文字都会按照tintColor渲染
+    tabBar.tintColor = UIColor.orangeColor()
+    // 注意: Swift开发中定义变量时候先用let(常量), 只有真正需要修改时才用var
     let vc = HomeTableViewController()
     vc.title = "首页"
     vc.tabBarItem.image = UIImage(named: "tabbar_home")
