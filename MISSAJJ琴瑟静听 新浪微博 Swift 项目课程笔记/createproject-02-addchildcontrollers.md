@@ -145,13 +145,7 @@ class MainViewController: UITabBarController {
 - 正是因为Swift中有命名空间, 所以通过一个字符串来创建一个类和OC中也不太一样了, OC中可以直接通过类名创建一个类, 而Swift中如果想通过类名来创建一个类必须加上命名空间
 
 
-###通过命名空间可以实现什么效果?
-- 命名空间可运用于更换底部菜单图片及跳转 VC
-- 比如:淘宝APP 搞活动的时候,用户没有更新 APP, 却在打开 APP 发现底部菜单的图片和跳转界面全部被换掉了
-- 方案:为了防止应用审核期的等待,在开发的时候早已经将未来要做的活动做好了对应的一套菜单及 VC,通过网络传 json 给 APP 端, 如果 json 没有数据就显示默认的一套菜单, 到做活动的时候,服务器传的 json 数据有值了,APP端就会显示另外一套预先准备的菜单
 
-
-![image](images/CreateProject/命名空间运用于更换菜单图片.png)
 ### 用代码动态创建类
 
 * 跟踪 `类` 名称
@@ -311,3 +305,155 @@ private func addChildViewControllers() {
 }
 ```
 
+###通过命名空间可以实现什么效果?
+- 命名空间可运用于更换底部菜单图片及跳转 VC
+- 比如:淘宝APP 搞活动的时候,用户没有更新 APP, 却在打开 APP 发现底部菜单的图片和跳转界面全部被换掉了
+- 方案:为了防止应用审核期的等待,在开发的时候早已经将未来要做的活动做好了对应的一套菜单及 VC,通过网络传 json数据 给 APP 端, 如果 json 没有数据就显示默认的一套菜单, 到做活动的时候,服务器传的 json 数据有值了,APP端就会显示另外一套预先准备的菜单
+
+
+#####json 数据示例:
+```
+ [
+  {
+  "vcName": "HomeTableViewController",
+  "title": "首页123",
+  "imageName": "tabbar_home"
+  },
+  {
+  "vcName": "MessageTableViewController",
+  "title": "消息123",
+  "imageName": "tabbar_message_center"
+  },
+  {
+  "vcName": "DiscoverTableViewController",
+  "title": "广场123",
+  "imageName": "tabbar_discover"
+  },
+  {
+  "vcName": "ProfileTableViewController",
+  "title": "我123",
+  "imageName": "tabbar_profile"
+  }
+  ]
+```
+#####方案示意图
+
+![image](images/CreateProject/命名空间运用于更换菜单图片.png)
+
+####通过 json 数据通过命名空间动态创建控制器的代码案例
+
+
+```Swift
+import UIKit
+
+class MainViewController: UITabBarController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // iOS7以后只需要设置tintColor, 那么图片和文字都会按照tintColor渲染
+        tabBar.tintColor = UIColor.orangeColor()
+        
+        // 添加子控制器
+        addChildViewControllers()
+    }
+    
+    /// 添加所有子控制器
+    func addChildViewControllers()
+    {
+        
+        // 1.根据JSON文件创建控制器
+        // 1.1读取JSON数据
+        guard let filePath =  NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil) else
+        {
+            NJLog("JSON文件不存在")
+            return
+        }
+        
+        guard let data = NSData(contentsOfFile: filePath) else
+        {
+            NJLog("加载二进制数据失败")
+            return
+        }
+        
+        // 1.2将JSON数据转换为对象(数组字典)
+        do
+        {
+            /*
+             Swift和OC不太一样, OC中一般情况如果发生错误会给传入的指针赋值, 而在Swift中使用的是异常处理机制
+             1.以后但凡看大 throws的方法, 那么就必须进行 try处理, 而只要看到try, 就需要写上do catch
+             2.do{}catch{}, 只有do中的代码发生了错误, 才会执行catch{}中的代码
+             3. try  正常处理异常, 也就是通过do catch来处理
+                try! 告诉系统一定不会有异常, 也就是说可以不通过 do catch来处理
+                     但是需要注意, 开发中不推荐这样写, 一旦发生异常程序就会崩溃
+                     如果没有异常那么会返回一个确定的值给我们
+        
+                try? 告诉系统可能有错也可能没错, 如果没有系统会自动将结果包装成一个可选类型给我们, 如果有错系统会返回nil, 如果使用try? 那么可以不通过do catch来处理
+            */
+            
+            let objc = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! [[String: AnyObject]]
+            
+            // 1.3遍历数组字典取出每一个字典
+            for dict in objc
+            {
+                // 1.4根据遍历到的字典创建控制器
+                let title = dict["title"] as? String
+                let vcName = dict["vcName"] as? String
+                let imageName = dict["imageName"] as? String
+                addChildViewController(vcName, title: title, imageName: imageName)
+            }
+        }catch
+        {
+            // 只要try对应的方法发生了异常, 就会执行catch{}中的代码
+            addChildViewController("HomeTableViewController", title: "首页", imageName: "tabbar_home")
+            addChildViewController("MessageTableViewController", title: "消息", imageName: "tabbar_message_center")
+            addChildViewController("DiscoverTableViewController", title: "发现", imageName: "tabbar_discover")
+            addChildViewController("ProfileTableViewController", title: "我", imageName: "tabbar_profile")
+        }
+    }
+
+    /// 添加一个子控制器
+    func addChildViewController(childControllerName: String?, title: String?, imageName: String?) {
+
+        
+        // 1.动态获取命名空间
+        guard let name =  NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as? String else
+        {
+            NJLog("获取命名空间失败")
+            return
+        }
+        
+        // 2.根据字符串获取Class
+        var cls: AnyClass? = nil
+        if let vcName = childControllerName
+        {
+            cls = NSClassFromString(name + "." + vcName)
+        }
+        
+        // 3.根据Class创建对象
+        // Swift中如果想通过一个Class来创建一个对象, 必须告诉系统这个Class的确切类型
+        guard let typeCls = cls as? UITableViewController.Type else
+        {
+            NJLog("cls不能当做UITableViewController")
+            return
+        }
+        // 通过Class创建对象
+        let childController = typeCls.init()
+        
+        
+        // 1.2设置自控制的相关属性
+        childController.title = title
+        if let ivName = imageName
+        {
+            childController.tabBarItem.image = UIImage(named: ivName)
+            childController.tabBarItem.selectedImage = UIImage(named: ivName + "_highlighted")
+        }
+        
+        // 1.3包装一个导航控制器
+        let nav = UINavigationController(rootViewController: childController)
+        // 1.4将子控制器添加到UITabBarController中
+        addChildViewController(nav)
+        
+    }
+}
+```
