@@ -17,6 +17,7 @@ MISSAJJ分享给大家一些用下来觉得非常得心应手的工具，
    * [Mac 高效工具资源及分享](gao_xiao_gong_ju_zi_yuan_ji_fen_xiang.md)
    * [Xcode开发必备-优秀插件分享](xcodekai_fa_bi_5907-_you_xiu_cha_jian_fen_xiang.md)
    * [Github-iOS 优秀代码集萃 和 面试题集锦](github-ios_you_xiu_dai_ma_ji_cui_he_mian_shi_ti_ji.md)
+   * [Mac系统常用快捷键以及技巧大全](macxi_tong_chang_yong_kuai_jie_jian_yi_ji_ji_qiao_.md)
    * [Markdown 语法整理](markdownyu_fa_zheng_li.md)
    * [CocoaPods 的使用](cocoapodsde_shi_yong.md)
    * [项目管理 Git 常用命令](xiangmu_guan_li_git_chang_yong_ming_ling.md)
