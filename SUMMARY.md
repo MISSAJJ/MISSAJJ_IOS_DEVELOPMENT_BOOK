@@ -7,7 +7,7 @@
    * [Github-iOS 优秀代码集萃 和 面试题集锦](MISSAJJ琴瑟静听高效工具资源及分享/github-ios_you_xiu_dai_ma_ji_cui_he_mian_shi_ti_ji.md)
    * [Mac系统常用快捷键以及技巧大全](MISSAJJ琴瑟静听高效工具资源及分享/macxi_tong_chang_yong_kuai_jie_jian_yi_ji_ji_qiao_.md)
    * [Markdown 语法整理](MISSAJJ琴瑟静听高效工具资源及分享/markdownyu_fa_zheng_li.md)
-   * [CocoaPods 的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
+   * [CocoaPods 的使用](MISSAJJ琴瑟静听高效工具资源及分享/cocoapodsde_shi_yong.md)
    * [项目管理 Git 常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
 * [★【Chapter-02  MISSAJJ琴瑟静听 iOS 项目开发 OC 语言课程笔记】](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/README.md)
    * [iOS 项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
