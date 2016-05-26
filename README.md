@@ -217,3 +217,5 @@ Update 更新：2016年5月27日 By {MISSAJJ琴瑟静听}
 直接阅读此书，请点底部 > 箭头按钮开始阅读
 ```
  * [GitBook在线阅读地址](https://missajj.gitbooks.io/missajj_iosdevelopment_gitbook/content/)
+
+![image](cover.jpg)
