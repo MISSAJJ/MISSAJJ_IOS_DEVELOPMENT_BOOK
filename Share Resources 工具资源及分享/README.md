@@ -1,6 +1,6 @@
 #Chapter-01 MISSAJJ琴瑟静听高效工具资源分享
 ```objc
-Update更新：2016年5月22日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
 友情提示：
 免费 MAC 软件下载地址随时会失效，下载到就是赚到！你懂的！^_^
 ```
