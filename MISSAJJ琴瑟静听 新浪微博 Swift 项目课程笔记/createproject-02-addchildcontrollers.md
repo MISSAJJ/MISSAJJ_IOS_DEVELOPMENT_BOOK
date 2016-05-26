@@ -164,6 +164,65 @@ print(NSBundle.mainBundle().infoDictionary)
 let namespace = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
 ```
 
+###命名空间代码案例
+```Swift
+/// 添加一个子控制器
+//    func addChildViewController(childController: UIViewController, title: String, imageName: String) {
+    
+    func addChildViewController(childControllerName: String, title: String, imageName: String) {
+    
+        /*
+        guard 条件表达式 else {
+//            需要执行的语句
+//            只有条件为假才会执行{}中的内容
+            return
+        }
+        guard可以有效的解决可选绑定容易形成{}嵌套问题
+        */
+        
+        // 1.动态获取命名空间
+        // 由于字典/数组中只能存储对象, 所以通过一个key从字典中获取值取出来是一个AnyObject类型, 并且如果key写错或者没有对应的值, 那么就取不到值, 所以返回值可能有值也可能没值, 所以最终的类型是AnyObject?
+        guard let name =  NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as? String else
+        {
+            NJLog("获取命名空间失败")
+            return
+        }
+        
+        /*
+        Swift中新增了一个叫做命名空间的概念
+        作用: 避免重复
+        不用项目中的命名空间是不一样的, 默认情况下命名空间的名称就是当前项目的名称
+        正是因为Swift可以通过命名空间来解决重名的问题, 所以在做Swift开发时尽量使用cocoapods来集成三方框架, 这样可以有效的避免类名重复
+        正是因为Swift中有命名空间, 所以通过一个字符串来创建一个类和OC中也不太一样了, OC中可以直接通过类名创建一个类, 而Swift中如果想通过类名来创建一个类必须加上命名空间
+        */
+        let cls: AnyClass? = NSClassFromString(name + "." + childControllerName)
+        
+         // Swift中如果想通过一个Class来创建一个对象, 必须告诉系统这个Class的确切类型
+        guard let typeCls = cls as? UITableViewController.Type else
+        {
+            NJLog("cls不能当做UITableViewController")
+            return
+        }
+        
+        // 通过Class创建对象
+        let childController = typeCls.init()
+        NJLog(childController)
+        
+        /*
+        // 1.2设置自控制的相关属性
+        childController.title = title
+        childController.tabBarItem.image = UIImage(named: imageName)
+        childController.tabBarItem.selectedImage = UIImage(named: imageName + "_highlighted")
+        
+        
+        // 1.3包装一个导航控制器
+        let nav = UINavigationController(rootViewController: childController)
+        // 1.4将子控制器添加到UITabBarController中
+        addChildViewController(nav)
+        */
+    }
+
+```        
 * Tips
     + 在 swift 中，类名是包含命名空间的
     + 命名空间默认是项目名称，同一个命名空间全局共享
