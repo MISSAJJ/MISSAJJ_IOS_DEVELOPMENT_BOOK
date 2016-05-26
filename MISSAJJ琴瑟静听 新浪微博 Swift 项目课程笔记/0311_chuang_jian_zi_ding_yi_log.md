@@ -1,5 +1,91 @@
 # 创建自定义Log
 ----
+
+在 OC 语言中有宏定义可以简单定义 Log, 但是在 Swift 语言内是没有宏定义的, 所以我们需要通过其他办法来自定义 Log, 下面介绍几种相关自定义 Log 的工具
+
+
+##CocoaPods 安装日志工具 QorumLogs
+
+![image](cocoaPods 安装.png)
+
+- 1.编辑 Podfile: 如图内1所示,打开编辑 Podfile 文件,输入以下代码并保存关闭
+
+
+```
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'QorumLogs'
+```
+
+- 2.点 Install Pods 安装,耐心等待直到安装完成提示重启项目,之后是在xcworkspace文件打开
+
+```
+安装完成后日志输出
+
+
+/usr/local/bin/pod install
+
+Updating local specs repositories
+
+CocoaPods 1.0.0 is available.
+To update use: `gem install cocoapods`
+Until we reach version 1.0 the features of CocoaPods can and will change.
+We strongly recommend that you use the latest version at all times.
+
+For more information see http://blog.cocoapods.org
+and the CHANGELOG for this version http://git.io/BaH8pQ.
+
+Analyzing dependencies
+Downloading dependencies
+Using QorumLogs (0.7.2)
+Generating Pods project
+Integrating client project
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+
+
+```
+
+- 3.AppDelegate.swift导入头文件,并开启日志输出
+
+
+```Swift
+import UIKit
+import QorumLogs //导入头文件
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = UIColor.whiteColor()
+        window?.rootViewController = MainViewController()
+        
+        window?.makeKeyAndVisible()
+        
+        //写下这两句开启日志输出
+        QorumLogs.enabled = true
+        QorumLogs.test()
+        
+        
+        return true
+    }
+    
+```
+- 4.输出的日志如图显示为英文,但还不是彩色的
+
+
+![image](日志显示.png)
+
+- 5.见证奇迹的时刻: 让日志变彩色,安装XcodeColors:
+
+![image](彩色日志.png)
+
 ##日志工具QorumLogs
 
 - 为 Xcode 和 Google Docs 设计的 Swift 日志工具。
@@ -11,6 +97,7 @@
 ![image](https://camo.githubusercontent.com/2fc12517298757e8e188e9265d7166d2bfac324e/687474703a2f2f692e696d6775722e636f6d2f4b374f577142772e676966)
 ##让你的日志变成彩色的 XcodeColors
 - 很有趣的插件，可以试一下哦~
-  - 作者源代码： https://github.com/DeepIT/XcodeColors
+  - 作者源代码： https://github.com/robbiehanson/XcodeColors
 
-![image](./images/XcodeColors.png)
+![image](../Share Resources 工具资源及分享/Images/XcodeColors.png)
+
