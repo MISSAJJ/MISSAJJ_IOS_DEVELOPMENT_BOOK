@@ -72,6 +72,7 @@
        * [0.3.2. 添加子控制器](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-02-addchildcontrollers.md)
            * [0.3.2.1. throw catch](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/throw_catch.md)
            * [0.3.2.2. 变量类型推导](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/variablestype.md)
+           * 0.3.2.0.Name Space 命名空间
        * [0.3.3. 添加加号按钮](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-03-costommaintabbar.md)
        * [0.3.4. 阶段性小结](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-04-summary.md)
    * [0.4. 未登录页面处理](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor.md)
