@@ -1,6 +1,11 @@
 # Xcode开发必备-优秀插件分享
  
 ----
+
+```objc
+Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
+ 
+```
 ##CocoaPods 插件 cocoapods-xcode-plugin
 
 - 我很不喜欢用终端设置 CocoaPods，所以站在巨人的肩膀上用了这个插件，非常好用哦!
