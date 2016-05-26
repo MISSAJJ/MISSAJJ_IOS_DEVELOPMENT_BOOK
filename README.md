@@ -179,8 +179,16 @@ Update 更新：2016年5月26日 By {MISSAJJ琴瑟静听}
  
 ####Contact 联系方式
  
-- 个人博客 : http://www.MISSAJJ.com （此域名 ICP 备案中，暂时关闭）
-- 个人博客 :http://cz.jiboit.com （临时博客地址，感谢技柏科技提供免费空间）
+-  MISSAJJ网站 : http://www.MISSAJJ.com 
+  - 此域名解析在海外服务器近4年,如今满怀爱国之心想回归祖国
+  - 但是天朝个人网站的 ICP 备案好麻烦哦~
+  - 网站名不能是英文名? 不能是博客? 若是博客还需要待预审?...
+  - 反复被拒绝了4次以上了, 竟然比Appstore 的 APP 审核还要麻烦!!!
+  - 索性暂时关闭,大大滴写上"网站正在等待中国工信部ICP备案中"
+  - ICP 审核人员:你们慢慢~慢慢 and 慢慢~慢慢~审核吧,姐姐我不伺候了!
+  
+  
+- Blog : http://cz.jiboit.com （临时博客地址，感谢技柏科技提供免费空间）
 - Github  : https://github.com/MISSAJJ
 - GitBook : https://www.gitbook.com/@missajj
 
@@ -195,7 +203,9 @@ Update 更新：2016年5月26日 By {MISSAJJ琴瑟静听}
 ```objc
 感谢 Jobs 的激励，感谢 Limon 和 邦Ben 的建议,
 感谢传智、小码哥、MJ 等各种视频课程及资料的启发，
-感谢美国朋友 Matt 分享资源，越南极客 Brian 的帮助。
+感谢美国同事 Matt 、美国朋友 Joseph 和 Danny 分享的资源，
+感谢越南同事 Brian (极客)对我所提出的各种SB问题的解答和帮助,
+感谢亲爱哒读者们给我点的 Stars, 感谢大家的关注,支持,建议和吐槽。
 ```
 ####Reading 阅读说明  
 
