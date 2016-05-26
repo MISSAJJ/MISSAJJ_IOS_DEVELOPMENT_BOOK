@@ -7,7 +7,8 @@ Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
 免费 MAC 软件下载地址随时会失效，下载到就是赚到！你懂的！^_^
 ```
 MISSAJJ 分享给大家一些用下来觉得非常得心应手的工具，帮助大家一起提高开发效率及提升技术能力，欢迎大家联系分享资源。
-
+#Mac软件资源
+----
 ##项目的图片资源
 - 可以利用一个 Mac 软件解压 
  - https://github.com/devcxm/iOS-Images-Extractor
@@ -28,7 +29,7 @@ MISSAJJ 分享给大家一些用下来觉得非常得心应手的工具，帮助
      （下载到就是赚到！此类软件的下载地址很快就会被屏蔽或失效，所以请尽快下载，你懂的！）
      - 爱情守望者 ： http://www.waitsun.com  （目前已不再免费，仅会员可下载）
 
-##Github-iOS 代码备忘
+##Github-iOS 代码备忘（很棒！）
 - 非常详尽的归纳整理了 Github 各种 iOS 相关的代码
  - http://github.ibireme.com/github/list/ios
  - 作者本人 ibireme 的 github 地址 https://github.com/ibireme
@@ -39,6 +40,9 @@ MISSAJJ 分享给大家一些用下来觉得非常得心应手的工具，帮助
 - 这个我就不多解释了，求职面试必备，呵呵^_^
  - https://github.com/ChenYilong/iOSInterviewQuestions
 
+
+#Xcode插件
+----
 ##CocoaPods 插件 cocoapods-xcode-plugin
 
 - 我很不喜欢用终端设置 CocoaPods，所以站在巨人的肩膀上用了这个插件，非常好用哦!
