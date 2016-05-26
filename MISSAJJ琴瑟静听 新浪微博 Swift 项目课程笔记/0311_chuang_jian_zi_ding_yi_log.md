@@ -67,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ####注意: 自定义 MALog 必须自定义 Debug 标记
 
-- 如图:在Build Setting 搜索custom flag,添加 Debug
+- 如图:在Build Setting 搜索custom flag, 点开 Other Swift Flags, 在 DEbug 处添加 `-D DEBUG`
 
 ![image](images/CreateProject/添加 DEBUG.png)
 
