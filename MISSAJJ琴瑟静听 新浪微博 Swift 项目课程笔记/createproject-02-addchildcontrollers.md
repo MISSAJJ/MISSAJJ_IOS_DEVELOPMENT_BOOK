@@ -134,8 +134,16 @@ class MainViewController: UITabBarController {
 ![image](images/CreateProject/Simulator Screen Shot 2016年5月26日 21.40.38.png)
 
 
-#其他知识补充:命名空间
+#Name Space命名空间
 ---
+
+ 
+####Swift中新增了一个叫做命名空间的概念
+- 作用: 避免重复
+- 不用项目中的命名空间是不一样的, 默认情况下命名空间的名称就是当前项目的名称
+- 正是因为Swift可以通过命名空间来解决重名的问题, 所以在做Swift开发时尽量使用cocoapods来集成三方框架, 这样可以有效的避免类名重复
+- 正是因为Swift中有命名空间, 所以通过一个字符串来创建一个类和OC中也不太一样了, OC中可以直接通过类名创建一个类, 而Swift中如果想通过类名来创建一个类必须加上命名空间
+ 
 ### 用代码动态创建类
 
 * 跟踪 `类` 名称
