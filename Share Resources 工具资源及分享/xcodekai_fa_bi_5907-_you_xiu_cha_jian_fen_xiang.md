@@ -6,6 +6,7 @@
 - 我很不喜欢用终端设置 CocoaPods，所以站在巨人的肩膀上用了这个插件，非常好用哦!
  - https://github.com/kattrali/cocoapods-xcode-plugin
 
+![image](./Images/cocoapods-menu.png)
 ##快速写代码注释的插件 VVDocumenter-Xcode
 - 平时经常使用的，有些依赖她了。
  - https://github.com/onevcat/VVDocumenter-Xcode
@@ -43,4 +44,4 @@
 - 很有趣的插件，可以试一下哦~
   - 作者源代码： https://github.com/DeepIT/XcodeColors
 
-![image](XcodeColors.png)
+![image](./Images/XcodeColors.png)
