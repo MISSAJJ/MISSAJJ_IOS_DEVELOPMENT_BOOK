@@ -13,11 +13,7 @@
 #### 主目录 `Classes`
 
 #### 二级目录
-| First Header | Second Header | Third Header |
-| ------------ | ------------- | ------------ |
-| Content Cell | Content Cell  | Content Cell |
-| Content Cell | Content Cell  | Content Cell |
-
+ 
 
  目录名 | 说明 
  ----- | -----
@@ -33,13 +29,13 @@
 ### Main
 
 | 目录 | Controller |
-| -- | -- |
+| ------ | ------ |
 | Main | MainViewController.swift(`:UITabBarController`) |
 
 ### 功能模块
 
 | 目录 | Controller |
-| -- | -- |
+| ------ | ------ |
 | Home | HomeTableViewController.swift |
 | Message | MessageTableViewController.swift |
 | Discover | DiscoverTableViewController.swift |
