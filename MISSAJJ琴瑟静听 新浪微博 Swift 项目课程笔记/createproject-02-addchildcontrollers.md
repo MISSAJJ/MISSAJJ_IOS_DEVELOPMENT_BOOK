@@ -134,7 +134,7 @@ class MainViewController: UITabBarController {
 ![image](images/CreateProject/Simulator Screen Shot 2016年5月26日 21.40.38.png)
 
 
-#其他知识补充
+#其他知识补充:命名空间
 ---
 ### 用代码动态创建类
 
