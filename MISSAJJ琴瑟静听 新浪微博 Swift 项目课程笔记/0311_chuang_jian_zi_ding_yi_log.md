@@ -6,7 +6,51 @@ Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
 ```
 在 OC 语言中有宏定义可以简单定义 Log, 但是在 Swift 语言内是没有宏定义的, 所以我们需要通过其他办法来自定义 Log, 下面介绍几种相关自定义 Log 的工具
 
+##自定义 Log
 
+```swift
+import UIKit 
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // 1.初始化LOG
+        //自定义 Log
+        MALog("test")
+        
+        // 2.初始化window
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = UIColor.whiteColor()
+        
+        window?.rootViewController = MainViewController()
+        window?.makeKeyAndVisible()
+        
+        return true
+    }
+}
+
+/*
+自定义LOG的目的:
+在开发阶段自动显示LOG
+在发布阶段自动屏蔽LOG
+
+print(__FUNCTION__)  // 打印所在的方法
+print(__LINE__)     // 打印所在的行
+print(__FILE__)     // 打印所在文件的路径
+
+方法名称[行数]: 输出内容
+*/
+    func MALog<T>(message: T, method: String = #function, line: Int = #line)
+    {
+        #if DEBUG
+            print("\(method)[\(line)]: \(message)")
+        #endif
+    }
+
+```
 ##CocoaPods 安装日志工具 QorumLogs
 
 ![image](cocoaPods 安装.png)
@@ -65,16 +109,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.backgroundColor = UIColor.whiteColor()
-        window?.rootViewController = MainViewController()
+             // 1.初始化LOG
+             
+         //开关日志输出
+         QorumLogs.enabled = true // 启用QorumLogs
+         QorumLogs.enabled = false //项目发布之前,关闭QorumLogs
+         QorumLogs.test() // 测试QorumLogs
         
-        window?.makeKeyAndVisible()
+        // 设置需要显示的等级
+         QorumLogs.minimumLogLevelShown = 4
         
-        //写下这两句开启日志输出
-        QorumLogs.enabled = true
-        QorumLogs.test()
+        // 测试的时候，可以限定输出文件
+        QorumLogs.onlyShowThisFile(MainViewController)
         
+        QL1("mylog") // debug
+        QL2("mylog")  // info
+        QL3("mylog") // warning
+        QL4("mylog") // error
+        QLPlusLine() // 打印加号作为分割线 +++++++++++++ 
+
+        QLShortLine() // 打印等号作为分割线 ==========
         
         return true
     }
