@@ -1,4 +1,4 @@
-# 项目Git部署
+# 项目Git部署（使用OSChina开源中国)
 
 
 ```objc
