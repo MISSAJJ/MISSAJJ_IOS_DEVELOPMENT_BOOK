@@ -9,6 +9,8 @@
    * [Markdown 语法整理](Share Resources 工具资源及分享/markdownyu_fa_zheng_li.md)
    * [CocoaPods 的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
    * [项目管理 Git 常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
+
+
 * [★【Chapter-02  MISSAJJ琴瑟静听 iOS 项目开发 OC 语言课程笔记】](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/README.md)
    * [iOS 项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
    * [PCH 文件的设置创建](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/pchwen_jian_de_she_zhi_chuang_jian.md)
@@ -25,25 +27,35 @@
    * [相机相簿存图 UIImagePicker SDK](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/xiang_jixiang_bu_cun_tu_uiimagepicker_sdk.md)
    * [消息推送通知](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/xiao_xi_tui_song_tong_zhi.md)
    * [Runtime 简介和作用](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/runtimejian_jie_he_zuo_yong.md)
+
+
 * [★【Chapter-03  UIKit 框架下的各类控件和知识点】](UIKit框架下的各类控件和知识点/README.md)
    * [所有控件的父类:UIView](UIKit框架下的各类控件和知识点/suo_you_kong_jian_de_fu_7c7b3a_uiview.md)
    * [Frame 和 Bounds 及尺寸位置](UIKit框架下的各类控件和知识点/framehe_bounds_ji_chi_cun_wei_zhi.md)
    * [UITextField UILabel 图文混排](UIKit框架下的各类控件和知识点/uitextfield_uilabel_tu_wen_hun_pai.md)
    * [UILabel 控件-文本](UIKit框架下的各类控件和知识点/uilabelkong_4ef6-_wen_ben.md)
+
+
 * [★【Chapter-04 地图定位 CoreLocation 框架】](地图定位CoreLocation框架/README.md)
    * [（I）不同 iOS 系统地图定位的注意点](地图定位CoreLocation框架/iff09_bu_tong_ios_xi_tong_di_tu_ding_wei_de_zhu_yi.md)
    * [（II）地图定位 CoreLocation 框架](地图定位CoreLocation框架/iiff09ditu_ding_wei_corelocation_kuang_jia.md)
    * [（III）MISSAJJ整理的 MALocationTool 定位工具类](地图定位CoreLocation框架/iiimissajjzheng_li_de_malocationtool_ding_wei_gong.md)
+
+
 * [★【Chapter-05 蓝牙交互 BlueTooth】](蓝牙交互CoreBlueTooth/README.md)
    * [（I）蓝牙交互 CoreBlueTooth](蓝牙交互CoreBlueTooth/iff09_lan_ya_jiaohu_corebluetooth.md)
    * [（II）蓝牙交互 GameKit](蓝牙交互CoreBlueTooth/iiff09_lan_ya_jiao_hu_gamekit.md)
    * [（III）蓝牙交互 Mutipeer Connectivity](蓝牙交互CoreBlueTooth/iiiff09_lan_ya_jiaohu_mutipeer_connectivity.md)
+
+
 * [★【Chapter-06 ReactiveCocoa ( RAC ) 编程思想和 MVVM 架构进阶】](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/README.md)
    * [(I)  ReactiveCocoa（RAC）编程思想和 MVVM 架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/i_reactivecocoa_racff09_bian_cheng_si_xiang_he_mvv.md)
    * [(II)  ReactiveCocoa（RAC）编程思想和 MVVM 架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.md)
    * [(III)  ReactiveCocoa（RAC）编程思想和 MVVM 架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/iii_reactivecocoa_racff09_bian_cheng_si_xiang_he_m.md)
    * [(IV)  ReactiveCocoa（RAC）编程思想和 MVVM 架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/iv_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.md)
    * [(V) ReactiveCocoa（RAC）编程思想和 MVVM 架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/v_reactivecocoaracff09_bian_cheng_si_xiang_he_mvvm.md)
+
+
 * [★【Chapter-07 MISSAJJ琴瑟静听 Swift 基础语言课程笔记】](MISSAJJ琴瑟静听Swift基础语言课程笔记/SUMMARY.md)
    * [Swift-入门介绍](MISSAJJ琴瑟静听Swift基础语言课程笔记/README.md)
    * [Swift-数据类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/12.md)
@@ -62,26 +74,29 @@
    * [Swift-懒加载](MISSAJJ琴瑟静听Swift基础语言课程笔记/09.md)
    * [Swift-getter & setter](MISSAJJ琴瑟静听Swift基础语言课程笔记/10.md)
    * [Swift-ATS应用传输安全](MISSAJJ琴瑟静听Swift基础语言课程笔记/11.md)
-* [★【Chapter-08 MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记】](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/README.md)
-   * [0.1. 项目Git部署（使用OSChina开源中国)](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/oschina.md)
-   * [0.2. 图片素材](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/imagesassets.md)
-       * [0.2.1. 图标素材 & App 名称](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/imagesassets-01-icon_default.md)
-   * [0.3. 项目搭建](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject.md)
-       * [0.3.1. 创建文件](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-01-createfiles.md)
-           * [0.3.1.1 创建自定义Log](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/0311_chuang_jian_zi_ding_yi_log.md)
-       * [0.3.2. 添加子控制器](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-02-addchildcontrollers.md)
-           * [0.3.2.0.Name Space 命名空间](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/0320name_space_ming_ming_kong_jian.md)
-           * [0.3.2.1. throw catch](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/throw_catch.md)
-           * [0.3.2.2. 变量类型推导](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/variablestype.md)
-       * [0.3.3. 添加加号按钮](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-03-costommaintabbar.md)
-       * [0.3.4. 阶段性小结](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/createproject-04-summary.md)
-   * [0.4. 未登录页面处理](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor.md)
-       * [0.4.1. 表格视图控制器基类](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-01-basetableviewcontroller.md)
-       * [0.4.2. 用户登录视图](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-02-userloginview.md)
-       * [0.4.3. 设置未登录信息](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-03-loginlogic.md)
-       * [0.4.4. 首页动画](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-04-homeanimation.md)
-       * [0.4.5. 登录&注册代理回调](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-05-logindelegate.md)
-       * [0.4.6. 设置全局外观](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-06-setupappearance.md)
-       * [0.4.7. 阶段性小结](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/visitor-07-summary.md)
-   * [0.5. 代码评审(Code Review)](MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/code_review.md)
+
+
+  
+* [★【Chapter-08 MISSAJJ琴瑟静听新浪微博Swift项目课程笔记】](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/README.md)
+   * [0.1. 项目Git部署（使用OSChina开源中国)](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/oschina.md)
+   * [0.2. 图片素材](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/imagesassets.md)
+       * [0.2.1. 图标素材 & App 名称](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/imagesassets-01-icon_default.md)
+   * [0.3. 项目搭建](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/createproject.md)
+       * [0.3.1. 创建文件](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/createproject-01-createfiles.md)
+           * [0.3.1.1 创建自定义Log](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0311_chuang_jian_zi_ding_yi_log.md)
+       * [0.3.2. 添加子控制器](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/createproject-02-addchildcontrollers.md)
+           * [0.3.2.0.Name Space 命名空间](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0320name_space_ming_ming_kong_jian.md)
+           * [0.3.2.1. throw catch](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/throw_catch.md)
+           * [0.3.2.2. 变量类型推导](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/variablestype.md)
+       * [0.3.3. 添加加号按钮](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/createproject-03-costommaintabbar.md)
+       * [0.3.4. 阶段性小结](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/createproject-04-summary.md)
+   * [0.4. 未登录页面处理](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor.md)
+       * [0.4.1. 表格视图控制器基类](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-01-basetableviewcontroller.md)
+       * [0.4.2. 用户登录视图](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-02-userloginview.md)
+       * [0.4.3. 设置未登录信息](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-03-loginlogic.md)
+       * [0.4.4. 首页动画](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-04-homeanimation.md)
+       * [0.4.5. 登录&注册代理回调](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-05-logindelegate.md)
+       * [0.4.6. 设置全局外观](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-06-setupappearance.md)
+       * [0.4.7. 阶段性小结](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-07-summary.md)
+   * [0.5. 代码评审(Code Review)](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/code_review.md)
 
