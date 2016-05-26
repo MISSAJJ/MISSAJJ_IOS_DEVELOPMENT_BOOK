@@ -2,7 +2,7 @@
 
 * [Introduction前言介绍](README.md)
 * [★【Chapter-01  MISSAJJ高效工具资源分享】](Share Resources 工具资源及分享/README.md)
-   * Xcode开发必备-优秀插件分享
+   * [Xcode开发必备-优秀插件分享](Share Resources 工具资源及分享/xcodekai_fa_bi_5907-_you_xiu_cha_jian_fen_xiang.md)
    * [高效工具资源及分享](Share Resources 工具资源及分享/gao_xiao_gong_ju_zi_yuan_ji_fen_xiang.md)
    * [Markdown 语法整理](Share Resources 工具资源及分享/markdownyu_fa_zheng_li.md)
    * [CocoaPods 的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
