@@ -67,11 +67,13 @@ Update 更新：2016年5月26日 By {MISSAJJ琴瑟静听}
 
 
 * [★【Chapter-01  MISSAJJ高效工具资源分享】](Share Resources 工具资源及分享/README.md)
-   * [高效工具资源及分享](Share Resources 工具资源及分享/gao_xiao_gong_ju_zi_yuan_ji_fen_xiang.md)
+   * [Mac 高效工具资源及分享](Share Resources 工具资源及分享/gao_xiao_gong_ju_zi_yuan_ji_fen_xiang.md)
+   * [Xcode开发必备-优秀插件分享](Share Resources 工具资源及分享/xcodekai_fa_bi_5907-_you_xiu_cha_jian_fen_xiang.md)
+   * [Github-iOS 优秀代码集萃 和 面试题集锦](Share Resources 工具资源及分享/github-ios_you_xiu_dai_ma_ji_cui_he_mian_shi_ti_ji.md)
    * [Markdown 语法整理](Share Resources 工具资源及分享/markdownyu_fa_zheng_li.md)
    * [CocoaPods 的使用](Share Resources 工具资源及分享/cocoapodsde_shi_yong.md)
    * [项目管理 Git 常用命令](Share Resources 工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
-
+  
 
 * [★【Chapter-02  MISSAJJ琴瑟静听 iOS 项目开发 OC 语言课程笔记】](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/README.md)
    * [iOS 项目开发综合笔记](MISSAJJ琴瑟静听IOS项目开发OC语言课程笔记/iosxiang_mu_kai_fa_zong_he_bi_ji.md)
