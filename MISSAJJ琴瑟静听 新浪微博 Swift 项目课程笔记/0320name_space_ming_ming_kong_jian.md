@@ -305,7 +305,7 @@ class MainViewController: UITabBarController {
         // Swift中如果想通过一个Class来创建一个对象, 必须告诉系统这个Class的确切类型
         guard let typeCls = cls as? UITableViewController.Type else
         {
-            NJLog("cls不能当做UITableViewController")
+            MALog("cls不能当做UITableViewController")
             return
         }
         // 通过Class创建对象
