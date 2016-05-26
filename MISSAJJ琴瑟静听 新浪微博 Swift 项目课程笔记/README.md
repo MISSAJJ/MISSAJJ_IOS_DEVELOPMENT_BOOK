@@ -17,7 +17,7 @@ Update更新：2016年5月25日 By {MISSAJJ琴瑟静听}
  
 
 * [★【Chapter-08 MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记】](README.md)
-   * [0.1. 项目部署](oschina.md)
+   * [0.1. 项目Git部署（使用OSChina开源中国)](oschina.md)
    * [0.2. 图片素材](imagesassets.md)
        * [0.2.1. 图标素材 & App 名称](imagesassets-01-icon_default.md)
    * [0.3. 项目搭建](createproject.md)
