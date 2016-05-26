@@ -13,7 +13,18 @@ Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
 * LaunchScreen.xib
 
 
+###快速创建目录的快捷键(熟练运用,就开挂啦!)
 
+```
+command + shift + j 快速定位到目录
+通过 ⬆️ ⬇️控制选中的目录
+按下回车进入目录编辑模式
+command + c 拷贝目录名称
+command + n 新建文件夹
+command + v 粘帖目录名称
+下一步下一步 直到创建文件完毕
+重复以上操作
+```
 ### 创建项目结构
 
 #### 主目录 `Classes`
