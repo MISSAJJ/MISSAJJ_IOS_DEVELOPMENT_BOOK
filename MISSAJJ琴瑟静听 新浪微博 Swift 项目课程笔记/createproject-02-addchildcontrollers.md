@@ -42,6 +42,71 @@ private func addChildViewController() {
 
 ![](./images/CreateProject/修改图片渲染模式.png)
 
+
+###创建多个子控制器的完整代码
+```Swift
+//
+//  MainViewController.swift
+//  MASINAWEIBO
+//
+//  Created by MISSAJJ on 16/5/26.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+//
+
+import UIKit
+
+class MainViewController: UITabBarController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // iOS7以后只需要设置tintColor, 那么图片和文字都会按照tintColor渲染
+        tabBar.tintColor = UIColor.orangeColor()
+        
+        //添加所有子控制器
+        addChildViewControllers()
+    }
+    
+    //MARK: - 添加所有子控制器
+    func addChildViewControllers()
+    {
+     
+         addChildViewController(HomeTableViewController(), title: "首页", imageName: "tabbar_home")
+         addChildViewController(MessageTableViewController(), title: "消息", imageName: "tabbar_message_center")
+         addChildViewController(DiscoverTableViewController(), title: "发现", imageName: "tabbar_discover")
+         addChildViewController(ProfileTableViewController(), title: "我", imageName: "tabbar_profile")
+       
+    }
+    
+    //MARK: - 添加一个子控制器
+   func addChildViewController(childController: UIViewController, title: String, imageName: String) {
+    
+    
+        //添加子控制器
+        childController.tabBarItem.title = title
+        childController.tabBarItem.image = UIImage.init(named: imageName)
+        childController.tabBarItem.selectedImage = UIImage.init(named: imageName + "_highlighted")
+    
+        //设置自控制器的导航栏标题
+        childController.title = title
+    
+        //包装导航控制器
+        let nav = UINavigationController.init(rootViewController: childController)
+    
+        //将子控制器添加到UITabBarController中
+        addChildViewController(nav)
+
+        
+        
+    }
+}
+
+```
+
+###项目模拟器截图
+
+![image](images/CreateProject/Simulator Screen Shot 2016年5月26日 21.40.38.png)
+
 ### 用代码动态创建类
 
 * 跟踪 `类` 名称
