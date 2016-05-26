@@ -38,21 +38,30 @@ private func addChildViewController() {
 }
 ```
 
-* 修改图片的渲染模式
+### 修改图片的渲染模式
 
   - 代码方式
 
 ```Swift 
 //取消图片被系统自动渲染,设置原始状态代码UIImage.init(named: imageName)?.imageWithRenderingMode(.AlwaysOriginal)
-
-
+ 
 childController.tabBarItem.image = UIImage.init(named: imageName)?.imageWithRenderingMode(.AlwaysOriginal)
  
 childController.tabBarItem.selectedImage = UIImage.init(named: imageName + "_highlighted")?.imageWithRenderingMode(.AlwaysOriginal)
 
 
 ```
+  - Swift缩写方式
 
+
+```Swift
+
+//完整写法
+var image : UIImage? = UIImage(named:"myImage.png").imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+
+//缩写方式
+var image : UIImage? = UIImage(named:"myImage.png").imageWithRenderingMode(.AlwaysOriginal)
+```
   - Assets.xcassets 设置方式
 
 ![](./images/CreateProject/修改图片渲染模式.png)
@@ -75,8 +84,8 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // iOS7以后只需要设置tintColor, 那么图片和文字都会按照tintColor渲染
-        tabBar.tintColor = UIColor.orangeColor()
+        // iOS7以后只需要设置tintColor, 那么图片和文字都会按照tintColor渲染 : 如果使用了使用原始图片,那就不需要设置 tintcolor
+        //tabBar.tintColor = UIColor.orangeColor()
         
         //添加所有子控制器
         addChildViewControllers()
@@ -98,9 +107,11 @@ class MainViewController: UITabBarController {
     
     
         //添加子控制器
-        childController.tabBarItem.title = title
-        childController.tabBarItem.image = UIImage.init(named: imageName)
-        childController.tabBarItem.selectedImage = UIImage.init(named: imageName + "_highlighted")
+ //取消图片被系统自动渲染,设置原始状态代码UIImage.init(named: imageName)?.imageWithRenderingMode(.AlwaysOriginal)
+ 
+//childController.tabBarItem.image = UIImage.init(named: imageName)
+ childController.tabBarItem.image = UIImage.init(named: imageName)?.imageWithRenderingMode(.AlwaysOriginal)
+ childController.tabBarItem.selectedImage = UIImage.init(named: imageName + "_highlighted")?.imageWithRenderingMode(.AlwaysOriginal)
     
         //设置自控制器的导航栏标题
         childController.title = title
