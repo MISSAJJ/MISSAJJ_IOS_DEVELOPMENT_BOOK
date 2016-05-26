@@ -40,6 +40,21 @@ private func addChildViewController() {
 
 * 修改图片的渲染模式
 
+  - 代码方式
+
+```Swift 
+//取消图片被系统自动渲染,设置原始状态代码UIImage.init(named: imageName)?.imageWithRenderingMode(.AlwaysOriginal)
+
+
+childController.tabBarItem.image = UIImage.init(named: imageName)?.imageWithRenderingMode(.AlwaysOriginal)
+ 
+childController.tabBarItem.selectedImage = UIImage.init(named: imageName + "_highlighted")?.imageWithRenderingMode(.AlwaysOriginal)
+
+
+```
+
+  - Assets.xcassets 设置方式
+
 ![](./images/CreateProject/修改图片渲染模式.png)
 
 
@@ -107,6 +122,9 @@ class MainViewController: UITabBarController {
 
 ![image](images/CreateProject/Simulator Screen Shot 2016年5月26日 21.40.38.png)
 
+
+#其他知识补充
+---
 ### 用代码动态创建类
 
 * 跟踪 `类` 名称
