@@ -3,7 +3,7 @@
 ## 素材对应的设备
 
 | 1x | 2x | 3x |
-| -- | -- | -- |
+| ------ | ------ | ------ |
 | 大小对应开发中的`点` | 宽高是 `1x` 的两倍 | 宽高时 `1x` 的三倍 |
 | iPhone 3GS，可以省略 | iPhone 4<br />iPhone 4s<br />iPhone 5<br />iPhone 5s<br />iPhone 6<br /> | iPhone 6+ |
 
