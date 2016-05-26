@@ -14,14 +14,14 @@
 
 #### 二级目录
 
-| 目录名 | 说明 |
-| -- | -- |
-| Main | 主要 |
-| Home | 首页 |
-| Message | 消息 |
-| Discover | 发现 |
-| Profile | 我 |
-| Tools | 工具类 |
+ 目录名 | 说明 
+ -- | -- 
+ Main | 主要 
+ Home | 首页 
+ Message | 消息 
+ Discover | 发现 
+ Profile | 我 
+ Tools | 工具类 
 
 ## 创建项目文件
 
