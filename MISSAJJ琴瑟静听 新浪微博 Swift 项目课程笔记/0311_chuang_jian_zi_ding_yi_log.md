@@ -34,7 +34,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
     func MALog<T>(message : T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line)  {
         
-        #if DEBUG  //swift 系统已经不支持宏定义了,所以需要用 DEBUG 必须在 Build Setting 搜索 custom flag, 点开 Other Swift Flags, 在 DEbug 处添加 `-D DEBUG`
+        /*
+        swift 系统已经不支持宏定义了,
+        所以需要用 DEBUG 必须在 Build Setting 搜索 custom flag, 
+        点开 Other Swift Flags, 在 DEbug 处添加 `-D DEBUG`
+        */
+        
+        #if DEBUG  
             
             //    print("\((fileName as NSString).pathComponents.last!).\(methodName)[\(lineNumber)]:\(message)")
             
