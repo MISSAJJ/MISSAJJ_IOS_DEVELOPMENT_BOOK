@@ -58,4 +58,4 @@ Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
 - 很有趣的插件，可以试一下哦~
   - 作者源代码： https://github.com/DeepIT/XcodeColors
 
-![image](./Images/XcodeColors.png)
+![image](../MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记/images/CreateProject/彩色日志.png)
