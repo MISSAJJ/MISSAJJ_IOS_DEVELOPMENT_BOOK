@@ -237,13 +237,13 @@ class MainViewController: UITabBarController {
         // 1.1读取JSON数据
         guard let filePath =  NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil) else
         {
-            NJLog("JSON文件不存在")
+            MALog("JSON文件不存在")
             return
         }
         
         guard let data = NSData(contentsOfFile: filePath) else
         {
-            NJLog("加载二进制数据失败")
+            MALog("加载二进制数据失败")
             return
         }
         
@@ -290,7 +290,7 @@ class MainViewController: UITabBarController {
         // 1.动态获取命名空间
         guard let name =  NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as? String else
         {
-            NJLog("获取命名空间失败")
+            MALog("获取命名空间失败")
             return
         }
         
