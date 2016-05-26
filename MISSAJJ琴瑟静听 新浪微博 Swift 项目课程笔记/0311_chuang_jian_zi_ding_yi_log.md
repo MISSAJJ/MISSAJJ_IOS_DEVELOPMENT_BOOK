@@ -80,11 +80,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 - 4.输出的日志如图显示为英文,但还不是彩色的
 
 
-![image](日志显示.png)
+![image](images/CreateProject/日志显示.png)
 
 - 5.见证奇迹的时刻: 让日志变彩色,安装XcodeColors:
 
-![image](彩色日志.png)
+![image](images/CreateProject/彩色日志.png)
 
 
 ----
