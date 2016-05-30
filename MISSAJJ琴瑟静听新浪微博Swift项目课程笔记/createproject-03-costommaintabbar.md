@@ -133,3 +133,52 @@ override func viewWillAppear(animated: Bool) {
 ```
 
 > 注意：`composetBtnClick` 函数不能使用 `private` 修饰，因为当系统监听到按钮点击事件时，会给控制器发送 `composetBtnClick` 消息，如果设置成私有函数
+
+
+
+###权限public,internal,private
+
+```
+    public : 最大权限, 可以在当前framework和其他framework中访问
+    internal : 默认的权限, 可以在当前framework中随意访问
+    private : 私有权限, 只能在当前文件中访问
+    以上权限可以修饰属性/方法/类
+    
+    注意: 在企业开发中建议严格的控制权限, 不想让别人访问的东西一定要private
+  
+```
+###懒加载按钮
+
+```Swift
+   // 如果给按钮的监听方法加上private就会报错, 报错原因是因为监听事件是由运行循环触发的, 而如果该方法是私有的只能在当前类中访问
+    // 而相同的情况在OC中是没有问题, 因为OC是动态派发的
+    // 而Swift不一样, Swift中所有的东西都在是编译时确定的
+    // 如果想让Swift中的方法也支持动态派发, 可以在方法前面加上 @objc
+    // 加上 @objc就代表告诉系统需要动态派发
+    
+    @objc private func compseBtnClick(btn: UIButton)
+    {
+        NJLog(btn)
+    }
+    // MARK: - 懒加载
+    private lazy var composeButton: UIButton = {
+        () -> UIButton
+        in
+        // 1.创建按钮
+        let btn = UIButton()
+        // 2.设置前景图片
+        btn.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: UIControlState.Normal)
+        btn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: UIControlState.Highlighted)
+        // 3.设置背景图片
+        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
+        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
+        
+        // 4.监听按钮点击
+        btn.addTarget(self, action: Selector("compseBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+        // 4.调整按钮尺寸
+        btn.sizeToFit()
+        
+        return btn
+    }()
+
+```
