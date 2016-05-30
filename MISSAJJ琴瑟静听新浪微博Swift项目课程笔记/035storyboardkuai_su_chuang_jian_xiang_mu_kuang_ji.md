@@ -76,3 +76,60 @@ Update更新：2016年5月30日 By {MISSAJJ琴瑟静听}
     newVC.text = "Pass"
     self.navigationController?.pushViewController(newVC, animated: true)
 ```
+
+
+###通过 Storyboard 创建项目架构后的剩余代码
+- 将 Main.Storyboard 文件的 tabbarcontroller控制器绑定MainViewController.swift
+- 由于项目框架都已在Main.Storyboard创建的, 所以就可以删除很多不必要的代码了
+- 现在再看MainViewController.swift里的代码就非常干净了
+
+```Swift
+//  MainViewController.swift
+//  MASINAWEIBO
+//
+//  Created by MISSAJJ on 16/5/26.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+//
+
+import UIKit
+
+class MainViewController: UITabBarController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad() 
+        tabBar.backgroundImage = UIImage.init(named: "tabbar_background")  
+    } 
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //添加中间按钮
+        tabBar.addSubview(composeBtn)
+        // 保存按钮尺寸
+        let rect = composeBtn.frame
+        // 计算宽度
+        let width = tabBar.bounds.width / CGFloat(childViewControllers.count)
+        // 设置按钮的位置
+        composeBtn.frame = CGRect(x: 2 * width, y: 0, width: width, height: rect.height)
+        //        composeButton.frame = CGRectOffset(rect, 2 * width, 0)
+    }
+     
+    func composeBtnClick(btn : UIButton) {
+        
+        MALog(btn)
+    }
+    //MARK : - 懒加载
+    private  lazy var composeBtn: UIButton = {
+        () -> UIButton
+        in
+         
+        //优化中间加号按钮
+        // 1.创建按钮
+        let btn = UIButton(imageName:"tabbar_compose_icon_add",backgroundImageName:"tabbar_compose_button")
+        // 2.监听按钮点击
+        btn.addTarget(self, action: #selector(MainViewController.composeBtnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside) 
+        return btn 
+    }()
+}
+```
+
