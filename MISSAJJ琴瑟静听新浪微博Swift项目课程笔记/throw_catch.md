@@ -1,4 +1,8 @@
 # try throw 代码实践
+---
+```objc
+Update更新：2016年5月30日 By {MISSAJJ琴瑟静听} 
+```
 
 > `throw catch` 是 `Xcode 7.0` 对错误处理的一个非常大的变化
 
