@@ -36,6 +36,10 @@ Update更新：2016年5月30日 By {MISSAJJ琴瑟静听}
 ![image](images/CreateProject/refactor改为9.0.png)
 
 
+- 项目 storyboard 截图
+
+![image](images/CreateProject/storyboard创建项目界面截图.png)
+
 ###Storyboard 跳转 和 传值    
 
 在 iOS9.0之前也是可以分开创建 storyboard, 但是只能手动创建 storyboard 文件,再通过代码加载
@@ -133,3 +137,7 @@ class MainViewController: UITabBarController {
 }
 ```
 
+
+###模拟器截图
+
+![image](images/CreateProject/storyboard创建模拟器截图.png)
