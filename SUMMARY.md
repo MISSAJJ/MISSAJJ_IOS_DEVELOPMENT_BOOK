@@ -55,7 +55,7 @@
    * [Swift-字典](MISSAJJ琴瑟静听Swift基础语言课程笔记/06.Swift-字典.md)
    * [Swift-元祖](MISSAJJ琴瑟静听Swift基础语言课程笔记/13.Swift-元祖.md)
    * [Swift-可选类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/14.Swift-可选类型.md)
-   * [Swift-函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/07.md)
+   * [Swift-函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/07.Swift-函数.md)
    * [Swift-类的定义](MISSAJJ琴瑟静听Swift基础语言课程笔记/15.md)
    * [Swift-类的构造函数](MISSAJJ琴瑟静听Swift基础语言课程笔记/16.Swift-类的构造函数.md)
    * [Swift-闭包](MISSAJJ琴瑟静听Swift基础语言课程笔记/08.md)
