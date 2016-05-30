@@ -1,5 +1,8 @@
 # 设置全局外观
-
+---
+```objc
+Update更新：2016年5月30日 By {MISSAJJ琴瑟静听} 
+```
 * 修改 AppDelegate 代码如下
 
 ```swift
