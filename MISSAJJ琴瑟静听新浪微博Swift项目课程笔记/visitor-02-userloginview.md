@@ -33,8 +33,70 @@ Update更新：2016年5月30日 By {MISSAJJ琴瑟静听}
 - 拖入 Label,按住` Control + 鼠标右键`移动到动画圆形背景,相对设置水平居中和顶部距离20, 固定宽为220,设置 lines 为0 
 - 接着拖入 Button,设置为custom, 按钮文字为黄色的`注册`,按住` Control + 鼠标右键`移动到label, 设置左对齐,并设置间距为20, 设置宽为100
 - 按住` option + 鼠标点住注册按钮`,复制一个新按钮,按钮名称改为`登录`,按住` Control + 右键`移动到label, 设置右对齐,并设置与`注册`按钮同宽
+- 别忘了custom class 绑定 VisitorView
 
-![image](VisitorViewXib视图.png)
+![image](images/未登录界面截图/VisitorViewXib视图.png)
+
+- 在VisitorView.swift内代码快速创建 Xib
+
+```Swift 
+//  VisitorView.swift
+//  MASINAWEIBO 
+//  Created by MISSAJJ on 16/5/30.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+//
+
+import UIKit 
+class VisitorView: UIView {
+
+    //    func 相当于 OC 中 -号开头的方法
+    //    class func  相当于 OC 中 +号开头的方法
+    
+    //快速创建 xib
+    class func visitorView() -> VisitorView { 
+        return NSBundle.mainBundle().loadNibNamed("VisitorView", owner: nil, options: nil).last as! VisitorView 
+    } 
+} 
+```
+- 在 BaseTableViewController.swift 内改写代码
+
+```Swift
+//  BaseTableViewController.swift
+//  MASINAWEIBO 
+//  Created by MISSAJJ on 16/5/30.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+//
+
+import UIKit
+
+class BaseTableViewController: UITableViewController {
+    // 定义标记记录用户登录状态
+    var  isLogin  = false 
+    // 访客视图
+    var visitorView: VisitorView? 
+    
+    override func loadView() {
+        
+        // 判断用户是否登录, 如果没有登录就显示访客界面, 如果已经登录就显示tableview
+        
+        isLogin ? super.loadView() : setupVisitorView()
+        
+    }
+    
+    // MARK: - 内部控制方法
+    private func setupVisitorView()
+    { 
+        let otherView = VisitorView.visitorView()
+        view = otherView  
+    }
+}
+```
+
+###模拟器截图
+
+![](images/未登录界面截图/加载VisitorViewxib模拟器截图.png)
+
+
 
 
 ###纯代码创建登录视图
