@@ -32,4 +32,8 @@ func setupVisitorInfo(isHome: Bool, imageName: String, message: String){
     }
 
 ```
+###模拟器动画演示图
+
+![image](images/未登录界面截图/visitorView.gif)
+
 
