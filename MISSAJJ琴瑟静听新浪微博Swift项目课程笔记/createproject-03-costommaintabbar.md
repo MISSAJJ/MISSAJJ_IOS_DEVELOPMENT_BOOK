@@ -212,9 +212,26 @@ override func viewWillAppear(animated: Bool) {
           NJLog(btn)
      }
 ```
-###懒加载按钮
+### Swift懒加载UIButton的标准写法
+
+- 标准写法
+
+```Swift 
+    // MARK: - 懒加载
+    private lazy var composeButton: UIButton = {
+        () -> UIButton   
+        in              //以上两行可以省略
+         
+        ....设置按钮属性
+        return btn
+    }()
+
+```
+- 懒加载示例
 
 ```Swift
+    
+    //监听按钮
     func composeBtnClick(btn : UIButton) {
         
         MALog(btn)
@@ -222,8 +239,9 @@ override func viewWillAppear(animated: Bool) {
     
     // MARK: - 懒加载
     private lazy var composeButton: UIButton = {
-        () -> UIButton
-        in
+        () -> UIButton   
+        in              //以上两行可以省略
+        
         // 1.创建按钮
         let btn = UIButton()
         // 2.设置前景图片
@@ -232,7 +250,6 @@ override func viewWillAppear(animated: Bool) {
         // 3.设置背景图片
         btn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
         btn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
-        
         // 4.监听按钮点击
         btn.addTarget(self, action: Selector("compseBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
         // 4.调整按钮尺寸
