@@ -50,7 +50,7 @@
    * [Swift-常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.Swift-常量&变量.md)
    * [Swift-逻辑分支](MISSAJJ琴瑟静听Swift基础语言课程笔记/02.Swift-逻辑分支.md)
    * [Swift-循环](MISSAJJ琴瑟静听Swift基础语言课程笔记/03.Swift-循环.md)
-   * [Swift-字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.md)
+   * [Swift-字符串](MISSAJJ琴瑟静听Swift基础语言课程笔记/04.Swift-字符串.md)
    * [Swift-数组](MISSAJJ琴瑟静听Swift基础语言课程笔记/05.Swift-数组.md)
    * [Swift-字典](MISSAJJ琴瑟静听Swift基础语言课程笔记/06.md)
    * [Swift-元祖](MISSAJJ琴瑟静听Swift基础语言课程笔记/13.md)
