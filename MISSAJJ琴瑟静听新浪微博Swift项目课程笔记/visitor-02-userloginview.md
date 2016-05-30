@@ -19,8 +19,17 @@ Update更新：2016年5月30日 By {MISSAJJ琴瑟静听}
 ## 功能实现
 
 * 拖拽相关图片素材
-* 新建 `VisitorLoginView.swift` 继承自 `UIView`
+* 新建 `VisitorView.swift` 继承自 `UIView`
+* 新建 `VisitorView.xib`
 
+![image](images/未登录界面截图/创建VisitorView.png)
+
+### xib 创建登录视图
+
+
+
+
+###纯代码创建登录视图
 ```swift
 ///  访客登录视图
 class VisitorLoginView: UIView {
