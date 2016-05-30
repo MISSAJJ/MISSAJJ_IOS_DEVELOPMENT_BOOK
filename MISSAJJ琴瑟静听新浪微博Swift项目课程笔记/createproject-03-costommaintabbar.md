@@ -126,40 +126,34 @@ override func viewWillAppear(animated: Bool) {
 
 * 因此可以考虑在 viewWillAppear 方法中 计算加号按钮位置
 
-### 计算 `撰写按钮` 的位置
-```swift
-    /**
-    设置加号按钮位置
-    */
-    private func setupComposeButton()
-    {
-        // 1.计算按钮宽度
-        let width = tabBar.bounds.width / CGFloat(viewControllers!.count)
-        // 2.创建按钮frame
-        let rect = CGRect(x: 0, y: 0, width: width, height: tabBar.bounds.height)
-        // 3.设置按钮frame和偏移位 (通过偏移位是另一种思路, 但是如果美工做的图片大小比例不是屏幕1/5宽就会导致产生位置误差,建议还是用上边的2.创建按钮frame)
+
+###在viewWillAppear中添加按钮和调整位置
+```Swift
+ override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // 添加中间按钮
+        tabBar.addSubview(composeBtn)
+        // 保存按钮尺寸
+        let rect = composeBtn.frame
+        // 计算宽度
+        let width = tabBar.bounds.width / CGFloat(childViewControllers.count)
+        // 设置按钮的位置
+        composeBtn.frame = CGRect(x: 2 * width, y: 0, width: width, height: rect.height)
+        // 设置按钮frame和偏移位 (通过偏移位是另一种思路, 但是如果美工做的图片大小比例不是屏幕1/5宽就会导致产生位置误差,建议还是用上边的2.创建按钮frame)
         //composeButton.frame = CGRectOffset(rect, 2 * width, 0)
     }
+
 ```
+ 
 
 ### 撰写按钮点击处理
-
+- 无返回值的点击处理
 ```swift
     lazy private var composeButton:UIButton = {
-        // 1.创建按钮
-        let button = UIButton()
-        // 2.设置图片
-        button.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: UIControlState.Normal)
-        button.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: UIControlState.Highlighted)
-        // 3.设置背景图片
-        button.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
-        button.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
-        // 4.添加监听
-        button.addTarget(self, action: "composetBtnClick", forControlEvents: UIControlEvents.TouchUpInside)
-        // 5.添加到tabBar上
-        // Swift中能不写self就不写self, 在闭包中必须写self
-        self.tabBar.addSubview(button)
-        // 6.返回按钮
+       
+        ....省略 
+        button.addTarget(self, action: "composetBtnClick", forControlEvents: UIControlEvents.TouchUpInside) 
         return button
     }()
 
@@ -169,7 +163,15 @@ override func viewWillAppear(animated: Bool) {
         print(__FUNCTION__)
     }
 ```
+- 有返回值的点击处理
 
+```Swift
+  selector写成:action: Selector("compseBtnClick:")
+  
+  func composeBtnClick(btn : UIButton) { 
+        MALog(btn)
+    }
+```
 > 注意：`composetBtnClick` 函数不能使用 `private` 修饰，因为当系统监听到按钮点击事件时，会给控制器发送 `composetBtnClick` 消息，如果设置成私有函数
 
 
