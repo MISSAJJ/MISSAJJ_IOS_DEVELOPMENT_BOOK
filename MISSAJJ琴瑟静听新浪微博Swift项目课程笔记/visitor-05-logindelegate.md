@@ -1,9 +1,16 @@
 # 登录&注册代理回调
 
+---
+```objc
+Update更新：2016年5月30日 By {MISSAJJ琴瑟静听} 
+```
+
+###模拟器演示
+
+![image](images/未登录界面截图/visitorViewDelegateBtn.gif)
 
 
-
-* 定义协议
+###定义协议
 
 ```swift
 /// 访客视图协议
@@ -18,7 +25,7 @@ protocol VisitorViewDelegate: NSObjectProtocol
 
 > 定义协议时，需要继承自 `NSObjectProtocol`，否则无法设置代理的类型
 
-* 定义代理
+###定义代理
 
 ```swift
 // 定义代理:和OC一样代理属性必须使用weak修饰
@@ -39,19 +46,19 @@ protocol VisitorViewDelegate: NSObjectProtocol
     }
 ```
 
-* 遵守协议
+###遵守协议
 
 ```swift
 class BaseTableViewController: UITableViewController, VisitorViewDelegate
 ```
-* 设置代理
+###设置代理
 
 ```swift
 // 设置代理
 visitorLoginView?.delegate = self
 ```
 
-* 实现方法
+###实现方法
 
 ```swift
 // MARK: - 访客视图协议方法
@@ -67,7 +74,7 @@ visitorLoginView?.delegate = self
     }
 ```
 
-* 如果没有在头部一起遵守协议
+###如果没有在头部遵守协议
 
 ```swift
 //如果头部没有写上VisitorViewDelegate这个代理协议 
@@ -92,14 +99,14 @@ extension BaseTableViewController: VisitorViewDelegate
 ```
 
 
-* 修改导航条按钮监听方法
+###修改导航条按钮监听方法
 
 ```swift
 navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: "visitorViewRegister")
 navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.Plain, target: self, action: "visitorViewLogin")
 ```
 
-###完整代码
+###完整代码示例
 
 ```Swift
 //
