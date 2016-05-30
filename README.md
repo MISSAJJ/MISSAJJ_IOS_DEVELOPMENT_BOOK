@@ -162,6 +162,7 @@ Update 更新：2016年5月30日 By {MISSAJJ琴瑟静听}
            * [0.3.2.2. 变量类型推导](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/variablestype.md)   (更新)
        * [0.3.3. 添加加号按钮](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/createproject-03-costommaintabbar.md)   (更新)
        * [0.3.4. 阶段性小结](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/createproject-04-summary.md)   (更新)
+       * [0.3.5.storyboard快速创建项目框架](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/035storyboardkuai_su_chuang_jian_xiang_mu_kuang_ji.md)   (更新)
    * [0.4. 未登录页面处理](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor.md)
        * [0.4.1. 表格视图控制器基类](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-01-basetableviewcontroller.md)
        * [0.4.2. 用户登录视图](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-02-userloginview.md)
