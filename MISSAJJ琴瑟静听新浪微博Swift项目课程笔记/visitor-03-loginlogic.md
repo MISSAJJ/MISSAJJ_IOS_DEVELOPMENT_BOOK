@@ -1,6 +1,9 @@
 # 登录视图代码实现
 
-
+---
+```objc
+Update更新：2016年5月30日 By {MISSAJJ琴瑟静听} 
+```
 
 ###BaseTableViewController.swift的代码调整
 ```Swift
