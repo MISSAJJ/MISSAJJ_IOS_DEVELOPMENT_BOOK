@@ -185,21 +185,43 @@ override func viewWillAppear(animated: Bool) {
     以上权限可以修饰属性/方法/类
     
     注意: 在企业开发中建议严格的控制权限, 不想让别人访问的东西一定要private
-  
+
+ ```    
+ -  [会报错] private func 告诉系统需要动态派发 
+ 
+```Swift   
+    //注意: 给按钮的监听方法加上private会导致报错,
+    //报错原因是因为监听事件是由运行循环触发的, 
+    //而如果该方法是私有的只能在当前类中访问
+     private func compseBtnClick(btn: UIButton)  
+     {
+          NJLog(btn)
+     }
+```    
+     
+
+
+- 告诉系统需要动态派发@objc private func 
+```     
+    而相同的情况在OC中是没有问题, 因为OC是动态派发的
+    而Swift不一样, Swift中所有的东西都在是编译时确定的
+    如果想让Swift中的方法也支持动态派发, 可以在方法前面加上 @objc
+    加上 @objc就代表告诉系统需要动态派发 
+``` 
+```Swift    
+     @objc private func compseBtnClick(btn: UIButton)
+     {
+          NJLog(btn)
+     }
 ```
 ###懒加载按钮
 
 ```Swift
-   // 如果给按钮的监听方法加上private就会报错, 报错原因是因为监听事件是由运行循环触发的, 而如果该方法是私有的只能在当前类中访问
-    // 而相同的情况在OC中是没有问题, 因为OC是动态派发的
-    // 而Swift不一样, Swift中所有的东西都在是编译时确定的
-    // 如果想让Swift中的方法也支持动态派发, 可以在方法前面加上 @objc
-    // 加上 @objc就代表告诉系统需要动态派发
-    
-    @objc private func compseBtnClick(btn: UIButton)
-    {
-        NJLog(btn)
+    func composeBtnClick(btn : UIButton) {
+        
+        MALog(btn)
     }
+    
     // MARK: - 懒加载
     private lazy var composeButton: UIButton = {
         () -> UIButton
