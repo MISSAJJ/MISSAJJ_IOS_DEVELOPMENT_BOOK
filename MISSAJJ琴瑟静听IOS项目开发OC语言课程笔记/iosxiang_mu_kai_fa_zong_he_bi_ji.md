@@ -1,7 +1,7 @@
 # iOS 项目开发综合笔记
 ---
 ```objc
-Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
+Update更新：2016年5月30日 By {MISSAJJ琴瑟静听}
 ```
 ##项目的常见属性
 
@@ -23,6 +23,7 @@ Update更新：2016年5月24日 By {MISSAJJ琴瑟静听}
 - 调出代码:command+option+Enter 
 - 退出代码:command+Enter  
 - .h 件和.m 件切换:control+command+上下键 
+- 折叠全部代码:command + SHIFT + ALT + 左箭头
 
 ##不同的屏幕的尺寸,代表的点坐标系 
 - 3.5 : 320x480
