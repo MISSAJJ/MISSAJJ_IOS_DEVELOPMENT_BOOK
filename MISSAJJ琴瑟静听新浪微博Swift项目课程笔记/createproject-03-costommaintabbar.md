@@ -99,8 +99,8 @@ override func viewWillAppear(animated: Bool) {
         let width = tabBar.bounds.width / CGFloat(viewControllers!.count)
         // 2.创建按钮frame
         let rect = CGRect(x: 0, y: 0, width: width, height: tabBar.bounds.height)
-        // 3.设置按钮frame和偏移位
-        composeButton.frame = CGRectOffset(rect, 2 * width, 0)
+        // 3.设置按钮frame和偏移位 (通过偏移位是另一种思路, 但是如果美工做的图片大小比例不是屏幕1/5宽就会导致产生位置误差,建议还是用上边的2.创建按钮frame)
+        //composeButton.frame = CGRectOffset(rect, 2 * width, 0)
     }
 ```
 
