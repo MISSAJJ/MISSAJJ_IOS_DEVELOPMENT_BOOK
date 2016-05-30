@@ -8,10 +8,28 @@ Update更新：2016年5月30日 By {MISSAJJ琴瑟静听}
 ###模拟器演示
 
 ![image](images/未登录界面截图/visitorViewDelegateBtn.gif)
+###不定义代理协议的方法
+----
+直接通过visitorView就可以拿到loginButton,然后设置addTarget就可以了
+```Swift
+ 
+ visitorView?.loginButton.addTarget(self, action: Selector("loginBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+ visitorView?.registerButton.addTarget(self, action: Selector("registerBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+ 
+    // 用户注册
+    @objc private func loginBtnClick(btn: UIButton)
+    {
+        MALog("")
+    }
+    // 用户登录
+    {
+        MALog("")
+    }
+```
 
-
-###定义协议
-
+###定义代理协议的方法
+---
+####定义协议
 ```swift
 /// 访客视图协议
 protocol VisitorViewDelegate: NSObjectProtocol
@@ -25,14 +43,14 @@ protocol VisitorViewDelegate: NSObjectProtocol
 
 > 定义协议时，需要继承自 `NSObjectProtocol`，否则无法设置代理的类型
 
-###定义代理
+####定义代理
 
 ```swift
 // 定义代理:和OC一样代理属性必须使用weak修饰
     weak var delegate: VisitorViewDelegate?
 ```
 
-* 按钮回调
+####按钮回调
 
 ```swift
     // 点击注册按钮
@@ -46,19 +64,19 @@ protocol VisitorViewDelegate: NSObjectProtocol
     }
 ```
 
-###遵守协议
+####遵守协议
 
 ```swift
 class BaseTableViewController: UITableViewController, VisitorViewDelegate
 ```
-###设置代理
+####设置代理
 
 ```swift
 // 设置代理
 visitorLoginView?.delegate = self
 ```
 
-###实现方法
+####实现方法
 
 ```swift
 // MARK: - 访客视图协议方法
@@ -74,7 +92,7 @@ visitorLoginView?.delegate = self
     }
 ```
 
-###如果没有在头部遵守协议
+####如果没有在头部遵守协议
 
 ```swift
 //如果头部没有写上VisitorViewDelegate这个代理协议 
@@ -97,6 +115,8 @@ extension BaseTableViewController: VisitorViewDelegate
     }
 }
 ```
+
+
 
 
 ###修改导航条按钮监听方法
