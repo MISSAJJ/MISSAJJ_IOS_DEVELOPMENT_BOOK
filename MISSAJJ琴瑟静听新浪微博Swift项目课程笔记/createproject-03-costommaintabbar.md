@@ -484,3 +484,68 @@ class MainViewController: UITabBarController {
 ###添加中间按钮层级图
 
 ![image](images/CreateProject/添加中间按钮层级图.png)
+
+###优化中间加号按钮
+
+- 创建按钮的延展类方法
+
+```Swift
+//MARK : - 懒加载
+    private  lazy var composeBtn: UIButton = {
+        () -> UIButton
+        in
+   
+        //优化中间加号按钮
+        // 1.创建按钮的延展类方法
+        let btn = UIButton(imageName:"tabbar_compose_icon_add",backgroundImageName:"tabbar_compose_button")
+        // 2.监听按钮点击
+        btn.addTarget(self, action: Selector("composeBtnClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+    
+        return btn
+        
+    }()
+
+```
+
+- 创建UIButton 的延展扩充类 UIButton+Extension.swift
+
+
+```Swift
+//  UIButton+Extension.swift
+//  MASINAWEIBO
+//
+//  Created by MISSAJJ on 16/5/30.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+//
+
+import UIKit    //将 foundation改写为 UIKit
+
+extension UIButton  //增加这行代码
+{
+    
+    /*
+     如果构造方法前面没有convenience单词, 代表着是一个初始化构造方法(指定构造方法)
+     如果构造方法前面有convenience单词, 代表着是一个便利构造方法
+     指定构造方法和便利构造方法的区别
+     指定构造方法中必须对所有的属性进行初始化self.init()
+     便利构造方法中不用对所有的属性进行初始, "因为便利构造方法依赖于指定构造方法"
+     一般情况下如果想给系统的类提供一个快速创建的方法, 就自定义一个便利构造方法
+     */
+    
+    convenience init(imageName: String,backgroundImageName:String)
+    {
+         self.init()
+        
+        // 2.设置前景图片
+        setImage(UIImage(named: imageName), forState: UIControlState.Normal)
+        setImage(UIImage(named: imageName + "_highlighted"), forState: UIControlState.Highlighted)
+        // 3.设置背景图片
+        setBackgroundImage(UIImage(named: backgroundImageName), forState: UIControlState.Normal)
+        setBackgroundImage(UIImage(named: backgroundImageName + "_highlighted"), forState: UIControlState.Highlighted)
+        
+        // 4.调整按钮尺寸
+        sizeToFit()
+    
+    } 
+}
+```
