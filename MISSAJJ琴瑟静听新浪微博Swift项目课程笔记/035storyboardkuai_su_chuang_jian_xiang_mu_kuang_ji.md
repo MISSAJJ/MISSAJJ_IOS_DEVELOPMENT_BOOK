@@ -13,7 +13,8 @@ Update更新：2016年5月30日 By {MISSAJJ琴瑟静听}
 ```
  ![image](images/CreateProject/storyboard添加tintColor.png)
  
- ###Storyboard Reference仅支持 iOS9.0
+ 
+### Storyboard Reference仅支持 iOS9.0
  
 早期 storyboard 对于团队开发很不友好,所以一般很少用 storyboard, 在 IOS9.0 之后有了 Storyboard Reference 功能, 可以将不同的界面独立分开给团队人员,下面简单讲一下如何设置
 
