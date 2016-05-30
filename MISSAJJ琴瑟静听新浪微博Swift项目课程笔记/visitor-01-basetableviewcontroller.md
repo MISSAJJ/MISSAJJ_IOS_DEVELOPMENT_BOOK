@@ -18,34 +18,42 @@
 
 * 增加 用户登录标记
 
-```swift
+```swift 
+ 
+
 class BaseTableViewController: UITableViewController {
 
-    ///  用户登录标记
-    var userLogon = false
-
-    override func loadView() {
-
-        print(userLogon)
-
-        super.loadView()
-    }
+    var  isLogin  = false 
 }
 ```
 
 * 根据用户登录标记判断是否加载默认视图
 
-```swift
-override func loadView() {
+```swift 
+//  BaseTableViewController.swift
+//  MASINAWEIBO 
+//  Created by MISSAJJ on 16/5/30.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+//
 
-    userLogon = false
+import UIKit
 
-    userLogon ? super.loadView() : setupVisitorView()
-}
+class BaseTableViewController: UITableViewController {
 
-///  设置访客视图
-private func setupVisitorView() {
-    view = UIView()
+    var  isLogin  = false
+    
+    override func loadView() {
+   
+     // 判断用户是否登录, 如果没有登录就显示访客界面, 如果已经登录就显示tableview 
+        isLogin ? super.loadView() : setupVisitorView() 
+    } 
+    // MARK: - 内部控制方法
+    private func setupVisitorView()
+    { 
+     let otherView = UIView()
+     otherView.backgroundColor = UIColor.greenColor()
+     view = otherView 
+    }
 }
 ```
 
