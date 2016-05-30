@@ -198,9 +198,7 @@ override func viewWillAppear(animated: Bool) {
           NJLog(btn)
      }
 ```    
-     
-
-
+      
 - 告诉系统需要动态派发@objc private func 
 ```     
     而相同的情况在OC中是没有问题, 因为OC是动态派发的
