@@ -6,6 +6,8 @@ Update更新：2016年5月30日 By {MISSAJJ琴瑟静听}
 
 > `throw catch` 是 `Xcode 7.0` 对错误处理的一个非常大的变化
 
+
+### 遇到throw,进行 try 处理,写上do{}catch{}
 ```
 Swift和OC不太一样, OC中一般情况如果发生错误会给传入的指针赋值, 而在Swift中使用的是异常处理机制
  1.以后但凡看大 throws的方法, 那么就必须进行 try处理, 而只要看到try, 就需要写上do catch
@@ -57,6 +59,6 @@ let array = try! NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSO
         }
 ```
 
-
+###完整代码
 
 
