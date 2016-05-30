@@ -441,3 +441,7 @@ class MainViewController: UITabBarController {
 }
 
 ```
+
+###添加中间按钮层级图
+
+![image](images/CreateProject/添加中间按钮层级图.png)
