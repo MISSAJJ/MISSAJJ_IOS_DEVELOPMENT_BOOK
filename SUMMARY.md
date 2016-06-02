@@ -89,6 +89,7 @@
        * [0.6.1.导航栏左右按钮](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/061dao_hang_lan_zuo_you_an_niu.md)
        * [0.6.2.导航栏下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/062dao_hang_lan_xia_la_cai_dan.md)
            * 0.6.2.3.封装优化下拉菜单的转场效果
+           * 0.6.2.3.封装优化下拉菜单的转场效果
            * [0.6.2.1.通过Storyboard布局下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0621tong_guo_storyboard_bu_ju_xia_la_cai_dan.md)
            * [0.6.2.2.完善下拉菜单转场效果](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0622wan_shan_xia_la_cai_dan_zhuan_chang_xiao_guo.md)
                * 0.6.2.3.封装优化下拉菜单的转场效果
