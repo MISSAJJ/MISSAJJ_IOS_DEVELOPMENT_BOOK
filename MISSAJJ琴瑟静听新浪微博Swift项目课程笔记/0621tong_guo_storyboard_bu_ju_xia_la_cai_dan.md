@@ -69,7 +69,7 @@ extension HomeTableViewController: UIViewControllerTransitioningDelegate
 ```Swift
 
 //  MAPresentationController.swift
-//  XMGWB
+//  MISSAJJ
 //
 //  Created by MISSAJJ on 16/6/2.
 //  Copyright © 2016年 MISSAJJ. All rights reserved.
@@ -101,5 +101,4 @@ class MAPresentationController: UIPresentationController {
     }
 }
 
-```
-
+``` 
