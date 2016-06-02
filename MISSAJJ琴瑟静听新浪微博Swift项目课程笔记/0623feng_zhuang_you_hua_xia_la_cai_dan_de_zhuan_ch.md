@@ -238,7 +238,5 @@ class HomeTableViewController: BaseTableViewController {
         btn.addTarget(self, action: #selector(HomeTableViewController.titleBtnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         return btn
     }()
-}
-
-
-```
+} 
+``` 
