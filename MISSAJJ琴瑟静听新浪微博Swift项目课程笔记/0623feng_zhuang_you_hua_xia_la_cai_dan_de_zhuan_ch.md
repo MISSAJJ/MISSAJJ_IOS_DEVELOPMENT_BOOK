@@ -5,6 +5,9 @@
 Update更新：2016年6月2日 By {MISSAJJ琴瑟静听} 
 ```
 
+直接上代码,慢慢看吧...
+
+
 ##创建转场效果管理类MAPresentationManager
 
 ```swift
@@ -125,4 +128,117 @@ class MAPresentationManager: NSObject , UIViewControllerTransitioningDelegate, U
     }
 
 }
+```
+
+##主界面的调用调整
+```swift
+ 
+//  HomeTableViewController.swift
+//  MISSAJJ
+//
+//  Created by MISSAJJ on 16/6/2.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+//
+
+import UIKit
+
+class HomeTableViewController: BaseTableViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        view.backgroundColor = UIColor.redColor()
+        // 1.判断用户是否登录
+        if !isLogin
+        {
+            // 设置访客视图
+            visitorView?.setupVisitorInfo(nil, title: "关注一些人，回这里看看有什么惊喜")
+            return
+        }
+        
+        // 2.初始化导航条
+        setupNav()
+        
+ //***********注册和移除通知:管理转场的显示和消失*************//   
+        // 3.注册通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("titleChange"), name: MAPresentationManagerDidPresented, object: animatorManager)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("titleChange"), name: MAPresentationManagerDidDismissed, object: animatorManager)
+    }
+    deinit
+    {
+        // 移除通知
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+//************************************************//   
+    
+    
+    // MARK: - 内部控制方法
+    private func setupNav()
+    {
+        // 1.添加左右按钮
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_friendattention", target: self, action: Selector("leftBtnClick"))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop", target: self, action: Selector("rightBtnClick"))
+        
+        // 2.添加标题按钮
+        navigationItem.titleView = titleButton
+    }
+    
+    @objc private func titleChange()
+    {
+        titleButton.selected = !titleButton.selected
+    }
+    @objc private func titleBtnClick(btn: TitleButton)
+    {
+        // 1.修改按钮的状态
+//        btn.selected = !btn.selected
+        
+        // 2.显示菜单
+        // 2.1创建菜单
+        let sb = UIStoryboard(name: "Popover", bundle: nil)
+        guard let menuView = sb.instantiateInitialViewController() else
+        {
+            return
+        }
+        
+        //***************代理改为 animatorManager************//  
+        // 自定义专场动画
+        // 设置转场代理
+        menuView.transitioningDelegate = animatorManager
+        
+        //************************************************//  
+        // 设置转场动画样式
+        menuView.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        // 2.2弹出菜单
+        presentViewController(menuView, animated: true, completion: nil)
+    }
+    
+    @objc private func leftBtnClick()
+    {
+        NJLog("")
+    }
+    @objc private func rightBtnClick()
+    {
+        NJLog("")
+    }
+   //******************懒加载 转场管理类**************************//  
+    // MARK: - 懒加载
+    private lazy var animatorManager: MAPresentationManager = {
+       let manager = MAPresentationManager()
+       //设置下拉菜单的大小
+        manager.presentFrame = CGRect(x: 100, y: 45, width: 200, height: 300)
+        return manager
+    }()
+   //************************************************//  
+    /// 标题按钮
+    private lazy var titleButton: TitleButton = {
+        let btn = TitleButton()
+        btn.setTitle("MISSAJJ", forState: UIControlState.Normal)
+        btn.addTarget(self, action: #selector(HomeTableViewController.titleBtnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        return btn
+    }()
+}
+
+
 ```
