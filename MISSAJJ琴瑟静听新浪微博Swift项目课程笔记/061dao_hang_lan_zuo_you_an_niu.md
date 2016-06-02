@@ -5,6 +5,10 @@
 Update更新：2016年6月2日 By {MISSAJJ琴瑟静听} 
 ```
 
+##需求截图演示
+![image](images/navigationItem截图.png)
+
+
 
 ##无 Highlighted 图片的导航栏按钮
 
