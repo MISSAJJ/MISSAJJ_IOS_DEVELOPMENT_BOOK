@@ -27,7 +27,7 @@ Update更新：2016年6月2日 By {MISSAJJ琴瑟静听}
         btn.selected = !btn.selected
     }
 ```
-- 重写UIButton的集中不同方式
+- 重写UIButton的几种不同方式
 
   - 1.重写RectForContentRect,将按钮的文字标题和图片交换过来
 
@@ -39,7 +39,7 @@ Update更新：2016年6月2日 By {MISSAJJ琴瑟静听}
         return CGRectZero
     }
 ```
-  - 2.通过layoutSubviews重新布局
+  - 2.通过layoutSubviews重新布局 (常用)
 
 ```swift
    override func layoutSubviews() {
@@ -119,7 +119,5 @@ class TitleButton: UIButton {
         imageView?.frame.origin.x = titleLabel!.frame.width
     }
 }
-
-
-```
-
+ 
+``` 
