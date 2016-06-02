@@ -4,6 +4,8 @@
 ```objc
 Update更新：2016年6月2日 By {MISSAJJ琴瑟静听} 
 ```
+OC项目的转场动画一般都是用第三方的资源,如今通过SDK来自行实现和调整转场动画这部分课程,有些晕头转向,连续反复看了很多遍才陆续清晰了思路,希望大家还能看得明白.
+
 
 ##需求动画效果
 ![image](images/完善下拉菜单转场动画.gif)
@@ -140,6 +142,13 @@ extension HomeTableViewController: UIViewControllerAnimatedTransitioning
 ##MAPresentationController调整重写转场代码
 
 ```Swift
+
+//  MAPresentationController.swift
+//  XMGWB
+//
+//  Created by MISSAJJ on 16/6/2.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
+
 import UIKit
 
 class MAPresentationController: UIPresentationController {
