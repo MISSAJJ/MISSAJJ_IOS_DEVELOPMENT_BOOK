@@ -63,7 +63,7 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "naviga
 //  MISSAJJ
 //
 //  Created by MISSAJJ on 16/6/2.
-//  Copyright © 2015年 MISSAJJ. All rights reserved.
+//  Copyright © 2016年 MISSAJJ. All rights reserved.
 //
 
 import UIKit
@@ -106,8 +106,4 @@ extension UIBarButtonItem
         MALog("")
     }
 
-
-
 ```
-
-
