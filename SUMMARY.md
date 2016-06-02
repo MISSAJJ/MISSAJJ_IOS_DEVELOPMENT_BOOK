@@ -87,5 +87,5 @@
    * [0.5. 代码评审(Code Review)](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/code_review.md)
    * [0.6.主界面导航栏按钮和下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/06dao_hang_tiao_biao_ti_cai_dan_an_niu.md)
        * [0.6.1.导航栏左右按钮](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/061dao_hang_lan_zuo_you_an_niu.md)
-       * 0.6.2.导航栏下拉菜单
+       * [0.6.2.导航栏下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/062dao_hang_lan_xia_la_cai_dan.md)
 
