@@ -77,7 +77,7 @@ extension HomeTableViewController: UIViewControllerTransitioningDelegate
 
 import UIKit
 
-class XMGPresentationController: UIPresentationController {
+class MAPresentationController: UIPresentationController {
 
     /*
     1.如果不自定义转场modal出来的控制器会移除原有的控制器
