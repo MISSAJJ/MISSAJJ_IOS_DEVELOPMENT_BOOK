@@ -5,7 +5,7 @@
 Update更新：2016年6月2日 By {MISSAJJ琴瑟静听} 
 ```
 
-直接上代码,慢慢看吧...
+直接上完整代码,慢慢看吧...
 
 
 ##创建转场效果管理类MAPresentationManager
@@ -131,7 +131,7 @@ class MAPresentationManager: NSObject , UIViewControllerTransitioningDelegate, U
 ```
 
 ##主界面的调用调整
-```swift
+```Swift
  
 //  HomeTableViewController.swift
 //  MISSAJJ
