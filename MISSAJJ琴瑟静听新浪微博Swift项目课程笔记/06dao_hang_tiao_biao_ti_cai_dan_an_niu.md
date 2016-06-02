@@ -9,4 +9,4 @@ Update更新：2016年6月2日 By {MISSAJJ琴瑟静听}
 
 ##导航栏功能演示截图
 
-![image](导航栏功能演示截图.png)
+![image](images/导航栏功能演示截图.png)
