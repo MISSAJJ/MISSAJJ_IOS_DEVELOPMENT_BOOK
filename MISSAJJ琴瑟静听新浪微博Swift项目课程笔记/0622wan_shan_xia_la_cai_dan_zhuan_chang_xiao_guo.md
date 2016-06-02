@@ -51,7 +51,7 @@ extension HomeTableViewController: UIViewControllerTransitioningDelegate
     // 可以在该对象中控制弹出视图的尺寸等
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController?
     {
-        return XMGPresentationController(presentedViewController: presented, presentingViewController: presenting)
+        return MAPresentationController(presentedViewController: presented, presentingViewController: presenting)
     }
     
     // 该方法用于返回一个负责转场如何出现的对象
@@ -143,8 +143,7 @@ extension HomeTableViewController: UIViewControllerAnimatedTransitioning
 
 ```Swift
 
-//  MAPresentationController.swift
-//  XMGWB
+//  MAPresentationController.swift 
 //
 //  Created by MISSAJJ on 16/6/2.
 //  Copyright © 2016年 MISSAJJ. All rights reserved.
