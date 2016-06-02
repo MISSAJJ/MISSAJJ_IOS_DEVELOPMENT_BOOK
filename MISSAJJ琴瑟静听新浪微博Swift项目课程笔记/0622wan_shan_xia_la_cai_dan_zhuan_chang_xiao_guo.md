@@ -1,11 +1,15 @@
 # 0.6.2.2.完善下拉菜单转场效果
 
+---
+```objc
+Update更新：2016年6月2日 By {MISSAJJ琴瑟静听} 
+```
 
 ##需求动画效果
 ![image](images/完善下拉菜单转场动画.gif)
 
 
-##优化转场动画
+##HomeTableViewController优化转场动画
 
 ```Swift
  @objc private func titleBtnClick(btn: TitleButton)
@@ -33,6 +37,11 @@
     /// 定义标记记录当前是否是展现
     private var isPresent = false
 }
+
+```
+
+## HomeTableViewController代理方法调整
+```Swift
 
 extension HomeTableViewController: UIViewControllerTransitioningDelegate
 {
@@ -128,12 +137,12 @@ extension HomeTableViewController: UIViewControllerAnimatedTransitioning
 
 
 ```
-
+##MAPresentationController调整重写转场代码
 
 ```Swift
 import UIKit
 
-class XMGPresentationController: UIPresentationController {
+class MAPresentationController: UIPresentationController {
 
     /*
     1.如果不自定义转场modal出来的控制器会移除原有的控制器
@@ -155,7 +164,7 @@ class XMGPresentationController: UIPresentationController {
         
         // 添加蒙版
         containerView?.insertSubview(coverButton, atIndex: 0)
-        coverButton.addTarget(self, action: #selector(XMGPresentationController.coverBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
+        coverButton.addTarget(self, action: #selector(MAPresentationController.coverBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     // MARK: - 内部控制方法
