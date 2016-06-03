@@ -75,10 +75,10 @@ Update 更新：2016年6月2日 By {MISSAJJ琴瑟静听}
 * [Introduction 前言介绍](README.md)
 
 * [★【Chapter-01  MISSAJJ高效工具资源分享】](MISSAJJ琴瑟静听高效工具资源及分享/README.md)
-   * [Mac 高效工具资源及分享](MISSAJJ琴瑟静听高效工具资源及分享/gao_xiao_gong_ju_zi_yuan_ji_fen_xiang.md)   (更新)
-   * [Xcode开发必备-优秀插件分享](MISSAJJ琴瑟静听高效工具资源及分享/xcodekai_fa_bi_5907-_you_xiu_cha_jian_fen_xiang.md)   (更新)
-   * [Github-iOS 优秀代码集萃 和 面试题集锦](MISSAJJ琴瑟静听高效工具资源及分享/github-ios_you_xiu_dai_ma_ji_cui_he_mian_shi_ti_ji.md)   (更新)
-   * [Mac系统常用快捷键以及技巧大全](MISSAJJ琴瑟静听高效工具资源及分享/macxi_tong_chang_yong_kuai_jie_jian_yi_ji_ji_qiao_.md)   (更新)
+   * [Mac 高效工具资源及分享](MISSAJJ琴瑟静听高效工具资源及分享/gao_xiao_gong_ju_zi_yuan_ji_fen_xiang.md)   
+   * [Xcode开发必备-优秀插件分享](MISSAJJ琴瑟静听高效工具资源及分享/xcodekai_fa_bi_5907-_you_xiu_cha_jian_fen_xiang.md)   
+   * [Github-iOS 优秀代码集萃 和 面试题集锦](MISSAJJ琴瑟静听高效工具资源及分享/github-ios_you_xiu_dai_ma_ji_cui_he_mian_shi_ti_ji.md)  
+   * [Mac系统常用快捷键以及技巧大全](MISSAJJ琴瑟静听高效工具资源及分享/macxi_tong_chang_yong_kuai_jie_jian_yi_ji_ji_qiao_.md)  
    * [Markdown 语法整理](MISSAJJ琴瑟静听高效工具资源及分享/markdownyu_fa_zheng_li.md)
    * [CocoaPods 的使用](MISSAJJ琴瑟静听高效工具资源及分享/cocoapodsde_shi_yong.md)
    * [项目管理 Git 常用命令](MISSAJJ琴瑟静听高效工具资源及分享/xiangmu_guan_li_git_chang_yong_ming_ling.md)
@@ -129,7 +129,7 @@ Update 更新：2016年6月2日 By {MISSAJJ琴瑟静听}
    * [(V) ReactiveCocoa（RAC）编程思想和 MVVM 架构进阶](ReactiveCocoa（RAC）编程思想和MVVM架构进阶/v_reactivecocoaracff09_bian_cheng_si_xiang_he_mvvm.md)
 
 
-* [★【Chapter-07 MISSAJJ琴瑟静听 Swift 基础语言课程笔记】](MISSAJJ琴瑟静听Swift基础语言课程笔记/SUMMARY.md) (更新)
+* [★【Chapter-07 MISSAJJ琴瑟静听 Swift 基础语言课程笔记】](MISSAJJ琴瑟静听Swift基础语言课程笔记/SUMMARY.md) 
    * [Swift-入门介绍](MISSAJJ琴瑟静听Swift基础语言课程笔记/README.md)
    * [Swift-数据类型](MISSAJJ琴瑟静听Swift基础语言课程笔记/12.Swift-数据类型.md)
    * [Swift-常量&变量](MISSAJJ琴瑟静听Swift基础语言课程笔记/01.Swift-常量&变量.md)
@@ -149,7 +149,7 @@ Update 更新：2016年6月2日 By {MISSAJJ琴瑟静听}
    * [Swift-ATS应用传输安全](MISSAJJ琴瑟静听Swift基础语言课程笔记/11.Swift-ATS应用传输安全.md)
 
 
-* [★【Chapter-08 MISSAJJ琴瑟静听新浪微博Swift项目课程笔记】](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/README.md)   (更新)
+* [★【Chapter-08 MISSAJJ琴瑟静听新浪微博Swift项目课程笔记】](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/README.md)   
    * [0.1. 项目Git部署（使用OSChina开源中国)](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/oschina.md) 
    * [0.2. 图片素材](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/imagesassets.md) 
        * [0.2.1. 图标素材 & App 名称](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/imagesassets-01-icon_default.md) 
