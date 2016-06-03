@@ -96,7 +96,7 @@
        * [0.7.2.二维码冲击波动画](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/072er_wei_ma_chong_ji_bo_dong_hua.md)
        * [0.7.3.扫描二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/073sao_miao_er_wei_ma.md)
        * [0.7.4.定位二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/074ding_wei_er_wei_ma.md)
-       * 0.7.5.指定扫描区域
+       * [0.7.5.指定扫描区域](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/075zhi_ding_sao_miao_qu_yu.md)
        * 0.7.6.扫描相册二维码
        * 0.7.7.生成二维码图片
 
