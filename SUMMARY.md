@@ -92,7 +92,7 @@
            * [0.6.2.2.完善下拉菜单转场效果](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0622wan_shan_xia_la_cai_dan_zhuan_chang_xiao_guo.md)
            * [0.6.2.3.封装优化下拉菜单的转场效果](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0623feng_zhuang_you_hua_xia_la_cai_dan_de_zhuan_ch.md)
    * [0.7.扫描,读取和生成二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/07sao_63cf2c_du_qu_he_sheng_cheng_er_wei_ma.md)
-       * 0.7.1.搭建二维码界面
+       * [0.7.1.搭建二维码界面](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/071da_jian_er_wei_ma_jie_mian.md)
        * 0.7.2.二维码冲击波动画
        * 0.7.3.扫描二维码
        * 0.7.4.定位二维码
