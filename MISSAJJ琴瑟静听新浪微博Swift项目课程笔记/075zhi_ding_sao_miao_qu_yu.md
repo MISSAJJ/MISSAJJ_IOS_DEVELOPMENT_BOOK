@@ -29,3 +29,79 @@
 
 ```
 
+##先清除定位图层,再生成定位图层
+```swift
+  extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate
+{
+    /// 只要扫描到结果就会调用
+    func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!)
+    {
+        // 1.显示结果
+        customLabel.text =  metadataObjects.last?.stringValue
+        
+        clearLayers()
+        
+        // 2.拿到扫描到的数据
+        guard let metadata = metadataObjects.last as? AVMetadataObject else
+        {
+            return
+        }
+        // 通过预览图层将corners值转换为我们能识别的类型
+        let objc = previewLayer.transformedMetadataObjectForMetadataObject(metadata)
+        // 2.对扫描到的二维码进行描边
+        drawLines(objc as! AVMetadataMachineReadableCodeObject)
+    }
+    
+    /// 绘制描边
+    private func drawLines(objc: AVMetadataMachineReadableCodeObject)
+    {
+        
+        // 0.安全校验
+        guard let array = objc.corners else
+        {
+            return
+        }
+        
+        // 1.创建图层, 用于保存绘制的矩形
+        let layer = CAShapeLayer()
+        layer.lineWidth = 2
+        layer.strokeColor = UIColor.greenColor().CGColor
+        layer.fillColor = UIColor.clearColor().CGColor
+        
+        // 2.创建UIBezierPath, 绘制矩形
+        let path = UIBezierPath()
+        var point = CGPointZero
+        var index = 0
+        CGPointMakeWithDictionaryRepresentation((array[index++] as! CFDictionary), &point)
+        
+        // 2.1将起点移动到某一个点
+        path.moveToPoint(point)
+        
+        // 2.2连接其它线段
+        while index < array.count
+        {
+            CGPointMakeWithDictionaryRepresentation((array[index++] as! CFDictionary), &point)
+            path.addLineToPoint(point)
+        }
+        // 2.3关闭路径
+        path.closePath()
+        
+        layer.path = path.CGPath
+        // 3.将用于保存矩形的图层添加到界面上
+        containerLayer.addSublayer(layer)
+    }
+    
+    /// 清空描边
+    private func clearLayers()
+    {
+        guard let subLayers = containerLayer.sublayers else
+        {
+            return
+        }
+        for layer in subLayers
+        {
+            layer.removeFromSuperlayer()
+        }
+    }
+}  
+```
