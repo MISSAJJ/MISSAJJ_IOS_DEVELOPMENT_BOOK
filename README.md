@@ -172,13 +172,21 @@ Update 更新：2016年6月2日 By {MISSAJJ琴瑟静听}
        * [0.4.6. 设置全局外观](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-06-setupappearance.md)  
        * [0.4.7. 阶段性小结](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/visitor-07-summary.md)  
    * [0.5. 代码评审(Code Review)](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/code_review.md) 
-   * [0.6.主界面导航栏按钮和下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/06dao_hang_tiao_biao_ti_cai_dan_an_niu.md)   (更新)
-       * [0.6.1.导航栏左右按钮](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/061dao_hang_lan_zuo_you_an_niu.md)   (更新)
-       * [0.6.2.导航栏下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/062dao_hang_lan_xia_la_cai_dan.md)   (更新)
-           * [0.6.2.1.通过Storyboard布局下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0621tong_guo_storyboard_bu_ju_xia_la_cai_dan.md)   (更新)
-           * [0.6.2.2.完善下拉菜单转场效果](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0622wan_shan_xia_la_cai_dan_zhuan_chang_xiao_guo.md)   (更新)
-           * [0.6.2.3.封装优化下拉菜单的转场效果](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0623feng_zhuang_you_hua_xia_la_cai_dan_de_zhuan_ch.md)   (更新)
- 
+   * [0.6.主界面导航栏按钮和下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/06dao_hang_tiao_biao_ti_cai_dan_an_niu.md)  
+       * [0.6.1.导航栏左右按钮](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/061dao_hang_lan_zuo_you_an_niu.md)  
+       * [0.6.2.导航栏下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/062dao_hang_lan_xia_la_cai_dan.md)  
+           * [0.6.2.1.通过Storyboard布局下拉菜单](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0621tong_guo_storyboard_bu_ju_xia_la_cai_dan.md) 
+           * [0.6.2.2.完善下拉菜单转场效果](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0622wan_shan_xia_la_cai_dan_zhuan_chang_xiao_guo.md)  
+           * [0.6.2.3.封装优化下拉菜单的转场效果](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/0623feng_zhuang_you_hua_xia_la_cai_dan_de_zhuan_ch.md) 
+    * [0.7.扫描,读取和生成二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/07sao_63cf2c_du_qu_he_sheng_cheng_er_wei_ma.md)   (更新)
+       * [0.7.1.搭建二维码界面](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/071da_jian_er_wei_ma_jie_mian.md)   (更新)
+       * [0.7.2.二维码冲击波动画](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/072er_wei_ma_chong_ji_bo_dong_hua.md)   (更新)
+       * [0.7.3.扫描二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/073sao_miao_er_wei_ma.md)   (更新)
+       * [0.7.4.定位二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/074ding_wei_er_wei_ma.md)   (更新)
+       * [0.7.5.指定扫描区域](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/075zhi_ding_sao_miao_qu_yu.md)   (更新)
+       * [0.7.6.扫描相册二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/076sao_miao_xiang_ce_er_wei_ma.md)   (更新)
+       * [0.7.7.生成二维码图片](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/077sheng_cheng_er_wei_ma_tu_pian.md)   (更新)
+
 
 ```
 本书更多章节会在 GitBook 和 Github 同步更新，敬请关注收藏^_^
