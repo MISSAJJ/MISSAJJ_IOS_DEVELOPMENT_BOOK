@@ -9,7 +9,13 @@ Update更新：2016年6月3日 By {MISSAJJ琴瑟静听}
   /// 懒加载: 专门用于保存描边的图层
     private lazy var containerLayer: CALayer = CALayer()
 ```
+##添加容器图层
+```swift 
+       // 7.添加容器图层
+        view.layer.addSublayer(containerLayer)
+        containerLayer.frame = view.bounds
 
+```
 ##调整二维码代理方法
 ```swift
 extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate
