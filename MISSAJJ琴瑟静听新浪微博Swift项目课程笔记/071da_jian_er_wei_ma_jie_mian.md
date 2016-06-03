@@ -12,8 +12,10 @@ Update更新：2016年6月2日 By {MISSAJJ琴瑟静听}
 ##storyboard搭建二维码界面
 - 创建QRCode.storyboard 和 QRCodeViewController.swift
 
+ 
 ![image](images/storyboard搭建二维码界面.png)
  
+
 ```swift 
 //  QRCodeViewController.swift 
 
@@ -25,8 +27,10 @@ class QRCodeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // 1.设置默认选中
+        // 1.设置默认选中第一个二维码Tabbar
         customTabbar.selectedItem = customTabbar.items?.first
+        
+        //后期可以完善条形码的读取功能
     }
 
     @IBAction func photoBtnClick(sender: AnyObject) {
