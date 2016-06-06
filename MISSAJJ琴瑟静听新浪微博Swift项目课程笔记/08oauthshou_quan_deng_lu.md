@@ -5,6 +5,16 @@
 Update更新：2016年6月6日 By {MISSAJJ琴瑟静听} 
 ```
 
+
+   * [0.8.新浪微博如何进行OAuth授权](08oauthshou_quan_deng_lu.md)
+       * [0.8.1.获取OAuth授权换取AccessToken全过程](081huo_quoauth_shou_quan_huan_qu_accesstoken_quan_.md)
+       * [0.8.2.优化OAuth授权用户信息](082you_hua_oauth_shou_quan_yong_hu_xin_xi.md)
+       * [0.8.3.优化用户数据缓存](083you_hua_yong_hu_shu_ju_huan_cun.md)
+       * [0.8.4.用户过期时间的处理](084yong_hu_guo_qi_shi_jian_de_chu_li.md)
+       * [0.8.5.获取保存用户的详细信息](085huo_qu_bao_cun_yong_hu_de_xiang_xi_xin_xi.md)
+
+
+
 ###1.成为新浪的开发者
 去open.weibo.com上注册一个账号
 
