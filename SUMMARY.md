@@ -99,7 +99,7 @@
        * [0.7.5.指定扫描区域](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/075zhi_ding_sao_miao_qu_yu.md)
        * [0.7.6.扫描相册二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/076sao_miao_xiang_ce_er_wei_ma.md)
        * [0.7.7.生成二维码图片](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/077sheng_cheng_er_wei_ma_tu_pian.md)
-   * [0.8.OAuth授权登录](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/08oauthshou_quan_deng_lu.md)
+   * [0.8.新浪微博如何进行OAuth授权](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/08oauthshou_quan_deng_lu.md)
        * [0.8.1.获取OAuth授权换取AccessToken全过程](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/081huo_quoauth_shou_quan_huan_qu_accesstoken_quan_.md)
        * [0.8.2.优化OAuth授权用户信息](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/082you_hua_oauth_shou_quan_yong_hu_xin_xi.md)
 
