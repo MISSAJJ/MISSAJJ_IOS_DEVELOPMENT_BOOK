@@ -2,7 +2,7 @@
 
 ###抽取一个全局类管理固定内容
 
- OC 总我们经常使用宏定义来定义常量, Swift 项目中无法使用宏定义, 但是我们可以通过创建一个全局类,如:`Common.swift`来定义常量和本地通知key等,以便高效率统一管理
+- OC 总我们经常使用宏定义来定义常量, Swift 项目中无法使用宏定义, 但是我们可以通过创建一个全局类,如:`Common.swift`来定义常量和本地通知key等,以便高效率统一管理
 
 ```Swift
 //  Common.swift 
@@ -23,8 +23,8 @@ let MAPresentationManagerDidPresented = "MAPresentationManagerDidPresented"
 /// 自定义转场消失
 let MAPresentationManagerDidDismissed = "MAPresentationManagerDismissed"
 ```
-- 调用写法格式: 
-  - 先写一个斜杠`\`再将常量名写在括号`()`内,如:` \(WB_App_Key)`
+###全局调用的写法格式: 
+- 先写一个斜杠`\`再将常量名写在括号`()`内,如:` \(WB_App_Key)`
 
 ```Swift
 // 1.定义字符串保存登录界面URL
