@@ -84,7 +84,9 @@ guard let urlStr = request.URL?.absoluteString else
 {
 return false
 }
-if !urlStr.hasPrefix("http://www.missajj.com/")
+
+//注意网址后要加一个斜杠/
+if !urlStr.hasPrefix("http://www.missajj.com/") 
 {
 NJLog("不是授权回调页面")
 return true
