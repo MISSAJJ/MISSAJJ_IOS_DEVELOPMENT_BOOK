@@ -1,4 +1,4 @@
-~~~~###MISSAJJ琴瑟静听（ Swift 和 Objective-C ）iOS 开发项目电子书
+###MISSAJJ琴瑟静听（ Swift 和 Objective-C ）iOS 开发项目电子书
 ---
 
 ####★近期正在研究新浪微博的Swift项目,会陆续更新笔记哦,欢迎关注更新★
