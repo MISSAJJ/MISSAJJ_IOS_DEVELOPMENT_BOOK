@@ -205,3 +205,33 @@ extension AppDelegate
 }
 
 ```
+
+###WelcomeViewController调用优化
+- 将原来的跳转到首页的代码, 改为发送通知
+```swift
+ override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // 1.让头像执行动画
+        iconBottomCons.constant = (UIScreen.mainScreen().bounds.height - iconBottomCons.constant)
+        
+        UIView.animateWithDuration(2.0, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+            }) { (_) -> Void in
+                
+                UIView.animateWithDuration(2.0, animations: { () -> Void in
+                    self.titleLabel.alpha = 1.0
+                    }, completion: { (_) -> Void in
+                       
+                        // 跳转到首页
+                        /*
+                        let sb = UIStoryboard(name: "Main", bundle: nil)
+                        let vc = sb.instantiateInitialViewController()!
+                        UIApplication.sharedApplication().keyWindow?.rootViewController = vc
+                        */
+                        NSNotificationCenter.defaultCenter().postNotificationName(MASwitchRootViewController, object: true)
+                })
+        }
+    }
+
+```
