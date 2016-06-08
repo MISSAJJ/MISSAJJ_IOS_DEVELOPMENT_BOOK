@@ -206,7 +206,7 @@ extension AppDelegate
 
 ```
 
-###WelcomeViewController调用优化
+###WelcomeViewController界面跳转优化
 - 将原来的跳转到首页的代码, 改为发送通知
 
 ```swift
@@ -235,4 +235,22 @@ extension AppDelegate
         }
     }
 
+```
+
+###NewfeatureViewController界面跳转优化
+
+- - 将原来的跳转到首页的代码, 改为发送通知
+
+```swift
+    
+    @objc private func startBtnClick()
+    {
+        // 跳转到首页
+        /*
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateInitialViewController()!
+        UIApplication.sharedApplication().keyWindow?.rootViewController = vc
+        */
+         NSNotificationCenter.defaultCenter().postNotificationName(MASwitchRootViewController, object: true)
+    }
 ```
