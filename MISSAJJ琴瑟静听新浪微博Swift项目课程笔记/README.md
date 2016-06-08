@@ -1,7 +1,7 @@
 # Chapter-08 MISSAJJ琴瑟静听 新浪微博 Swift 项目课程笔记
 
 ```objc
-Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
+Update更新：2016年6月8日 By {MISSAJJ琴瑟静听}
  
 ```
 ``` 
