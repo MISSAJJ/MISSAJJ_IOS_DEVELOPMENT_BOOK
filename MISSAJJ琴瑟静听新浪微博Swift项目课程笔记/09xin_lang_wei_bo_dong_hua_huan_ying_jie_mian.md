@@ -2,13 +2,24 @@
 
 新浪微博在登陆后打开APP会出现一个欢迎界面,此界面会有一个将用户头像从下至上移动的动画, 动画结束后出现"欢迎回来"文字,这个界面很简单但是却对用户很友好.
 
+
+###欢迎界面演示
+
+![image](微博欢迎界面.PNG)
+
+
 ###搭建欢迎界面
 
-- 
+- Welcome.storyboard
+
 ![image](新浪微博动画欢迎界面.png)
 
 
 ###欢迎界面实现代码
+
+- WelcomeViewController.swift 
+
+
 ```swift 
 //  WelcomeViewController.swift 
 
