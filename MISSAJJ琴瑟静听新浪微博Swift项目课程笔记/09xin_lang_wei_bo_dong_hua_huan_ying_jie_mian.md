@@ -5,14 +5,14 @@
 
 ###欢迎界面演示
 
-![image](微博欢迎界面.PNG)
+![image](images/微博欢迎界面.PNG)
 
 
 ###搭建欢迎界面
 
 - Welcome.storyboard
 
-![image](新浪微博动画欢迎界面.png)
+![image](images/新浪微博动画欢迎界面.png)
 
 
 ###欢迎界面实现代码
