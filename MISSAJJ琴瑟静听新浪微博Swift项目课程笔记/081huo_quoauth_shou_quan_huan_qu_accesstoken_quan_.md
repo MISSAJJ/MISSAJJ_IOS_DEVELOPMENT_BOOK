@@ -9,7 +9,7 @@ Update更新：2016年6月6日 By {MISSAJJ琴瑟静听}
 ###创建OAuth授权界面
 - OAuth.storyboard
 
-![](storyboard创建OAuth授权Webview.png)
+![](images/storyboard创建OAuth授权Webview.png)
 
 
 ###跳转授权界面
