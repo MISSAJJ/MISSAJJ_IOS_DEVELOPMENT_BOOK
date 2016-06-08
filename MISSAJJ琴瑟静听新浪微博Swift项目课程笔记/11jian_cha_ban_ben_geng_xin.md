@@ -208,6 +208,7 @@ extension AppDelegate
 
 ###WelcomeViewController调用优化
 - 将原来的跳转到首页的代码, 改为发送通知
+
 ```swift
  override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
