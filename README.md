@@ -3,7 +3,7 @@
 
 ####★近期正在研究新浪微博的Swift项目,会陆续更新笔记哦,欢迎关注更新★
 ```objc
-Update 更新：2016年6月6日 By {MISSAJJ琴瑟静听} 
+Update 更新：2016年6月8日 By {MISSAJJ琴瑟静听} 
 
 友情提示：
 “高效工具资源及分享”里的免费 MAC 软件下载地址随时会失效，
@@ -219,16 +219,15 @@ Update 更新：2016年6月6日 By {MISSAJJ琴瑟静听}
 -  MISSAJJ网站 : http://www.MISSAJJ.com 
 
 ```objc
-  - 此域名解析在海外服务器近4年,如今满怀爱国之心想回归祖国
-  - 但是天朝个人网站的 ICP 备案好麻烦哦~
+此域名解析在海外服务器近4年,终于这一腔爱国的热血回归祖国...
+
+不得不吐槽一下:
+  - 咱们天朝的个人网站 ICP 备案好麻烦哦~
   - 网站名不能是英文名? 不能是博客? 若是博客还需要待预审?...
-  - 反复被拒绝了4次以上了, 竟然比 Appstore 审核 APP 还要麻烦!!!
-  - 索性暂时关闭,大大滴写上"网站正在等待中国工信部ICP备案中"
-  - ICP 审核人员:你们慢慢~慢慢 and 慢慢~慢慢~审核吧,姐姐我不伺候了!
+  - 历经2个月,遭遇4次被拒,竟然比 Appstore 审核 APP 还要麻烦!!! 
 ```  
   
-- Blog : http://cz.jiboit.com 
-  - （临时的MISSAJJ网站地址，感谢技柏科技免费提供国内空间）
+- MISSAJJ镜像站址 : http://cz.jiboit.com （感谢技柏科技免费提供空间）
 - Github  : https://github.com/MISSAJJ
 - GitBook : https://www.gitbook.com/@missajj
 
