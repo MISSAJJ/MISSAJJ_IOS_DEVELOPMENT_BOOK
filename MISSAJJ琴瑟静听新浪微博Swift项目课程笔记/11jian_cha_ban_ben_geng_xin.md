@@ -4,6 +4,8 @@
 
 ![image](images/界面切换流程图.png)
 
+
+
 ###判断是否有新版本
 
 ```swift
