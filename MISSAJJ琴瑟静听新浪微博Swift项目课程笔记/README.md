@@ -59,6 +59,9 @@ Update更新：2016年5月26日 By {MISSAJJ琴瑟静听}
        * [0.8.3.优化用户数据缓存](083you_hua_yong_hu_shu_ju_huan_cun.md)
        * [0.8.4.用户过期时间的处理](084yong_hu_guo_qi_shi_jian_de_chu_li.md)
        * [0.8.5.获取保存用户的详细信息](085huo_qu_bao_cun_yong_hu_de_xiang_xi_xin_xi.md)
+   * [0.9.新浪微博动画欢迎界面](09xin_lang_wei_bo_dong_hua_huan_ying_jie_mian.md)
+   * [10.新浪微博新特性界面和按钮动画](10xin_lang_wei_bo_xin_te_xing_jie_mian_he_an_niu_d.md)
+   * [11.检查版本更新](11jian_cha_ban_ben_geng_xin.md)
 
 
 ## 新浪微博
