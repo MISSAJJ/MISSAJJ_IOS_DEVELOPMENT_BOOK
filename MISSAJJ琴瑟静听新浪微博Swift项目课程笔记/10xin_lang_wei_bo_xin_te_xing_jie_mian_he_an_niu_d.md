@@ -3,4 +3,5 @@
 
 ###动画演示
 
-![image](新特性界面.gif)
+![image](images/新特性界面.gif)
+
