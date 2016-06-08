@@ -187,12 +187,15 @@ Update 更新：2016年6月8日 By {MISSAJJ琴瑟静听}
        * [0.7.5.指定扫描区域](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/075zhi_ding_sao_miao_qu_yu.md)  
        * [0.7.6.扫描相册二维码](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/076sao_miao_xiang_ce_er_wei_ma.md) 
        * [0.7.7.生成二维码图片](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/077sheng_cheng_er_wei_ma_tu_pian.md)
-   * [0.8.新浪微博如何进行OAuth授权](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/08oauthshou_quan_deng_lu.md)   (更新)
-       * [0.8.1.获取OAuth授权换取AccessToken全过程](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/081huo_quoauth_shou_quan_huan_qu_accesstoken_quan_.md)   (更新)
-       * [0.8.2.优化OAuth授权用户信息](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/082you_hua_oauth_shou_quan_yong_hu_xin_xi.md)   (更新)
-       * [0.8.3.优化用户数据缓存](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/083you_hua_yong_hu_shu_ju_huan_cun.md)   (更新)
-       * [0.8.4.用户过期时间的处理](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/084yong_hu_guo_qi_shi_jian_de_chu_li.md)   (更新)
-       * [0.8.5.获取保存用户的详细信息](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/085huo_qu_bao_cun_yong_hu_de_xiang_xi_xin_xi.md)   (更新)
+   * [0.8.新浪微博如何进行OAuth授权](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/08oauthshou_quan_deng_lu.md)   
+       * [0.8.1.获取OAuth授权换取AccessToken全过程](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/081huo_quoauth_shou_quan_huan_qu_accesstoken_quan_.md)   
+       * [0.8.2.优化OAuth授权用户信息](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/082you_hua_oauth_shou_quan_yong_hu_xin_xi.md)   
+       * [0.8.3.优化用户数据缓存](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/083you_hua_yong_hu_shu_ju_huan_cun.md)  
+       * [0.8.4.用户过期时间的处理](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/084yong_hu_guo_qi_shi_jian_de_chu_li.md)  
+       * [0.8.5.获取保存用户的详细信息](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/085huo_qu_bao_cun_yong_hu_de_xiang_xi_xin_xi.md)
+   * [0.9.新浪微博动画欢迎界面](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/09xin_lang_wei_bo_dong_hua_huan_ying_jie_mian.md)   (更新)
+   * [10.新浪微博新特性界面和按钮动画](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/10xin_lang_wei_bo_xin_te_xing_jie_mian_he_an_niu_d.md)   (更新)
+   * [11.检查版本更新](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/11jian_cha_ban_ben_geng_xin.md)   (更新)
 
 
 ```
