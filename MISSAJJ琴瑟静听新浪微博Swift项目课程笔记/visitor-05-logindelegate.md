@@ -48,7 +48,7 @@ protocol VisitorViewDelegate: NSObjectProtocol
 ```
   @protocol VisitorViewDelegate  <NSObject>
 ```
-- Swift 定义代理
+- Swift中定义协议,如若要写继承要写`NSObjectProtocol`
 ```
  protocol VisitorViewDelegate: NSObjectProtocol
 ```
