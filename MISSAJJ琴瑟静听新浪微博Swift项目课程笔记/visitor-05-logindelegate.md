@@ -2,7 +2,7 @@
 
 ---
 ```objc
-Update更新：2016年5月30日 By {MISSAJJ琴瑟静听} 
+Update更新：2016年6月12日 By {MISSAJJ琴瑟静听} 
 ```
 
 ###模拟器演示
@@ -41,7 +41,24 @@ protocol VisitorViewDelegate: NSObjectProtocol
 
 ```
 
-> 定义协议时，需要继承自 `NSObjectProtocol`，否则无法设置代理的类型
+####OC 和 Swift 定义协议的区别
+>注意: OC 继承写`NSObject`, Swift继承是写`NSObjectProtocol`
+
+- OC 中我们一般是这样定义的
+```
+  @protocol VisitorViewDelegate  <NSObject>
+```
+- Swift 定义代理
+```
+ protocol VisitorViewDelegate: NSObjectProtocol
+```
+
+- 在 Swift 中写错代理继承为 NSObject 会提示报错信息
+```
+Non-class type 'VisitorViewDelegate' cannot inherit from class 'NSObject'
+```
+
+
 
 ####定义代理
 
