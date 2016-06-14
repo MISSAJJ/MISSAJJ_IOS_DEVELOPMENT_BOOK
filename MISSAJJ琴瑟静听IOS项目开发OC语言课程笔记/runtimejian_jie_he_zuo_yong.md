@@ -3,7 +3,7 @@
  
 ---
 ```objc
-Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
+Update更新：2016年6月14日 By {MISSAJJ琴瑟静听}
 ```
 ### 一、runtime简介
 *	RunTime简称运行时。OC就是`运行时机制`，也就是在运行时候的一些机制，其中最主要的是消息机制。
@@ -18,7 +18,10 @@ Update更新：2016年5月20日 By {MISSAJJ琴瑟静听}
 ####1.发送消息
 *	方法调用的本质，就是让对象发送消息。
 *	objc_msgSend,只有对象才能发送消息，因此以objc开头.
-*	使用`消息机制`前提，必须导入#import <objc/message.h>
+*	使用`消息机制`前提，必须导入头文件
+```
+#import <objc/message.h>
+```
 *	消息机制简单使用
 
 ```objc
