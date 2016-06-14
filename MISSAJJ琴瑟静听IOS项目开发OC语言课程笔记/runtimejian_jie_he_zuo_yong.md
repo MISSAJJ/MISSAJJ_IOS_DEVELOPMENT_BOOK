@@ -18,10 +18,18 @@ Update更新：2016年6月14日 By {MISSAJJ琴瑟静听}
 ####1.发送消息
 *	方法调用的本质，就是让对象发送消息。
 *	objc_msgSend,只有对象才能发送消息，因此以objc开头.
-*	使用`消息机制`前提，必须导入头文件
+*	使用`消息机制`前提
+
 ```
+第一步: 必须导入头文件
 #import <objc/message.h>
+
+第二步:Build Setting -> 搜索msg -> 设置属性为No
+ 
 ```
+
+![image](runtime设置.jpg)
+
 *	消息机制简单使用
 
 ```objc
