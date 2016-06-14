@@ -28,7 +28,7 @@ Update更新：2016年6月14日 By {MISSAJJ琴瑟静听}
  
 ```
 
-![image](runtime设置.jpg)
+![image](Images/runtime设置.jpg)
 
 *	消息机制简单使用
 
