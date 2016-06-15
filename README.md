@@ -193,9 +193,11 @@ Update 更新：2016年6月12日 By {MISSAJJ琴瑟静听}
        * [0.8.3.优化用户数据缓存](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/083you_hua_yong_hu_shu_ju_huan_cun.md)  
        * [0.8.4.用户过期时间的处理](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/084yong_hu_guo_qi_shi_jian_de_chu_li.md)  
        * [0.8.5.获取保存用户的详细信息](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/085huo_qu_bao_cun_yong_hu_de_xiang_xi_xin_xi.md)
-   * [0.9.新浪微博动画欢迎界面](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/09xin_lang_wei_bo_dong_hua_huan_ying_jie_mian.md)   (更新)
-   * [10.新浪微博新特性界面和按钮动画](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/10xin_lang_wei_bo_xin_te_xing_jie_mian_he_an_niu_d.md)   (更新)
-   * [11.检查版本更新](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/11jian_cha_ban_ben_geng_xin.md)   (更新)
+   * [0.9.新浪微博动画欢迎界面](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/09xin_lang_wei_bo_dong_hua_huan_ying_jie_mian.md) 
+   * [10.新浪微博新特性界面和按钮动画](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/10xin_lang_wei_bo_xin_te_xing_jie_mian_he_an_niu_d.md) 
+   * [11.检查版本更新](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/11jian_cha_ban_ben_geng_xin.md) 
+   * [12.加载微博数据](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/12jia_zai_wei_bo_shu_ju.md)  (更新)
+   * [13.加载用户数据](MISSAJJ琴瑟静听新浪微博Swift项目课程笔记/13jia_zai_yong_hu_shu_ju.md)  (更新)
 
 
 ```
