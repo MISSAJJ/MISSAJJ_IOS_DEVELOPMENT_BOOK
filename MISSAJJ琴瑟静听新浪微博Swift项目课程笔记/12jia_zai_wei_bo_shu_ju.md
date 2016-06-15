@@ -3,10 +3,10 @@
 发送网络请求获得数据的相关的代码, 最好是封装在一个类里, 之前我们已经在进行OAuth授权的时候创建了`NetworkTools.swift`这个类,用于请求获取AccessToken,现在我们就将请求微博数据的网络请求也写在这个类里, 今后只要通过那个类来统一管理维护就可.
 
 ###封装网络请求
-发送网络请求三部曲
-- 1.准备路径 
-- 2.准备参数 
-- 3.发送GET请求
+- 发送网络请求三部曲
+ - 1.准备路径 
+ - 2.准备参数 
+ - 3.发送GET请求
 
 
 ```swift 
@@ -14,6 +14,8 @@
     func loadStatuses()
     {
         
+        //因为一定要有UserAccount.loadUserAccount的值才能发送请求,
+        //所以要通过断言提醒其他开发者,接着就可以放心去进行强制解包了.
         assert(UserAccount.loadUserAccount() != nil, "必须授权之后才能获取微博数据")
         
         // 1.准备路径
@@ -28,9 +30,20 @@
         }
     } 
 ```
+- 调用方法
 
+```swift
+ // MARK: - 内部控制方法
+    private func loadData()
+    {
+     NetworkTools.shareInstance.loadStatuses { (array, error) in
+     //获取数据后处理   
+        }
+    }
 
+```
 
+###完善和优化代码
 ```swift 
 //  NetworkTools.swift 
 
