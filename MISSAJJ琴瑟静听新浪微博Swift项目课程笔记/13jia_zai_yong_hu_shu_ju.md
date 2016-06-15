@@ -27,7 +27,7 @@ class User: NSObject {
     /// 用户认证类型
     var verified_type: Int = -1
     
-     ///重写字典转模型
+     ///字典转模型
     init(dict: [String: AnyObject])
     {
         super.init()
@@ -54,4 +54,23 @@ class User: NSObject {
 ```swift 
   /// 微博作者的用户信息
     var user: User?
+```
+
+但是`setValuesForKeysWithDictionary(dict)`这个方法, 通过`KVC`是不会把字典转模型的,所以我们需要通过重写`setValue(value: AnyObject?, forKeyPath keyPath: String) `拦截`user`进行赋值操作
+
+```swift 
+ /// KVC的setValuesForKeysWithDictionary方法内部会调用setValue方法
+    override func setValue(value: AnyObject?, forKey key: String) {
+        
+        NJLog("key = \(key), value = \(value)")
+        // 1.拦截user赋值操作
+        if key == "user"
+        {
+            user = User(dict: value as! [String : AnyObject])
+            return
+        }
+        //注意:拦截一定要写在super.setValue之前
+        super.setValue(value, forKey: key)
+    }
+
 ```
