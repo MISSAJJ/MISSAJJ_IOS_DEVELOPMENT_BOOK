@@ -4,7 +4,7 @@
 Update更新：2016年6月15日 By {MISSAJJ琴瑟静听} 
 ```
 
-发送网络请求获得数据的相关的代码, 最好是封装在同一个类里, 之前我们已经在进行OAuth授权的时候创建了`NetworkTools.swift`这个类,用于请求获取AccessToken,现在我们就将请求微博数据的网络请求也写在这个类里, 今后只要通过那个类来统一管理维护就可.
+发送网络请求获得数据的相关的代码, 最好是封装在同一个类里或者自己封装的框架里, 之前我们已经在进行OAuth授权的时候创建了`NetworkTools.swift`用于请求获取AccessToken,现在我们就将请求微博数据的网络请求也写在这个类里, 今后只要通过那个类来统一管理维护就可.
 
 ###封装网络请求
 - 发送网络请求三部曲
@@ -152,6 +152,7 @@ class NetworkTools: AFHTTPSessionManager {
                     SVProgressHUD.showErrorWithStatus("获取微博数据失败", maskType: SVProgressHUDMaskType.Black)
                     return
                 }
+                //守护校验返回数据一定有值
                 guard let arr = array else
                 {
                     return
