@@ -61,16 +61,18 @@ class Status: NSObject {
     /// 微博来源
     var source: String?
     
-    
+    ///字典转模型
     init(dict: [String: AnyObject])
     {
         super.init()
         setValuesForKeysWithDictionary(dict)
     }
+    //对应数据
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
         
     }
     
+    //为了方便调试, 重写description
     override var description: String {
         let property = ["created_at", "idstr", "text", "source"]
         let dict = dictionaryWithValuesForKeys(property)
@@ -80,7 +82,7 @@ class Status: NSObject {
 }
 ```
 
-###完善和优化代码
+###完善和优化网络请求代码
 ```swift 
 //  NetworkTools.swift 
 
@@ -118,7 +120,7 @@ class NetworkTools: AFHTTPSessionManager {
         // 3.发送GET请求
         GET(path, parameters: parameters, success: { (task, objc) -> Void in
             
-            // 返回数据给调用者
+            // 返回数据给调用者[服务器返回objc是字典,在objc内通过key获取到的statuses也是字典数组]
             guard let arr = (objc as! [String: AnyObject])["statuses"] as? [[String: AnyObject]] else
             {
                 finished(array: nil, error: NSError(domain: "com.missajj.www", code: 1000, userInfo: ["message": "没有获取到数据"]))
@@ -134,9 +136,33 @@ class NetworkTools: AFHTTPSessionManager {
  
 ```
 
-
+###获取数据后的处理
 ```swift 
-
+   // MARK: - 内部控制方法
+    private func loadData()
+    {
+           NetworkTools.shareInstance.loadStatuses { (array, error) -> () in
+                // 1.安全校验
+                if error != nil
+                {
+                    SVProgressHUD.showErrorWithStatus("获取微博数据失败", maskType: SVProgressHUDMaskType.Black)
+                    return
+                }
+                guard let arr = array else
+                {
+                    return
+                }
+                
+                // 2.将字典数组转换为模型数组
+                var models = [Status]()
+                for dict in arr
+                {
+                    let status = Status(dict: dict)
+                    models.append(status)
+                }
+           
+        }
+    }
 ```
 
 
