@@ -62,6 +62,8 @@ Update更新：2016年6月8日 By {MISSAJJ琴瑟静听}
    * [0.9.新浪微博动画欢迎界面](09xin_lang_wei_bo_dong_hua_huan_ying_jie_mian.md)
    * [10.新浪微博新特性界面和按钮动画](10xin_lang_wei_bo_xin_te_xing_jie_mian_he_an_niu_d.md)
    * [11.检查版本更新](11jian_cha_ban_ben_geng_xin.md)
+   * [12.加载微博数据](12jia_zai_wei_bo_shu_ju.md)
+   * [13.加载用户数据](13jia_zai_yong_hu_shu_ju.md)
 
 
 ## 新浪微博
