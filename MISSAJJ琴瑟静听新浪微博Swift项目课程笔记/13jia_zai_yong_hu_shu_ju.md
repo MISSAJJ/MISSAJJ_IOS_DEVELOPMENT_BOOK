@@ -62,7 +62,7 @@ class User: NSObject {
  /// KVC的setValuesForKeysWithDictionary方法内部会调用setValue方法
     override func setValue(value: AnyObject?, forKey key: String) {
         
-        NJLog("key = \(key), value = \(value)")
+        MALog("key = \(key), value = \(value)")
         // 1.拦截user赋值操作
         if key == "user"
         {
@@ -108,7 +108,7 @@ class Status: NSObject {
     /// KVC的setValuesForKeysWithDictionary方法内部会调用setValue方法
     override func setValue(value: AnyObject?, forKey key: String) {
         
-        NJLog("key = \(key), value = \(value)")
+        MALog("key = \(key), value = \(value)")
         // 1.拦截user赋值操作
         if key == "user"
         {
