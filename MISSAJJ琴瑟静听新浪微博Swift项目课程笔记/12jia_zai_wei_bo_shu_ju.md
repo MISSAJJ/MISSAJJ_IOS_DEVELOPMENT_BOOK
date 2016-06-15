@@ -171,11 +171,3 @@ class NetworkTools: AFHTTPSessionManager {
 ```
 
 
-```swift 
-
-```
-
-
-```swift 
-
-```
