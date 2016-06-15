@@ -8,6 +8,29 @@
 - 2.准备参数 
 - 3.发送GET请求
 
+
+```swift 
+// MARK: - 外部控制方法
+    func loadStatuses()
+    {
+        
+        assert(UserAccount.loadUserAccount() != nil, "必须授权之后才能获取微博数据")
+        
+        // 1.准备路径
+        let path = "2/statuses/home_timeline.json"
+        // 2.准备参数
+        let parameters = ["access_token": UserAccount.loadUserAccount()!.access_token!]
+        // 3.发送GET请求
+        GET(path, parameters: parameters, success: { (task, objc) -> Void in 
+            //获取后处理
+            }) { (task, error) -> Void in
+            //错误处理    
+        }
+    } 
+```
+
+
+
 ```swift 
 //  NetworkTools.swift 
 
@@ -34,7 +57,8 @@ class NetworkTools: AFHTTPSessionManager {
     // MARK: - 外部控制方法
     func loadStatuses(finished: (array: [[String: AnyObject]]?, error: NSError?)->())
     {
-        
+        //因为一定要有UserAccount.loadUserAccount的值才能发送请求,
+        //所以要通过断言提醒其他开发者,接着就可以放心去进行强制解包了.
         assert(UserAccount.loadUserAccount() != nil, "必须授权之后才能获取微博数据")
         
         // 1.准备路径
